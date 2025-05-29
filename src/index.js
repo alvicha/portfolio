@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+import 'primereact/resources/primereact.min.css';  // Estilos base de PrimeReact
+import 'primeicons/primeicons.css';  // Estilos de iconos de PrimeIcons
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
