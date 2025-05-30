@@ -19,10 +19,10 @@ const HomeComponent = () => {
                     <Button className="rounded btn-outline-orange" label="Contáctarme" outlined />
                 </div>
                 <div class="social-icons mt-5">
-                    <a href="#" class="icon"><i class="pi pi-github fs-5"></i></a>
-                    <a href="#" class="icon"><i class="pi pi-linkedin fs-5"></i></a>
-                    <a href="mailto:tuemail@correo.com" class="icon"><i class="pi pi-envelope fs-5"></i></a>
-                    <a href="#" class="icon"><i class="pi pi-twitter fs-5"></i></a>
+                    <a href="https://github.com/alvicha" class="icon"><i class="pi pi-github fs-5"></i></a>
+                    <a href="https://www.linkedin.com/in/alberto-villegas-chaparro-a786192a2/" class="icon"><i class="pi pi-linkedin fs-5"></i></a>
+                    <a href="mailto:avchaparro04@gmail.com" class="icon"><i class="pi pi-envelope fs-5"></i></a>
+                    <a href="https://x.com/AlbertoVil58869" class="icon"><i class="pi pi-twitter fs-5"></i></a>
                 </div>
             </div>
             <div className="profile-wrapper mt-4 mt-md-0">

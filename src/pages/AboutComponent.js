@@ -1,8 +1,15 @@
+import { useEffect, useState } from "react";
 import "./portfolio.css";
 
 const AboutComponent = () => {
+    const [active, setActive] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => setActive(true), 50);
+    }, []);
+
     return (
-        <section className="about-section">
+        <section className={`about-section page ${active ? 'active' : ''}`}>
             <h2 className="about-title">Sobre mí</h2>
             <p className="about-text">
                 Soy un profesional del desarrollo de software con una sólida formación en
