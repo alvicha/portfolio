@@ -2,12 +2,8 @@
 const FooterComponent = () => {
     return (
         <footer className="row d-flex align-items-center">
-            <div className="col-12 col-md-6 col-sm-6 text-md-left text-lg-left text-center description">
-                <p>Powered By VillegasCompany</p>
-            </div>
-
-            <div className="col-12 col-md-6 col-sm-6 text-md-right text-lg-right text-center version">
-                <p>&copy; Version 1.44</p>
+            <div class="mt-3 version">
+                <p class="text-center mt-3">&copy; Copyright 2025. Alberto Villegas. Todos los derechos reservados.</p>
             </div>
         </footer>
     );

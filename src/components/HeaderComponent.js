@@ -7,38 +7,36 @@ const HeaderComponent = () => {
             <nav className="navbar p-3">
                 <div className="container-fluid">
                     <div className="d-flex align-items-center w-100">
-                        <div className="d-flex align-items-center flex-column flex-sm-row align-items-start">
-                            <Link to="/templatesList"><img src="/images/logo.png" alt="Logo de la aplicación" width="100" height="90" /> </Link>
+                        <div className="d-flex justify-content-end flex-column flex-sm-row align-items-start">
+                            <Link to="/"><img src="/images/logo.png" alt="Logo de la aplicación" width="89" height="60" /> </Link>
                         </div>
-
-                        <div className="navegacion flex-grow-1 d-flex justify-content-center mb-2 mb-lg-0 mb-md-0 mb-sm-0">
+                        <div className="navegacion flex-grow-1 d-flex mb-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-end">
                             <ul className="navbar-nav d-flex flex-column flex-sm-row">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="index.html">
-                                        Inicio</a>
+                                    <Link className="nav-link" to="/home">
+                                        Inicio
+                                    </Link>
                                 </li>
                                 <li className="nav-item ms-3">
-                                    <a className="nav-link" href="sobre_mi(servicios).html">
-                                        Sobre mí</a>
+                                    <Link className="nav-link" to="/about">
+                                        Sobre mí
+                                    </Link>
                                 </li>
                                 <li className="nav-item ms-3">
-                                    <a className="nav-link" href="proyectos.html">Proyectos</a>
+                                    <Link className="nav-link" to="/proyectos">
+                                        Proyectos
+                                    </Link>
                                 </li>
                                 <li className="nav-item ms-3">
-                                    <a className="nav-link" href="contacto.html">Contacto</a>
+                                    <Link className="nav-link" to="/contacto">
+                                        Contacto
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
 
                         <div>
-                            <Button label="Cambiar Idioma" icon="pi pi-language" className="rounded-pill buttons"/>
-                        </div>
-
-                        <div className="d-flex ms-5 justify-content-end justify-content-sm-center align-items-sm-center">
-                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones"
-                                aria-controls="opciones" aria-expanded="false" aria-label="Navegación hamburguesa">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
+                            <Button label="Cambiar Idioma" icon="pi pi-language" className="ml-5 rounded buttons" />
                         </div>
                     </div>
                 </div>

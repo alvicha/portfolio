@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #121212;
+    background-color: #140820;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -17,25 +17,19 @@ header {
 }
 
 .navegacion .nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navegacion .nav-link {
-    display: flex;
-    align-items: center;
-    color: #ff6a00;
+    color: #FF6A00;
     font-weight: bold;
-    font-size: 17px;
-    padding: 8px 12px;
+    font-size: 16px;
+    padding: 22px 12px;
     border-radius: 6px;
     text-decoration: none;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
-    position: relative;
 }
 
 .navegacion .nav-link::after {
@@ -70,10 +64,16 @@ header {
     color: white;
 }
 
+.title-name {
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+
 .subtitle {
-    font-size: 55px;
+    font-size: 25px;
     font-weight: bold;
-    color: #ff6a00;
+    color: #bfcfdd;
     margin: 15px 0;
 }
 
@@ -159,13 +159,33 @@ header {
     color: #ff6a00;
 }
 
+.button-about {
+    background-color: #ff6a00 !important;
+    color: #ffffff !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none !important;
+    font-weight: bold !important;
+    padding: 12px 19px !important;
+}
+
+.button-about:hover {
+    background-color: #ffffff !important;
+    color: #ff6a00 !important;
+}
+
+.icon-arrow {
+    display: inline-flex;
+    margin-left: 10px;
+    margin-top: 3px;
+    animation: moveArrow 1s infinite linear;
+}
+
 .profile-wrapper {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     overflow: hidden;
     background-color: #1a1a1a;
-    /* Fondo opcional */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,16 +197,78 @@ header {
     object-fit: cover;
 }
 
-.btn-outline-white {
-    border: 1px solid white !important;
+.btn-outline-orange {
+    border: 1px solid #FF6A00 !important;
     color: white !important;
     background-color: transparent !important;
 }
 
-.btn-outline-white:hover {
+.btn-outline-orange:hover {
     background-color: white !important;
     color: black !important;
 }
+
+.social-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.icon {
+    background-color: #1E1E1E;
+    color: #FF6A00;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 25px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+@keyframes moveArrow {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.about-section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.about-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+    border-bottom: 3px solid #2980b9;
+    padding-bottom: 10px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    color: #555;
+}
+
 
 footer {
     background-color: white;
