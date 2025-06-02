@@ -242,7 +242,6 @@ header {
     transform: translateY(20px);
 }
 
-/* Imagen del perfil */
 .about-image-wrapper {
     flex: 1 1 300px;
     max-width: 320px;
