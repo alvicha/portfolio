@@ -44,7 +44,7 @@ const HomePage = () => {
             <div className={`home-container page ${active ? "active" : ""}`}>
                 <div className="text-start w-50 mb-5">
                     <div className="subtitle text-start">UI/UX designer</div>
-                    <h1 className="title-name fw-bold mb-3">Hola, mi nombre es Alberto Villegas</h1>
+                    <h1 className="title-name fw-bold mb-5">Hola, mi nombre es Alberto Villegas</h1>
                     <div className="button-group">
                         <Button className="button-about rounded me-3" icon="pi pi-arrow-right icon-arrow" iconPos="right" onClick={() => navigate('/about')} label="Ver más acerca de mi" outlined />
                         <Button className="rounded btn-outline-orange" onClick={() => navigate('/contact')} label="Contáctarme" outlined />

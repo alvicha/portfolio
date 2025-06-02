@@ -71,7 +71,7 @@ header {
     font-size: 18px;
     font-weight: bold;
     color: #ff6a00;
-    margin: 18px 0;
+    margin: 22px 0;
 }
 
 .social-icons {
@@ -331,6 +331,7 @@ header {
 
 .titulo-caracteristicas-wrapper {
     text-align: center;
+    margin-top: 80px
 }
 
 .titulo-caracteristicas {
