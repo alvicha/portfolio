@@ -329,6 +329,27 @@ header {
     text-align: center;
 }
 
+.titulo-caracteristicas-wrapper {
+    text-align: center;
+}
+
+.titulo-caracteristicas {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.titulo-caracteristicas::after {
+    content: "";
+    display: block;
+    margin: 60px auto 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFD700;
+}
+
 .page {
     opacity: 0;
     transform: translateY(20px);
