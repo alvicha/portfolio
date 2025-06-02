@@ -6,18 +6,18 @@ import './pages/portfolio.css';
 import { ScreensProvider } from './screens/ScreensContext';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
-import HomeComponent from './pages/HomeComponent';
-import AboutComponent from './pages/AboutComponent';
 import ContactComponent from './components/ContactComponent';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
     <ScreensProvider>
       <HeaderComponent />
       <Routes>
-        <Route path="/" element={<HomeComponent />} />
-        <Route path="/home" element={<HomeComponent />} />
-        <Route path="/about" element={<AboutComponent />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactComponent />} />
       </Routes>
       <FooterComponent />

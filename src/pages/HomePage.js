@@ -3,7 +3,7 @@ import "./portfolio.css";
 import { Button } from 'primereact/button';
 import { useEffect, useState } from "react";
 
-const HomeComponent = () => {
+const HomePage = () => {
     const navigate = useNavigate();
     const [active, setActive] = useState(false);
 
@@ -39,4 +39,4 @@ const HomeComponent = () => {
     );
 };
 
-export default HomeComponent;
+export default HomePage;

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import "./portfolio.css";
 
-const AboutComponent = () => {
+const AboutDescription = () => {
     const [active, setActive] = useState(false);
 
     useEffect(() => {
@@ -9,9 +8,12 @@ const AboutComponent = () => {
     }, []);
 
     return (
-        <section className={`about-section p-5 m-5 page ${active ? "active" : ""}`}>
+        <section className={`section-profile p-5 m-5 page ${active ? "active" : ""}`}>
+            <h1 className="about-title text-center mb-5 me-5">Sobre mí</h1>
             <div className="about-content">
-                <h1 className="about-title text-center mb-5 me-5">Sobre mí</h1>
+                <div className="about-image-wrapper">
+                    <img src="/images/perfil2.jpg" alt="Imagen de perfil" className="about-image" />
+                </div>
                 <p className="about-text me-5">
                     Soy un desarrollador full stack junior, apasionado por el aprendizaje continuo y por el desarrollo tanto frontend como backend. Tengo experiencia con diversas herramientas, tecnologías y frameworks, siempre enfocado en la usabilidad y el diseño centrado en el usuario.
                     <br /> <br />
@@ -22,4 +24,4 @@ const AboutComponent = () => {
     );
 };
 
-export default AboutComponent;
+export default AboutDescription;

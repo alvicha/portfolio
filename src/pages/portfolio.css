@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: white;
 }
 
 header {
@@ -237,73 +238,95 @@ header {
     }
 }
 
-/* Contenedor general de la sección About */
-.about-section {
+.section-profile {
     transform: translateY(20px);
-}
-
-.about-image-wrapper {
-    flex: 1 1 300px;
-    max-width: 320px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(255, 106, 0, 0.5);
-    transition: transform 0.3s ease;
-}
-
-.about-image-wrapper:hover {
-    transform: scale(1.05);
 }
 
 .about-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 40px 80px;
     color: white;
-    background-color: #140820;
     line-height: 1.7;
     text-align: justify;
-}
-
-.about-image {
-    width: 100%;
-    height: auto;
-    display: block;
+    gap: 5rem;
 }
 
 .about-title {
-    font-size: 45px;
+    font-size: 40px;
     color: white;
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
 }
 
-/* Texto con negritas mejor visibles */
-.about-text strong {
-    color: #ff8c00;
+.about-text {
+    max-width: 700px;
+    font-size: 1.1rem;
 }
 
-/* Responsive para pantallas pequeñas */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
+.about-image-wrapper {
+    width: 400px;
+    height: 400px;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(255, 106, 0, 0.5);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
 
-    .about-text-wrapper {
-        flex: unset;
-    }
+.about-image-wrapper:hover {
+    transform: scale(1.05);
+}
 
-    .about-image-wrapper {
-        max-width: 250px;
-        margin: 0 auto;
-    }
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .about-title {
-        font-size: 2rem;
-    }
+.skills-grid {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 4rem;
+    padding: 30px;
+    border: 1px solid white;
+}
+
+.skill-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 106, 0, 0.5));
+    transform: scale(1.1);
+}
+
+.skill-image {
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-label {
+    font-weight: 600;
+    text-align: center;
+}
+
+.skill-title {
+    margin-bottom: 70px;
+    text-align: center;
 }
 
 .page {
