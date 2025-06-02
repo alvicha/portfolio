@@ -9,23 +9,15 @@ const AboutComponent = () => {
     }, []);
 
     return (
-        <section className={`about-section page ${active ? 'active' : ''}`}>
-            <h2 className="about-title">Sobre mí</h2>
-            <p className="about-text">
-                Soy un profesional del desarrollo de software con una sólida formación en
-                [tu especialidad, ej. desarrollo frontend, backend o full-stack], enfocado en
-                crear soluciones tecnológicas eficientes, escalables y centradas en la experiencia de usuario.
-            </p>
-            <p className="about-text">
-                Con [X años] de experiencia en la industria, me especializo en el manejo de tecnologías
-                como [menciona tus tecnologías: React, Node.js, Python, etc.], y poseo un enfoque
-                orientado a la mejora continua, la calidad del código y la colaboración en equipo.
-            </p>
-            <p className="about-text">
-                Mi objetivo es aportar valor real a través de proyectos innovadores que impulsen
-                la transformación digital, manteniendo siempre un compromiso con los resultados
-                y la excelencia técnica.
-            </p>
+        <section className={`about-section p-5 m-5 page ${active ? "active" : ""}`}>
+            <div className="about-content">
+                <h1 className="about-title text-center mb-5 me-5">Sobre mí</h1>
+                <p className="about-text me-5">
+                    Soy un desarrollador full stack junior, apasionado por el aprendizaje continuo y por el desarrollo tanto frontend como backend. Tengo experiencia con diversas herramientas, tecnologías y frameworks, siempre enfocado en la usabilidad y el diseño centrado en el usuario.
+                    <br /> <br />
+                    Mi objetivo es combinar creatividad y técnica para desarrollar productos digitales que no solo funcionen correctamente, sino que también enamoren a sus usuarios.
+                </p>
+            </div>
         </section>
     );
 };

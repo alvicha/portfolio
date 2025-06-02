@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #140820;
     overflow-x: hidden;
     display: flex;
@@ -22,10 +22,10 @@ header {
 }
 
 .navegacion .nav-link {
-    color: #FF6A00;
+    color: white;
     font-weight: bold;
     font-size: 16px;
-    padding: 22px 12px;
+    padding: 20px 12px;
     border-radius: 6px;
     text-decoration: none;
     letter-spacing: 0.5px;
@@ -53,28 +53,24 @@ header {
 }
 
 .home-container {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 80px;
     color: white;
-    padding: 60px 20px;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.title-hello {
-    font-size: 20px;
-    color: white;
+    min-height: 90vh;
 }
 
 .title-name {
-    font-size: 50px;
     color: white;
-    text-transform: uppercase;
+    font-size: 50px;
 }
 
 .subtitle {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
-    color: #bfcfdd;
-    margin: 15px 0;
+    color: #ff6a00;
+    margin: 18px 0;
 }
 
 .social-icons {
@@ -176,14 +172,13 @@ header {
 .icon-arrow {
     display: inline-flex;
     margin-left: 10px;
-    margin-top: 3px;
     animation: moveArrow 1s infinite linear;
 }
 
 .profile-wrapper {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
+    width: 360px;
+    height: 390px;
+    border-radius: 8%;
     overflow: hidden;
     background-color: #1a1a1a;
     display: flex;
@@ -242,32 +237,74 @@ header {
     }
 }
 
+/* Contenedor general de la sección About */
 .about-section {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    margin-top: 40px;
+    transform: translateY(20px);
+}
+
+/* Imagen del perfil */
+.about-image-wrapper {
+    flex: 1 1 300px;
+    max-width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(255, 106, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.about-image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+    color: white;
+    background-color: #140820;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .about-title {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+    font-size: 45px;
+    color: white;
     font-weight: 700;
-    color: #2c3e50;
-    border-bottom: 3px solid #2980b9;
-    padding-bottom: 10px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 }
 
-.about-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 18px;
-    color: #555;
+/* Texto con negritas mejor visibles */
+.about-text strong {
+    color: #ff8c00;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text-wrapper {
+        flex: unset;
+    }
+
+    .about-image-wrapper {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
 }
 
 .page {
@@ -279,6 +316,46 @@ header {
 .page.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.text-help {
+    color: white !important;
+    font-size: 14px;
+}
+
+.btn-submit {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    padding: 12px 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.btn-submit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    /* empieza sin ancho */
+    background-color: #ff6a00;
+    /* color de fondo al completar */
+    transition: width 0.4s ease;
+    z-index: -1;
+    /* detrás del texto */
+}
+
+.btn-submit:hover {
+    color: white;
+}
+
+.btn-submit:hover::before {
+    width: 100%;
+    /* se expande de izquierda a derecha y se queda */
 }
 
 footer {

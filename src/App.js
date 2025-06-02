@@ -8,6 +8,7 @@ import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
 import HomeComponent from './pages/HomeComponent';
 import AboutComponent from './pages/AboutComponent';
+import ContactComponent from './components/ContactComponent';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomeComponent />} />
         <Route path="/home" element={<HomeComponent />} />
         <Route path="/about" element={<AboutComponent />} />
+        <Route path="/contact" element={<ContactComponent />} />
       </Routes>
       <FooterComponent />
     </ScreensProvider>

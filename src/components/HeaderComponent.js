@@ -4,7 +4,7 @@ import { Button } from 'primereact/button';
 const HeaderComponent = () => {
     return (
         <header>
-            <nav className="navbar p-3">
+            <nav className="navbar p-4">
                 <div className="container-fluid">
                     <div className="d-flex align-items-center w-100">
                         <div className="d-flex justify-content-end flex-column flex-sm-row align-items-start">
@@ -28,7 +28,7 @@ const HeaderComponent = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item ms-3">
-                                    <Link className="nav-link" to="/contacto">
+                                    <Link className="nav-link" to="/contact">
                                         Contacto
                                     </Link>
                                 </li>
