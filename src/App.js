@@ -6,9 +6,9 @@ import './pages/portfolio.css';
 import { ScreensProvider } from './screens/ScreensContext';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
-import ContactComponent from './components/ContactComponent';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactComponent />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <FooterComponent />
     </ScreensProvider>

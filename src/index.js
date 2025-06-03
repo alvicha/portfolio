@@ -3,17 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import "primereact/resources/themes/lara-light-cyan/theme.css";
-import 'primereact/resources/primereact.min.css';  // Estilos base de PrimeReact
-import 'primeicons/primeicons.css';  // Estilos de iconos de PrimeIcons
+import "primereact/resources/themes/saga-blue/theme.css"; // o el tema que uses
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
 import reportWebVitals from './reportWebVitals';
-
+import { ThemeProvider } from "@material-tailwind/react";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

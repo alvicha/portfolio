@@ -2,7 +2,7 @@ import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 import { Checkbox } from "primereact/checkbox";
 import { Button } from "primereact/button";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ContactComponent = () => {
     const [aceptaTerminos, setAceptaTerminos] = useState(false);

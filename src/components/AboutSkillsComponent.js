@@ -8,17 +8,20 @@ const AboutSkills = () => {
     }, []);
 
     const skills = [
+        { src: "/images/javascript.png", label: "JavaScript" },
         { src: "/images/html.png", label: "HTML5" },
         { src: "/images/css.png", label: "CSS" },
         { src: "/images/php.png", label: "PHP" },
-        { src: "/images/vuejs.png", label: "React" },
-        { src: "/images/React.png", label: "Vue" },
+        { src: "/images/vuejs.png", label: "VueJS" },
+        { src: "/images/React.png", label: "React" },
         { src: "/images/symfony.png", label: "Symfony" },
+        { src: "/images/nodejs.png", label: "NodeJS" },
         { src: "/images/bootstrap.png", label: "Bootstrap" },
         { src: "/images/firebase.png", label: "Firebase" },
         { src: "/images/mysql.png", label: "MySQL" },
         { src: "/images/angular.png", label: "Angular" },
         { src: "/images/logoc.png", label: "C#" },
+        { src: "/images/java.png", label: "Java" },
     ];
 
     return (

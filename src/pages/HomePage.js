@@ -34,9 +34,9 @@ const HomePage = () => {
     ];
 
     const footer = (
-        <>
-            <Button icon="pi pi-plus" className="button-about rounded-pill mt-3" severity="secondary" />
-        </>
+        <div className="d-flex justify-content-end">
+            <Button icon="pi pi-plus" className="btn-plus rounded-pill" severity="warning" />
+        </div>
     );
 
     return (
@@ -65,16 +65,16 @@ const HomePage = () => {
             </div>
 
             <div className="titulo-caracteristicas-wrapper">
-                <h2 className="titulo-caracteristicas">Características Concretas</h2>
+                <h2 className="titulo-caracteristicas fw-bold">Características Concretas</h2>
             </div>
             <div className="row mb-5">
                 {characteristics.map((item, index) => (
-                    <div className="col-12 col-lg-4 col-md-4" key={index}>
+                    <div className="col-12 col-lg-4 col-md-4 col-sm-4 mb-0 mb-sm-5" key={index}>
                         <Card
                             title={item.title}
                             header={<img alt={item.title} src={item.img} className="img-fluid mb-3" />}
                             footer={footer}
-                            className="h-100 w-100 text-center"
+                            className="h-100 text-center"
                         >
                             <p className="mt-0">{item.description}</p>
                         </Card>
