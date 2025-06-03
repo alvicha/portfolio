@@ -23,7 +23,7 @@ const HeaderComponent = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item ms-3">
-                                    <Link className="nav-link" to="/proyectos">
+                                    <Link className="nav-link" to="/projects">
                                         Proyectos
                                     </Link>
                                 </li>
