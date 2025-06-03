@@ -6,7 +6,7 @@ import {
     CardFooter,
 } from "@material-tailwind/react";
 
-const AboutExperience = () => {
+const AboutAcademicData = () => {
     const [active, setActive] = useState(false);
 
     useEffect(() => {
@@ -70,4 +70,4 @@ const AboutExperience = () => {
     );
 };
 
-export default AboutExperience;
+export default AboutAcademicData;
