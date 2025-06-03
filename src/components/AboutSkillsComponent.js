@@ -26,7 +26,7 @@ const AboutSkills = () => {
 
     return (
         <section className={`section-skills p-5 m-5 page ${active ? "active" : ""}`}>
-            <h1 className="skill-title me-5">Habilidades</h1>
+            <h2 className="skill-title me-5">Habilidades</h2>
             <div className="skills-grid rounded">
                 {skills.map((skill, index) => (
                     <div key={index} className="skill-item" >

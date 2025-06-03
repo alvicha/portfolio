@@ -11,7 +11,7 @@ const AboutDescription = () => {
     return (
         <section className={`section-profile p-5 m-5 page ${active ? "active" : ""}`}>
             <h1 className="about-title text-center mb-5 me-5">Sobre mí</h1>
-            <div className="about-content">
+            <div className="about-content mt-2">
                 <div className="about-image-wrapper">
                     <img src="/images/perfil2.jpg" alt="Imagen de perfil" className="about-image" />
                 </div>
