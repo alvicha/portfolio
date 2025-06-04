@@ -47,7 +47,7 @@ const HomePage = () => {
                     <h1 className="title-name fw-bold mb-5">Hola, mi nombre es Alberto Villegas</h1>
                     <div className="button-group">
                         <Button className="button-about rounded me-3" icon="pi pi-arrow-right icon-arrow" iconPos="right" onClick={() => navigate('/about')} label="Ver más acerca de mi" outlined />
-                        <Button className="rounded btn-outline-orange" onClick={() => navigate('/contact')} label="Contáctarme" outlined />
+                        <Button className="rounded fw-bold btn-outline-orange" onClick={() => navigate('/contact')} label="Contáctarme" outlined />
                     </div>
                     <div className="text-justify mt-4">
                         Explora mi portfolio para descubrir mis proyectos, habilidades y cómo puedo aportar valor con soluciones creativas, funcionales y centradas en el usuario.
@@ -67,14 +67,14 @@ const HomePage = () => {
             <div className="titulo-caracteristicas-wrapper">
                 <h2 className="titulo-caracteristicas fw-bold">Características Concretas</h2>
             </div>
-            <div className="container-characteristics row mb-5">
+            <div className="row mx-auto mb-5">
                 {characteristics.map((item, index) => (
-                    <div className="col-12 col-lg-4 col-md-4 col-sm-4 mb-0 mb-sm-5" key={index}>
+                    <div className="flex justify-content-center col-12 col-lg-4 col-md-4 col-sm-4 mb-0 mb-sm-5" key={index}>
                         <Card
                             title={item.title}
                             header={<img alt={item.title} src={item.img} className="img-fluid mb-3" />}
                             footer={footer}
-                            className="h-100 text-center"
+                            className="h-100 text-justify rounded"
                         >
                             <p className="mt-0">{item.description}</p>
                         </Card>

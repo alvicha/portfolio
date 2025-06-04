@@ -4,29 +4,54 @@ import { Link } from "react-router-dom";
 const FooterComponent = () => {
     return (
         <footer>
-            <div className="row d-flex align-items-center justify-content-around mt-3">
-                <div className="col-12 col-lg-2 mb-3 d-flex justify-content-start align-items-center">
-                    <Link to="/"><img src="/images/logo.png" alt="Logo de la aplicación" width="90" height="60" /></Link>
+            <div className="container py-md-4 py-lg-4">
+                <div className="row d-flex text-center text-md-start text-lg-start flex-wrap">
+                    <div className="col-12 col-lg-4 col-md-3 mb-4 mb-lg-0 mb-md-0 d-flex justify-content-center align-items-start">
+                        <Link to="/">
+                            <img src="/images/logo.png" alt="Logo de la aplicación" width="90" height="60" />
+                        </Link>
+                    </div>
+
+                    <div className="col-12 col-lg-4 col-md-5 mb-4">
+                        <h5 className="contact-title">Contacto</h5>
+                        <p className="d-flex align-items-center justify-content-center justify-content-md-start justify-content-lg-start mt-3">
+                            <i className="bi bi-geo-alt-fill me-3 icon-hover" />
+                            C/ Orba, 17, 46470 Massanassa, Valencia
+                        </p>
+                        <p className="d-flex align-items-center justify-content-center justify-content-md-start justify-content-lg-start mt-2">
+                            <i className="pi pi-phone me-3 icon-hover" />
+                            648722134
+                        </p>
+                        <p className="d-flex align-items-center justify-content-center justify-content-md-start justify-content-lg-start mt-2">
+                            <i className="pi pi-envelope me-3 icon-hover" />
+                            <a href="mailto:avchaparro04@gmail.com" className="email-link">avchaparro04@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div className="col-12 col-lg-4 col-md-4">
+                        <h5 className="url-title">Enlaces</h5>
+                        <ul className="navbar-nav d-flex flex-column align-items-center align-items-md-start align-items-lg-start">
+                            <li className="nav-item">
+                                <Link className="nav-link nav-hover" to="/home">Inicio</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link nav-hover" to="/about">Sobre mí</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link nav-hover" to="/projects">Proyectos</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link nav-hover" to="/contact">Contacto</Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div className="col-12 col-lg-2 col-md-4 col-sm-6 mb-3 d-flex flex-column justify-content-center">
-                    <p>Teléfono</p>
-                    <p className="d-flex align-items-center">
-                        <i className="pi pi-phone me-2" style={{ fontSize: '1.2rem' }}></i>
-                        648722134
+                <div className="col-12 border-top mt-4">
+                    <p className="text-center mt-4 mb-2">
+                        &copy; Copyright 2025. Alberto Villegas. Todos los derechos reservados.
                     </p>
                 </div>
-
-                <div className="col-12 col-lg-2 col-md-4 col-sm-6 text-md-start mb-3">
-                    <p>Email</p>
-                    <p className="d-flex justify-content-center justify-content-md-start align-items-center">
-                        <i className="pi pi-envelope me-2" style={{ fontSize: '1.2rem' }}></i>
-                        <a href="mailto:avchaparro04@gmail.com">avchaparro04@gmail.com</a>
-                    </p>
-                </div>
-            </div>
-            <div className="border-top mt-4">
-                <p className="text-center mt-4 mb-2">&copy; Copyright 2025. Alberto Villegas. Todos los derechos reservados.</p>
             </div>
         </footer>
     );

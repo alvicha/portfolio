@@ -22,7 +22,7 @@ const AboutDescription = () => {
                         <br /> <br />
                         Mi objetivo es combinar creatividad y técnica para desarrollar productos digitales que no solo funcionen correctamente, sino que también enamoren a sus usuarios.
                     </p>
-                    <Button className="rounded btn-outline-orange mt-3" label="Descargar CV" icon="pi pi-download" outlined />
+                    <Button className="rounded btn-outline-orange fw-bold mt-3" label="Descargar CV" icon="pi pi-download" outlined />
                 </div>
             </div>
         </section>
