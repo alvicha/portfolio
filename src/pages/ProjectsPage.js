@@ -147,12 +147,12 @@ const ProjectsPage = () => {
                 icon: "/images/php.png",
             },
             {
-                name: "SYMFONY",
-                icon: "/images/symfony.png",
-            },
-            {
                 name: "REACT",
                 icon: "/images/react.png",
+            },
+            {
+                name: "JAVASCRIPT",
+                icon: "/images/javascript.png",
             },
             {
                 name: "BOOSTRAP",

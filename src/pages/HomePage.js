@@ -67,7 +67,7 @@ const HomePage = () => {
             <div className="titulo-caracteristicas-wrapper">
                 <h2 className="titulo-caracteristicas fw-bold">Características Concretas</h2>
             </div>
-            <div className="row mb-5">
+            <div className="container-characteristics row mb-5">
                 {characteristics.map((item, index) => (
                     <div className="col-12 col-lg-4 col-md-4 col-sm-4 mb-0 mb-sm-5" key={index}>
                         <Card

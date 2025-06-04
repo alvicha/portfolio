@@ -239,6 +239,10 @@ header {
     }
 }
 
+.container-characteristics {
+    max-width: 100%;
+}
+
 .section-profile {
     transform: translateY(20px);
 }
