@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #140820;
+    background-color: #1A1A2E;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -396,9 +396,19 @@ header {
 }
 
 .projects-title {
+    font-weight: 700;
     font-size: 40px;
     margin-bottom: 60px;
     text-transform: uppercase;
+}
+
+.projects-title::after {
+    content: "";
+    display: block;
+    margin: 50px auto 0;
+    width: 20%;
+    height: 2px;
+    background-color: #FFD700;
 }
 
 .projects-description {
@@ -411,6 +421,46 @@ header {
     justify-content: center;
     align-items: center;
     gap: 35px;
+    flex-wrap: wrap;
+}
+
+.tag-name {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.buttons-card {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background-color: #FFA64D !important;
+    color: #1A1A2E !important;
+    font-weight: 600;
+    border: none !important;
+}
+
+.buttons-card:hover {
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(-3px);
+}
+
+.button-more {
+    display: flex;
+    align-items: center;
+    padding: 25px 18px;
+    margin: 60px auto 30px;
+    font-size: 18px;
+    gap: 10px;
+    border: 1px solid #FF6A00;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-more:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 106, 0, 0.5));
+    transform: scale(1.1);
 }
 
 .page {
@@ -465,16 +515,16 @@ header {
 }
 
 footer {
-    background-color: white;
+    background-color: #1A1A2E;
     padding: 20px 40px;
     min-height: 110px;
-    border-top: 3px solid #ddd;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid rgb(1, 149, 186);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
 }
 
 footer .description p,
 footer .version p {
     font-size: 16px;
-    color: black;
+    color: white;
     font-weight: 600;
 }
