@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const FooterComponent = () => {
@@ -7,7 +6,7 @@ const FooterComponent = () => {
             <div className="container py-md-4 py-lg-4">
                 <div className="row d-flex text-center text-md-start text-lg-start flex-wrap">
                     <div className="col-12 col-lg-4 col-md-3 mb-4 mb-lg-0 mb-md-0 d-flex justify-content-center align-items-start">
-                        <Link to="/">
+                        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                             <img src="/images/logo.png" alt="Logo de la aplicación" width="90" height="60" />
                         </Link>
                     </div>

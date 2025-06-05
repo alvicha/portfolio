@@ -334,7 +334,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 33px;
+    font-size: 35px;
 }
 
 .titulo-caracteristicas-wrapper {
@@ -361,11 +361,10 @@ header {
 
 .experience-title {
     text-transform: uppercase;
-    margin-top: 100px;
-    margin-bottom: 45px;
+    margin-bottom: 70px;
     font-weight: 700;
     text-align: center;
-    font-size: 33px;
+    font-size: 35px;
 }
 
 .description-experience {
@@ -400,17 +399,17 @@ header {
     background-color: #FFD700;
 }
 
+.card-title {
+    font-weight: 600;
+    color: darkblue;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
 .projects-description {
     font-size: 17px;
     margin-bottom: 100px;
-}
-
-.projects-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    flex-wrap: wrap;
 }
 
 .tag-name {
@@ -421,7 +420,6 @@ header {
 .buttons-card {
     display: flex !important;
     align-items: center !important;
-    gap: 8px !important;
     background-color: #FFA64D !important;
     color: #1A1A2E !important;
     font-weight: 600;
@@ -606,6 +604,6 @@ footer .url-title:hover::after {
 }
 
 .p-dropdown .p-dropdown-trigger-icon {
-  font-size: 0.8rem;
-  color: #333;
+    font-size: 0.8rem;
+    color: #333;
 }

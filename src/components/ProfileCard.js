@@ -10,8 +10,8 @@ import {
 const ProfileCard = () => {
     return (
         <Card className="w-96 rounded-lg">
-            <CardHeader floated={false} className="rounded-lg h-72">
-                <img src="/images/perfil.jpg" alt="profile-picture" />
+            <CardHeader floated={false} className="rounded-lg h-64">
+                <img src="/images/persona.png" alt="profile-picture" className="w-full h-full object-cover" />
             </CardHeader>
             <CardBody className="text-center">
                 <Typography variant="h4" color="blue-gray" className="mb-3">

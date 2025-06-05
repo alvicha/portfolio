@@ -43,7 +43,7 @@ const HomePage = () => {
     return (
         <div>
             <div className={`home-container page ${active ? "active" : ""}`}>
-                <div className="text-start w-50 mb-5">
+                <div className="text-start w-50">
                     <div className="subtitle text-start">UI/UX designer</div>
                     <h1 className="title-name fw-bold mb-5">Hola, mi nombre es Alberto Villegas</h1>
                     <div className="button-group">

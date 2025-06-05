@@ -86,8 +86,8 @@ const AboutAcademicData = () => {
     };
 
     return (
-        <section className={`mt-5 page ${active ? "active" : ""}`}>
-            <h2 className="experience-title mb-5 me-5">Datos Académicos</h2>
+        <section className={`page ${active ? "active" : ""}`}>
+            <h2 className="experience-title me-5">Datos Académicos</h2>
             <div>
                 <p className="description-experience">
                     Se detallarán y mostrarán los estudios que he hecho, junto con las

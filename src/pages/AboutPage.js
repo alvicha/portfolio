@@ -7,8 +7,8 @@ const AboutPage = () => {
     return (
         <div>
             <AboutDescription />
-            <AboutSkills />
             <AboutAcademicData />
+            <AboutSkills />
         </div>
     );
 };
