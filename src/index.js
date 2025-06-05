@@ -8,13 +8,16 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "@material-tailwind/react";
+import { PrimeReactProvider } from 'primereact/api';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider>
-        <App />
+        <PrimeReactProvider>
+          <App />
+        </PrimeReactProvider>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>

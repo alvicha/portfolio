@@ -17,7 +17,7 @@ const HeaderComponent = () => {
         if (option) {
             return (
                 <div className="flex align-items-center gap-1">
-                    <img src={option.flag} alt={option.name} style={{ width: '30%', objectFit: 'cover', marginRight: '8px' }} />
+                    <img src={option.flag} alt={option.name} style={{ width: '28%', objectFit: 'cover', marginRight: '8px' }} />
                     <div>{option.name}</div>
                 </div>
             );
@@ -28,7 +28,7 @@ const HeaderComponent = () => {
     const countryOptionTemplate = (option) => {
         return (
             <div className="flex align-items-center gap-1">
-                <img src={option.flag} alt={option.name} style={{ width: '30%', objectFit: 'cover', marginRight: '8px' }} />
+                <img src={option.flag} alt={option.name} style={{ width: '25%', objectFit: 'cover', marginRight: '8px' }} />
                 <div>{option.name}</div>
             </div>
         );
@@ -67,7 +67,7 @@ const HeaderComponent = () => {
                             </ul>
                         </div>
 
-                        <div style={{ width: '140px', marginLeft: '10px' }}>
+                        <div style={{ marginLeft: '10px' }}>
                             <Dropdown
                                 value={selectedCountry}
                                 onChange={(e) => setSelectedCountry(e.value)}
@@ -76,6 +76,7 @@ const HeaderComponent = () => {
                                 placeholder="Seleccionar idioma"
                                 valueTemplate={selectedCountryTemplate}
                                 itemTemplate={countryOptionTemplate}
+                                className="w-full"
                             />
                         </div>
                     </div>
