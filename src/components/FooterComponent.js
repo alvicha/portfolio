@@ -15,8 +15,8 @@ const FooterComponent = () => {
                     <div className="col-12 col-lg-4 col-md-5 mb-4">
                         <h5 className="contact-title">Contacto</h5>
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start justify-content-lg-start mt-3">
-                            <i className="bi bi-geo-alt-fill me-3 icon-hover" />
-                            C/ Orba, 17, 46470 Massanassa, Valencia
+                            <i className="pi pi-map-marker me-3 icon-hover" />
+                            Calle Amalio Monforte, Sanroque, 4, Catarroja, España
                         </p>
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start justify-content-lg-start mt-2">
                             <i className="pi pi-phone me-3 icon-hover" />

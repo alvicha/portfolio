@@ -1,7 +1,39 @@
 import { Link } from "react-router-dom";
-import { Button } from 'primereact/button';
+import { Dropdown } from 'primereact/dropdown';
+import { useState } from "react";
+import { ChevronDownIcon } from 'primereact/icons/chevrondown';
+import { ChevronRightIcon } from 'primereact/icons/chevronright';
 
 const HeaderComponent = () => {
+    const [selectedCountry, setSelectedCountry] = useState(null);
+
+    const countries = [
+        { name: 'Francés', code: 'FR', flag: "https://flagcdn.com/w40/fr.png" },
+        { name: 'Español', code: 'ES', flag: 'https://flagcdn.com/w40/es.png' },
+        { name: 'Inglés', code: 'UK', flag: 'https://flagcdn.com/w40/gb.png' },
+    ];
+
+    const selectedCountryTemplate = (option, props) => {
+        if (option) {
+            return (
+                <div className="flex align-items-center gap-1">
+                    <img src={option.flag} alt={option.name} style={{ width: '30%', objectFit: 'cover', marginRight: '8px' }} />
+                    <div>{option.name}</div>
+                </div>
+            );
+        }
+        return <span>{props.placeholder}</span>;
+    };
+
+    const countryOptionTemplate = (option) => {
+        return (
+            <div className="flex align-items-center gap-1">
+                <img src={option.flag} alt={option.name} style={{ width: '30%', objectFit: 'cover', marginRight: '8px' }} />
+                <div>{option.name}</div>
+            </div>
+        );
+    };
+
     return (
         <header>
             <nav className="navbar p-4">
@@ -35,8 +67,16 @@ const HeaderComponent = () => {
                             </ul>
                         </div>
 
-                        <div>
-                            <Button label="Cambiar Idioma" icon="pi pi-language" className="ml-5 rounded buttons" />
+                        <div style={{ width: '140px', marginLeft: '10px' }}>
+                            <Dropdown
+                                value={selectedCountry}
+                                onChange={(e) => setSelectedCountry(e.value)}
+                                options={countries}
+                                optionLabel="name"
+                                placeholder="Seleccionar idioma"
+                                valueTemplate={selectedCountryTemplate}
+                                itemTemplate={countryOptionTemplate}
+                            />
                         </div>
                     </div>
                 </div>

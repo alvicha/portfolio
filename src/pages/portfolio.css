@@ -454,8 +454,7 @@ header {
     display: flex;
     align-items: center;
     background-color: transparent !important;
-    padding: 25px 18px;
-    margin: 60px auto 30px;
+    margin: 50px auto 30px;
     font-size: 18px;
     gap: 10px;
     border: 1px solid #FF6A00;
@@ -621,4 +620,9 @@ footer .contact-title:hover::after {
 
 footer .url-title:hover::after {
     width: 60%;
+}
+
+.p-dropdown .p-dropdown-trigger-icon {
+  font-size: 0.8rem;
+  color: #333;
 }

@@ -9,6 +9,7 @@ import {
 } from "@material-tailwind/react";
 import { Tag } from 'primereact/tag';
 import { useEffect, useState } from "react";
+import { Image } from 'primereact/image';
 
 const ProjectsPage = () => {
     const [localActive, setLocalActive] = useState(false);
@@ -132,7 +133,7 @@ const ProjectsPage = () => {
             title: "Templator",
             description: "Integración de un editor HTML de tipo WYSIWYG llamado Summernote con el objetivo de crear y gestionar plantillas HTML para el envío de correos electrónicos.",
             image: "/images/templator.jpg",
-            link: "https://github.com/alvicha/AE03AD.git",
+            link: "https://github.com/alvicha/TEMPLATOR_FLORIDA.git",
             linkVideo: "https://youtu.be/-2a1i9pEZ5E",
             tags: [{
                 name: "HTML",
@@ -182,11 +183,7 @@ const ProjectsPage = () => {
                                 className="m-0 rounded-none"
                             >
                                 <div className="w-full">
-                                    <img
-                                        src={project.image}
-                                        alt="Imagen del proyecto"
-                                        className="w-full h-full object-cover"
-                                    />
+                                    <Image src={project.image} alt="Imagen del proyecto" width="470" preview />
                                 </div>
                             </CardHeader>
                             <CardBody className="p-4">
@@ -254,7 +251,7 @@ const ProjectsPage = () => {
                 <Button className="button-more" onClick={showMoreProjects}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 ml-2"
+                        className="h-5"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
