@@ -3,6 +3,7 @@ import "./portfolio.css";
 import { Button } from 'primereact/button';
 import { useEffect, useState } from "react";
 import { Card } from 'primereact/card';
+import ProfileCard from "../components/ProfileCard";
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -52,15 +53,9 @@ const HomePage = () => {
                     <div className="text-justify mt-4">
                         Explora mi portfolio para descubrir mis proyectos, habilidades y cómo puedo aportar valor con soluciones creativas, funcionales y centradas en el usuario.
                     </div>
-                    <div className="social-icons mt-5">
-                        <a href="https://github.com/alvicha" className="icon"><i className="pi pi-github fs-5"></i></a>
-                        <a href="https://www.linkedin.com/in/alberto-villegas-chaparro-a786192a2/" className="icon"><i className="pi pi-linkedin fs-5"></i></a>
-                        <a href="mailto:avchaparro04@gmail.com" className="icon"><i className="pi pi-envelope fs-5"></i></a>
-                        <a href="https://x.com/AlbertoVil58869" className="icon"><i className="pi pi-twitter fs-5"></i></a>
-                    </div>
                 </div>
                 <div className="mt-4 mt-md-0">
-                    <img src="/images/perfil.jpg" alt="Imagen de perfil" className="profile-pic" />
+                    <ProfileCard />
                 </div>
             </div>
 
