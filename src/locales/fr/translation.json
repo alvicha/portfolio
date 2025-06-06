@@ -87,6 +87,10 @@
             {
                 "title": "Templator",
                 "description": "Intégration d’un éditeur HTML de type WYSIWYG appelé Summernote pour créer et gérer des modèles HTML destinés à l’envoi d’e-mails."
+            },
+            {
+                "title": "Logiciel de Fitness",
+                "description": "Plateforme web développée pour la gestion efficace d’un club de fitness, visant à optimiser les opérations et améliorer l’expérience des utilisateurs."
             }
         ]
     }

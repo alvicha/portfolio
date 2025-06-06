@@ -166,11 +166,10 @@ const ProjectsPage = () => {
         },
 
         {
-            title: "Software Fitness",
-            description: "Aplicación para el desarrollo de una plataforma web para la gestión eficiente de un club proporcionado y mejorar la experiencia de los usuarios.",
-            image: "/images/templator.jpg",
-            link: "https://github.com/alvicha/TEMPLATOR_FLORIDA.git",
-            linkVideo: "https://youtu.be/-2a1i9pEZ5E",
+            title: t("projectsCard.list.6.title"),
+            description: t("projectsCard.list.6.description"),
+            image: "/images/fitness.jpg",
+            link: "https://github.com/PauHernandezFort/proyectoFront.git",
             tags: [
                 {
                     name: "PHP",
@@ -211,8 +210,8 @@ const ProjectsPage = () => {
                     <div className="flex justify-content-center col-12 col-lg-4 col-md-4 col-sm-4" key={index}>
                         <Card
                             key={index}
-                            className="mb-4"
-                            header={<Image src={project.image} alt="Imagen del proyecto" imageClassName="rounded-lg" preview />}
+                            className="rounded mb-4"
+                            header={<Image src={project.image} alt="Imagen del proyecto" preview />}
                             footer={
                                 <div className="flex justify-content-center gap-3 mb-2">
                                     <a href={project.linkVideo} target="_blank" rel="noreferrer" className="no-underline">

@@ -87,6 +87,10 @@
             {
                 "title": "Templator",
                 "description": "Integration of a WYSIWYG HTML editor (Summernote) to create and manage HTML templates for email campaigns."
+            },
+            {
+                "title": "Fitness Software",
+                "description": "Web platform developed for the efficient management of a fitness club, aiming to streamline operations and enhance the user experience."
             }
         ]
     }
