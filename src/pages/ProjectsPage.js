@@ -4,8 +4,10 @@ import { Button } from 'primereact/button';
 import { Tag } from 'primereact/tag';
 import { Image } from 'primereact/image';
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ProjectsPage = () => {
+    const { t } = useTranslation();
     const [localActive, setLocalActive] = useState(false);
     const [visibleProjects, setVisibleProjects] = useState(3);
 
@@ -15,8 +17,8 @@ const ProjectsPage = () => {
 
     const projects = [
         {
-            title: "Albertours",
-            description: "Aplicación web realizada con PHP para la gestión de reservas de tours por las diferentes ciudades de España. Nos permite explorar tours disponibles, realizar reservas o cancelar las existentes y consultar información detallada sobre cada tour.",
+            title: t("projectsCard.list.0.title"),
+            description: t("projectsCard.list.0.description"),
             image: "/images/ALBERTOURS.jpg",
             link: "https://github.com/alvicha/ALBERTOURS.git",
             linkVideo: "https://youtu.be/4jwsf2T0TYk",
@@ -38,8 +40,8 @@ const ProjectsPage = () => {
             }]
         },
         {
-            title: "Roma8",
-            description: "Aplicación web y móvil desarrollada mediante Quasar sobre un sistema de gestión o administración de una finca. Este proyecto fue realizado con otro compañero de equipo.",
+            title: t("projectsCard.list.1.title"),
+            description: t("projectsCard.list.1.description"),
             image: "/images/roma8.jpg",
             link: "https://github.com/alvicha/PFC_Roma8.git",
             linkVideo: "https://youtu.be/ykaZMpaO2Qc",
@@ -61,8 +63,8 @@ const ProjectsPage = () => {
             }]
         },
         {
-            title: "Aplicación juego memoria",
-            description: "Aplicación en Java del juego de la memoria que usa MongoDB como base de datos. Permite a los usuarios registrarse, iniciar sesión y jugar eligiendo distintos niveles de dificultad. Guarda los tiempos, resultados y récords, y está desarrollada con el patrón de diseño MVC.",
+            title: t("projectsCard.list.2.title"),
+            description: t("projectsCard.list.1.description"),
             image: "/images/juego_memoria.jpg",
             link: "https://github.com/alvicha/AE03AD.git",
             linkVideo: "https://github.com/alvicha/ALBERTOURS.git",
@@ -77,8 +79,8 @@ const ProjectsPage = () => {
             }]
         },
         {
-            title: "Hotel Estrellas",
-            description: "Aplicación para gestionar reservas de habitaciones que ofrece una experiencia completa al cliente. Incluye versión móvil con información de servicios como comedor, piscina y gimnasio, y permite buscar, explorar y reservar habitaciones de forma rápida y segura. Proyecto desarrollado en equipo",
+            title: t("projectsCard.list.3.title"),
+            description: t("projectsCard.list.3.description"),
             image: "/images/hotel_estrellas.jpg",
             link: "https://github.com/rsanzfloridauni/DAM2324_Estrellas.git",
             linkVideo: "https://github.com/alvicha/ALBERTOURS.git",
@@ -94,11 +96,15 @@ const ProjectsPage = () => {
             {
                 name: "EXPO",
                 icon: "/images/expo.png",
+            },
+            {
+                name: "MONGODB",
+                icon: "/images/mongodb.png",
             }]
         },
         {
-            title: "App Comida",
-            description: "Aplicación web para gestionar platos de comida, que permite consultar datos mediante una API REST pública y almacenar información relevante en una base de datos propia. Además, utiliza tecnologías para manejar tanto la búsqueda de platos como la gestión en la base de datos.",
+            title: t("projectsCard.list.4.title"),
+            description: t("projectsCard.list.4.description"),
             image: "/images/comida.jpg",
             link: "https://github.com/alvicha/PFC_Roma8.git",
             linkVideo: "https://youtu.be/XemnFDyUMoA",
@@ -124,8 +130,8 @@ const ProjectsPage = () => {
             }]
         },
         {
-            title: "Templator",
-            description: "Integración de un editor HTML de tipo WYSIWYG llamado Summernote con el objetivo de crear y gestionar plantillas HTML para el envío de correos electrónicos.",
+            title: t("projectsCard.list.5.title"),
+            description: t("projectsCard.list.5.description"),
             image: "/images/templator.jpg",
             link: "https://github.com/alvicha/TEMPLATOR_FLORIDA.git",
             linkVideo: "https://youtu.be/-2a1i9pEZ5E",
@@ -152,7 +158,40 @@ const ProjectsPage = () => {
             {
                 name: "BOOSTRAP",
                 icon: "/images/bootstrap.png",
+            },
+            {
+                name: "MYSQL",
+                icon: "/images/mysql.png"
             }]
+        },
+
+        {
+            title: "Software Fitness",
+            description: "Aplicación para el desarrollo de una plataforma web para la gestión eficiente de un club proporcionado y mejorar la experiencia de los usuarios.",
+            image: "/images/templator.jpg",
+            link: "https://github.com/alvicha/TEMPLATOR_FLORIDA.git",
+            linkVideo: "https://youtu.be/-2a1i9pEZ5E",
+            tags: [
+                {
+                    name: "PHP",
+                    icon: "/images/php.png",
+                },
+                {
+                    name: "Angular",
+                    icon: "/images/angular.png",
+                },
+                {
+                    name: "Symfony",
+                    icon: "/images/symfony.png",
+                },
+                {
+                    name: "BOOSTRAP",
+                    icon: "/images/bootstrap.png",
+                },
+                {
+                    name: "MYSQL",
+                    icon: "/images/mysql.png"
+                }]
         }
     ];
 
@@ -162,10 +201,9 @@ const ProjectsPage = () => {
 
     return (
         <section className={`projects-page page ${localActive ? 'active' : ''}`}>
-            <h1 className="projects-title mt-5">Mis Proyectos</h1>
+            <h1 className="projects-title mt-5">{t("projectsTitle")}</h1>
             <p className="projects-description text-center">
-                Aquí encontrarás una selección de mis proyectos que he hecho tanto individuales como en equipo.
-                Explora mis proyectos para saber más sobre lo que hago.
+                {t("projectsDescription")}
             </p>
 
             <div className="row mx-auto">
@@ -174,14 +212,14 @@ const ProjectsPage = () => {
                         <Card
                             key={index}
                             className="mb-4"
-                            header={<Image src={project.image} alt="Imagen del proyecto" className="rounded-pill" preview />}
+                            header={<Image src={project.image} alt="Imagen del proyecto" imageClassName="rounded-lg" preview />}
                             footer={
                                 <div className="flex justify-content-center gap-3 mb-2">
                                     <a href={project.linkVideo} target="_blank" rel="noreferrer" className="no-underline">
-                                        <Button label="Ver demo" icon="pi pi-play" className="buttons-card rounded" />
+                                        <Button label={t("viewDemo")} icon="pi pi-play" className="buttons-card rounded" />
                                     </a>
                                     <a href={project.link} target="_blank" rel="noreferrer" className="no-underline">
-                                        <Button label="Ver en GitHub" icon="pi pi-github" className="buttons-card rounded" />
+                                        <Button label={t("viewGitHub")} icon="pi pi-github" className="buttons-card rounded" />
                                     </a>
                                 </div>
                             }
@@ -207,7 +245,7 @@ const ProjectsPage = () => {
                                                 gap: 7,
                                                 justifyContent: 'center'
                                             }}>
-                                                <img src={tag.icon} alt={tag.name} style={{ width: 24, height: 20, flexShrink: 0 }} />
+                                                <img src={tag.icon} alt={tag.name} style={{ width: 25, objectFit: "cover", flexShrink: 0 }} />
                                                 <span className="tag-name">{tag.name}</span>
                                             </div>
                                         }
@@ -220,9 +258,7 @@ const ProjectsPage = () => {
             </div>
 
             {visibleProjects < projects.length && (
-                <Button className="rounded p-3 button-more mt-4" onClick={showMoreProjects}>
-                    <i className="pi pi-plus mr-2" />
-                    Mostrar Más
+                <Button label={t("viewMore")} className="rounded p-3 button-more mt-4" onClick={showMoreProjects}>
                 </Button>
             )}
         </section>

@@ -1,7 +1,9 @@
 import { Button } from "primereact/button";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutDescription = () => {
+    const { t } = useTranslation();
     const [active, setActive] = useState(false);
 
     useEffect(() => {
@@ -10,19 +12,21 @@ const AboutDescription = () => {
 
     return (
         <section className={`section-profile p-5 m-5 page ${active ? "active" : ""}`}>
-            <h1 className="about-title text-center mb-5 me-5">Sobre mí</h1>
+            <h1 className="about-title text-center mb-5 me-5">{t("aboutTitle")}</h1>
             <div className="about-content mt-2">
                 <div className="about-image-wrapper">
-                    <img src="/images/perfil2.jpg" alt="Imagen de perfil" className="about-image" />
+                    <img src="/images/perfil2.jpg" alt="Imagen perfil" className="about-image" />
                 </div>
 
                 <div>
                     <p className="about-text me-5">
-                        Soy un desarrollador full stack junior, apasionado por el aprendizaje continuo y por el desarrollo tanto frontend como backend. Tengo experiencia con diversas herramientas, tecnologías y frameworks, siempre enfocado en la usabilidad y el diseño centrado en el usuario.
+                        {t("aboutDescriptionFirst")}
                         <br /> <br />
-                        Mi objetivo es combinar creatividad y técnica para desarrollar productos digitales que no solo funcionen correctamente, sino que también enamoren a sus usuarios.
+                        {t("aboutDescriptionSecond")}
                     </p>
-                    <Button className="rounded btn-outline-orange fw-bold mt-3" label="Descargar CV" icon="pi pi-download" outlined />
+                    <a href="/cv/curriculum.pdf" download>
+                        <Button className="rounded btn-outline-orange fw-bold mt-3" label={t("downloadCV")} icon="pi pi-download" outlined />
+                    </a>
                 </div>
             </div>
         </section>

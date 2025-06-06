@@ -1,0 +1,93 @@
+{
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "links": "Enlaces",
+    "location": "Calle Amalio Monforte, Sanroque, 4, Catarroja, España",
+    "selectLanguage": "Seleccionar idioma",
+    "uiuxDesigner": "Diseñador UI/UX",
+    "greeting": "Hola, mi nombre es Alberto Villegas",
+    "aboutMeButton": "Ver más acerca de mí",
+    "contactMeButton": "Contáctame",
+    "introText": "Explora mi portafolio para descubrir mis proyectos, habilidades y cómo puedo aportar valor con soluciones creativas, funcionales y centradas en el usuario.",
+    "concreteFeatures": "Características concretas",
+    "developmentTitle": "Desarrollo de software multiplataforma",
+    "developmentDescription": "Especializado en la creación de aplicaciones web y móviles usando frameworks.",
+    "developmentLabel": "Más información sobre desarrollo multiplataforma",
+    "programmingTitle": "Habilidades de programación",
+    "programmingDescription": "Conocimientos en varios lenguajes de programación para web y multiplataforma, permitiendo la creación de sitios web, etc.",
+    "programmingLabel": "Más información sobre habilidades de programación",
+    "databaseTitle": "Gestión de bases de datos",
+    "databaseDescription": "Control de servidores de bases de datos con experiencia en varios proyectos desarrollados a lo largo de los años.",
+    "databaseLabel": "Más información sobre gestión de bases de datos",
+    "name": "Alberto Villegas",
+    "profession": "Desarrollador Full Stack",
+    "tooltipGithub": "GitHub",
+    "tooltipLinkedIn": "LinkedIn",
+    "tooltipEmail": "Correo electrónico",
+    "tooltipTwitter": "X / Twitter",
+    "academicDataTitle": "Datos académicos",
+    "academicDataDescription": "Detalles y muestra de los estudios que he realizado, junto con las <strong>instituciones educativas</strong> donde los completé.",
+    "academicInstitutions": "instituciones educativas",
+    "floridaUni": "Universidad Florida, Catarroja",
+    "webDevDegree": "Grado Superior en Desarrollo de Aplicaciones Web",
+    "multiPlatformDevDegree": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
+    "microSystemsDegree": "Grado Medio en Técnico en Sistemas Microinformáticos y Redes",
+    "period1": "Septiembre 2024 - Junio 2025",
+    "period2": "Septiembre 2022 - Junio 2024",
+    "period3": "Septiembre 2020 - Junio 2022",
+    "aboutTitle": "Sobre mí",
+    "aboutDescriptionFirst": "Soy un desarrollador full stack junior, apasionado por el aprendizaje continuo y por el desarrollo tanto frontend como backend. Tengo experiencia con diversas herramientas, tecnologías y frameworks, siempre enfocado en la usabilidad y el diseño centrado en el usuario.",
+    "aboutDescriptionSecond": "Mi objetivo es combinar creatividad y técnica para desarrollar productos digitales que no solo funcionen correctamente, sino que también enamoren a sus usuarios.",
+    "downloadCV": "Descargar CV",
+    "projectsTitle": "Mis Proyectos",
+    "projectsDescription": "Aquí encontrarás una selección de mis proyectos que he hecho tanto individuales como en equipo. Explora mis proyectos para saber más sobre lo que hago.",
+    "viewDemo": "Ver demo",
+    "viewGitHub": "Ver en GitHub",
+    "viewMore": "Ver más",
+    "skills": "Habilidades",
+    "contactTitle": "¡Contacta conmigo!",
+    "contactDescription": "Contacta conmigo mediante este formulario y os resolveré las dudas cuanto antes.",
+    "namePlaceholder": "Nombre",
+    "lastNamePlaceholder": "Apellidos",
+    "emailPlaceholder": "Correo electrónico",
+    "emailHelpText": "Te enviaremos un mensaje de información.",
+    "phonePlaceholder": "Número de teléfono",
+    "messagePlaceholder": "Mensaje de información",
+    "acceptTermsLabel": "Acepta los términos y condiciones",
+    "sendButton": "Enviar",
+    "nameLanguages": {
+        "french": "Francés",
+        "spanish": "Español",
+        "english": "Inglés"
+    },
+    "projectsCard": {
+        "list": [
+            {
+                "title": "Albertours",
+                "description": "Aplicación web realizada con PHP para la gestión de reservas de tours por las diferentes ciudades de España. Nos permite explorar tours disponibles, realizar reservas o cancelar las existentes y consultar información detallada sobre cada tour."
+            },
+            {
+                "title": "Roma8",
+                "description": "Aplicación web y móvil desarrollada mediante Quasar sobre un sistema de gestión o administración de una finca. Este proyecto fue realizado con otro compañero de equipo."
+            },
+            {
+                "title": "Aplicación juego memoria",
+                "description": "Aplicación en Java del juego de la memoria que usa MongoDB como base de datos. Permite a los usuarios registrarse, iniciar sesión y jugar eligiendo distintos niveles de dificultad. Guarda los tiempos, resultados y récords, y está desarrollada con el patrón de diseño MVC."
+            },
+            {
+                "title": "Hotel Estrellas",
+                "description": "Aplicación para gestionar reservas de habitaciones que ofrece una experiencia completa al cliente. Incluye versión móvil con información de servicios como comedor, piscina y gimnasio, y permite buscar, explorar y reservar habitaciones de forma rápida y segura. Proyecto desarrollado en equipo."
+            },
+            {
+                "title": "App Comida",
+                "description": "Aplicación web para gestionar platos de comida, que permite consultar datos mediante una API REST pública y almacenar información relevante en una base de datos propia. Además, utiliza tecnologías para manejar tanto la búsqueda de platos como la gestión en la base de datos."
+            },
+            {
+                "title": "Templator",
+                "description": "Integración de un editor HTML de tipo WYSIWYG llamado Summernote con el objetivo de crear y gestionar plantillas HTML para el envío de correos electrónicos."
+            }
+        ]
+    }
+}

@@ -9,6 +9,7 @@ import "primeicons/primeicons.css";
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "@material-tailwind/react";
 import { PrimeReactProvider } from 'primereact/api';
+import './i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

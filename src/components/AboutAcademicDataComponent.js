@@ -3,11 +3,12 @@ import {
     Card,
     CardBody,
     Typography,
-    CardFooter,
 } from "@material-tailwind/react";
 import { Carousel } from 'primereact/carousel';
+import { useTranslation } from "react-i18next";
 
 const AboutAcademicData = () => {
+    const { t } = useTranslation();
     const [active, setActive] = useState(false);
 
     useEffect(() => {
@@ -16,19 +17,19 @@ const AboutAcademicData = () => {
 
     const dataAcademics = [
         {
-            company: "Florida Universitaria, Catarroja",
-            grade: "Grado Superior de Desarrollo de Aplicaciones Web",
-            period: "Septiembre 2024 - Junio 2025",
+            company: t("floridaUni"),
+            grade: t("webDevDegree"),
+            period: t("period1"),
         },
         {
-            company: "Florida Universitaria, Catarroja",
-            grade: "Grado Superior de Desarrollo de Aplicaciones Multiplataforma",
-            period: "Septiembre 2022 - Junio 2024",
+            company: t("floridaUni"),
+            grade: t("multiPlatformDevDegree"),
+            period: t("period2"),
         },
         {
-            company: "Florida Universitaria, Catarroja",
-            grade: "Grado Medio de Técnico en Sistemas Microinformáticos y Redes",
-            period: "Septiembre 2020 - Junio 2022",
+            company: t("floridaUni"),
+            grade: t("microSystemsDegree"),
+            period: t("period3"),
         },
     ];
 
@@ -69,7 +70,6 @@ const AboutAcademicData = () => {
                         <div className="flex justify-between gap-4 items-center">
                             <Typography
                                 variant="h5"
-                                color="text-gray-800"
                                 className="font-semibold mb-3"
                             >
                                 {acad.company}
@@ -87,12 +87,9 @@ const AboutAcademicData = () => {
 
     return (
         <section className={`page ${active ? "active" : ""}`}>
-            <h2 className="experience-title me-5">Datos Académicos</h2>
+            <h2 className="experience-title me-5">{t("academicDataTitle")}</h2>
             <div>
-                <p className="description-experience">
-                    Se detallarán y mostrarán los estudios que he hecho, junto con las
-                    <strong> instituciones educativas </strong> donde los hice.
-                </p>
+                <p className="description-experience" dangerouslySetInnerHTML={{ __html: t("academicDataDescription") }}></p>
             </div>
 
             <div className="col-12 d-flex justify-content-center">

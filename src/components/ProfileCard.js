@@ -6,19 +6,22 @@ import {
     Typography,
     Tooltip,
 } from "@material-tailwind/react";
+import { useTranslation } from "react-i18next";
 
 const ProfileCard = () => {
+    const { t } = useTranslation();
+
     return (
         <Card className="w-96 rounded-lg">
-            <CardHeader floated={false} className="rounded-lg h-64">
+            <CardHeader floated={false} className="rounded-lg h-80">
                 <img src="/images/persona.png" alt="profile-picture" className="w-full h-full object-cover" />
             </CardHeader>
             <CardBody className="text-center">
                 <Typography variant="h4" color="blue-gray" className="mb-3">
-                    Alberto Villegas
+                    {t("name")}
                 </Typography>
                 <Typography color="blue-gray" className="font-medium" textGradient>
-                    Desarrollador Full Stack
+                    {t("profession")}
                 </Typography>
             </CardBody>
             <CardFooter className="flex justify-center gap-6 pt-1">

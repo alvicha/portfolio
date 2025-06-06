@@ -1,0 +1,93 @@
+{
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "links": "Links",
+    "location": "4 Amalio Monforte Street, Sanroque, Catarroja, Spain",
+    "selectLanguage": "Select Language",
+    "uiuxDesigner": "UI/UX Designer",
+    "greeting": "Hi, my name is Alberto Villegas",
+    "aboutMeButton": "Learn More About Me",
+    "contactMeButton": "Contact Me",
+    "introText": "Explore my portfolio to discover my projects, skills, and how I can add value with creative, functional, and user-centered solutions.",
+    "concreteFeatures": "Concrete Features",
+    "developmentTitle": "Cross-platform Software Development",
+    "developmentDescription": "Specialized in creating web and mobile applications using frameworks.",
+    "developmentLabel": "More information about cross-platform development",
+    "programmingTitle": "Programming Skills",
+    "programmingDescription": "Knowledge of various programming languages for web and cross-platform, enabling the creation of websites, etc.",
+    "programmingLabel": "More information about programming skills",
+    "databaseTitle": "Database Management",
+    "databaseDescription": "Management of database servers with experience in several projects developed over the years.",
+    "databaseLabel": "More information about database management",
+    "name": "Alberto Villegas",
+    "profession": "Full Stack Developer",
+    "tooltipGithub": "GitHub",
+    "tooltipLinkedIn": "LinkedIn",
+    "tooltipEmail": "Email",
+    "tooltipTwitter": "X / Twitter",
+    "academicDataTitle": "Academic Data",
+    "academicDataDescription": "Details and overview of the studies I have completed, along with the <strong>educational institutions</strong> where I completed them.",
+    "academicInstitutions": "educational institutions",
+    "floridaUni": "Florida University, Catarroja",
+    "webDevDegree": "Higher Degree in Web Application Development",
+    "multiPlatformDevDegree": "Higher Degree in Multiplatform Application Development",
+    "microSystemsDegree": "Intermediate Degree in Microcomputer Systems and Networks Technician",
+    "period1": "September 2024 - June 2025",
+    "period2": "September 2022 - June 2024",
+    "period3": "September 2020 - June 2022",
+    "aboutTitle": "About Me",
+    "aboutDescriptionFirst": "I am a junior full stack developer, passionate about continuous learning and both frontend and backend development. I have experience with various tools, technologies, and frameworks, always focused on usability and user-centered design.",
+    "aboutDescriptionSecond": "My goal is to combine creativity and technique to develop digital products that not only work correctly but also captivate their users.",
+    "downloadCV": "Download CV",
+    "projectsTitle": "My Projects",
+    "projectsDescription": "Here you will find a selection of my projects, both individual and team-based. Explore my projects to learn more about what I do.",
+    "viewDemo": "View Demo",
+    "viewGitHub": "View on GitHub",
+    "viewMore": "View More",
+    "skills": "Skills",
+    "contactTitle": "Contact Me!",
+    "contactDescription": "Reach out to me through this form and I will answer your questions as soon as possible.",
+    "namePlaceholder": "First Name",
+    "lastNamePlaceholder": "Last Name",
+    "emailPlaceholder": "Email Address",
+    "emailHelpText": "We will send you an informational message.",
+    "phonePlaceholder": "Phone Number",
+    "messagePlaceholder": "Your message",
+    "acceptTermsLabel": "I accept the terms and conditions",
+    "sendButton": "Send",
+    "nameLanguages": {
+        "french": "French",
+        "spanish": "Spanish",
+        "english": "English"
+    },
+    "projectsCard": {
+        "list": [
+            {
+                "title": "Albertours",
+                "description": "Web application developed in PHP to manage tour bookings across various Spanish cities. Allows users to explore available tours, make or cancel reservations, and view detailed tour information."
+            },
+            {
+                "title": "Roma8",
+                "description": "Web and mobile application developed using Quasar for managing farm operations. This project was developed with a teammate."
+            },
+            {
+                "title": "Memory Game App",
+                "description": "Java application of the memory game using MongoDB as a database. Users can register, log in, and play with different difficulty levels. Stores results and records, following the MVC design pattern."
+            },
+            {
+                "title": "Hotel Estrellas",
+                "description": "Application to manage hotel room bookings with a full customer experience. Includes a mobile version showing services like dining, pool, and gym, and allows fast and secure reservations. Team-developed project."
+            },
+            {
+                "title": "Food App",
+                "description": "Web application to manage food dishes, allowing queries via a public REST API and storing information in a custom database. Uses various technologies for search and database management."
+            },
+            {
+                "title": "Templator",
+                "description": "Integration of a WYSIWYG HTML editor (Summernote) to create and manage HTML templates for email campaigns."
+            }
+        ]
+    }
+}

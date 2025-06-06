@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const FooterComponent = () => {
+    const { t } = useTranslation();
+
     return (
         <footer>
             <div className="container py-md-4 py-lg-4">
@@ -12,10 +15,10 @@ const FooterComponent = () => {
                     </div>
 
                     <div className="col-12 col-lg-4 col-md-5 mb-4">
-                        <h5 className="contact-title">Contacto</h5>
+                        <h5 className="contact-title">{t("contact")}</h5>
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start justify-content-lg-start mt-3">
                             <i className="pi pi-map-marker me-3 icon-hover" />
-                            Calle Amalio Monforte, Sanroque, 4, Catarroja, España
+                            {t("location")}
                         </p>
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start justify-content-lg-start mt-2">
                             <i className="pi pi-phone me-3 icon-hover" />
@@ -28,19 +31,27 @@ const FooterComponent = () => {
                     </div>
 
                     <div className="col-12 col-lg-4 col-md-4">
-                        <h5 className="url-title">Enlaces</h5>
+                        <h5 className="url-title">{t("links")}</h5>
                         <ul className="navbar-nav d-flex flex-column align-items-center align-items-md-start align-items-lg-start">
                             <li className="nav-item">
-                                <Link className="nav-link nav-hover" to="/home">Inicio</Link>
+                                <Link className="nav-link nav-hover" to="/home">
+                                    {t('home')}
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link nav-hover" to="/about">Sobre mí</Link>
+                                <Link className="nav-link nav-hover" to="/about">
+                                    {t('about')}
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link nav-hover" to="/projects">Proyectos</Link>
+                                <Link className="nav-link nav-hover" to="/projects">
+                                    {t('projects')}
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link nav-hover" to="/contact">Contacto</Link>
+                                <Link className="nav-link nav-hover" to="/contact">
+                                    {t('contact')}
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -48,7 +59,7 @@ const FooterComponent = () => {
 
                 <div className="col-12 border-top mt-4">
                     <p className="text-center mt-4 mb-2">
-                        &copy; Copyright 2025. Alberto Villegas. Todos los derechos reservados.
+                        &copy; Copyright 2025. Alberto Villegas.
                     </p>
                 </div>
             </div>

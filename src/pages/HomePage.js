@@ -3,9 +3,12 @@ import "./portfolio.css";
 import { Button } from 'primereact/button';
 import { useEffect, useState } from "react";
 import { Card } from 'primereact/card';
+import { Image } from 'primereact/image';
 import ProfileCard from "../components/ProfileCard";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
+    const { t } = useTranslation();
     const navigate = useNavigate();
     const [active, setActive] = useState(false);
 
@@ -15,22 +18,22 @@ const HomePage = () => {
 
     const characteristics = [
         {
-            title: "Desarrollo Software Multiplataforma",
-            description: "Especializado en la creación de aplicaciones web y móviles a través de frameworks.",
+            title: t("developmentTitle"),
+            description: t("developmentDescription"),
             img: "/images/desarrollo.jpeg",
-            label: "Más información sobre desarrollo multiplataforma"
+            label: t("developmentLabel")
         },
         {
-            title: "Habilidades en Programación",
-            description: "Conocimientos en varios lenguajes de programación tanto web como multiplataforma que permiten crear sitios web, etc.",
+            title: t("programmingTitle"),
+            description: t("programmingDescription"),
             img: "/images/programacion.jpg",
-            label: "Más información sobre habilidades en programacion"
+            label: t("programmingLabel")
         },
         {
-            title: "Manejo en Bases de Datos",
-            description: "Control en servidores de bases de datos con experiencia en algunos proyectos que he desarrollado a lo largo de estos años.",
+            title: t("databaseTitle"),
+            description: t("databaseDescription"),
             img: "/images/base_datos.jpg",
-            label: "Más información sobre manejo en bases de datos"
+            label: t("databaseLabel")
         }
     ];
 
@@ -44,14 +47,15 @@ const HomePage = () => {
         <div>
             <div className={`home-container page ${active ? "active" : ""}`}>
                 <div className="text-start w-50">
-                    <div className="subtitle text-start">UI/UX designer</div>
-                    <h1 className="title-name fw-bold mb-5">Hola, mi nombre es Alberto Villegas</h1>
+                    <div className="subtitle text-start">{t("uiuxDesigner")}</div>
+                    <h1 className="title-name fw-bold mb-5">{t("greeting")}</h1>
                     <div className="button-group">
-                        <Button className="button-about rounded me-3" icon="pi pi-arrow-right icon-arrow" iconPos="right" onClick={() => navigate('/about')} label="Ver más acerca de mi" outlined />
-                        <Button className="rounded fw-bold btn-outline-orange" onClick={() => navigate('/contact')} label="Contáctarme" outlined />
+                        <Button className="button-about rounded me-3" icon="pi pi-arrow-right icon-arrow" iconPos="right" onClick={() => navigate('/about')} label={t("aboutMeButton")} outlined />
+                        <Button className="rounded fw-bold btn-outline-orange" onClick={() => navigate('/contact')} label={t("contactMeButton")}
+                            outlined />
                     </div>
                     <div className="text-justify mt-4">
-                        Explora mi portfolio para descubrir mis proyectos, habilidades y cómo puedo aportar valor con soluciones creativas, funcionales y centradas en el usuario.
+                        {t("introText")}
                     </div>
                 </div>
                 <div className="mt-4 mt-md-0">
@@ -60,14 +64,14 @@ const HomePage = () => {
             </div>
 
             <div className="titulo-caracteristicas-wrapper">
-                <h2 className="titulo-caracteristicas fw-bold">Características Concretas</h2>
+                <h2 className="titulo-caracteristicas fw-bold">{t("concreteFeatures")}</h2>
             </div>
             <div className="row mx-auto mb-5">
                 {characteristics.map((item, index) => (
                     <div className="flex justify-content-center col-12 col-lg-4 col-md-4 col-sm-4 mb-0 mb-sm-5" key={index}>
                         <Card
                             title={item.title}
-                            header={<img alt={item.title} src={item.img} className="img-fluid mb-3" />}
+                            header={<Image alt={item.title} src={item.img} imageClassName="rounded img-fluid mb-3" />}
                             footer={footer}
                             className="h-100 text-justify rounded"
                         >

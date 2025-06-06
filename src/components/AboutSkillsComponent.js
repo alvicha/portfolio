@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutSkills = () => {
+    const { t } = useTranslation();
     const [active, setActive] = useState(false);
 
     useEffect(() => {
@@ -26,7 +28,7 @@ const AboutSkills = () => {
 
     return (
         <section className={`section-skills p-5 m-5 page ${active ? "active" : ""}`}>
-            <h2 className="skill-title me-5">Habilidades</h2>
+            <h2 className="skill-title me-5">{t("skills")}</h2>
             <div className="skills-grid rounded">
                 {skills.map((skill, index) => (
                     <div key={index} className="skill-item" >
