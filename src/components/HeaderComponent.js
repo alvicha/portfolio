@@ -1,17 +1,23 @@
 import { Link } from "react-router-dom";
 import { Dropdown } from 'primereact/dropdown';
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Button } from "primereact/button";
+import ScreensContext from "../screens/ScreensContext";
 
 const HeaderComponent = () => {
     const { t, i18n } = useTranslation();
-    const [selectedCountry, setSelectedCountry] = useState(null);
+    const [iconDark, setIconDark] = useState("pi pi-moon");
+    const [darkMode, setDarkMode] = useState(false);
+    const { containerRef } = useContext(ScreensContext);
 
     const countries = [
         { nameKey: "nameLanguages.french", code: 'fr', flag: "https://flagcdn.com/w40/fr.png" },
         { nameKey: "nameLanguages.spanish", code: 'es', flag: 'https://flagcdn.com/w40/es.png' },
         { nameKey: "nameLanguages.english", code: 'en', flag: 'https://flagcdn.com/w40/gb.png' },
     ];
+
+    const [selectedCountry, setSelectedCountry] = useState(countries[1]);
 
     const changeLanguage = (lng) => {
         setSelectedCountry(lng);
@@ -39,6 +45,15 @@ const HeaderComponent = () => {
         );
     };
 
+    const changeDarkMode = async () => {
+        const newMode = !darkMode;
+        setDarkMode(newMode);
+
+        setIconDark(newMode ? 'pi pi-sun' : 'pi pi-moon');
+        containerRef.current.classList.toggle('dark-mode');
+    };
+
+
     return (
         <header>
             <nav className="navbar p-4">
@@ -54,22 +69,26 @@ const HeaderComponent = () => {
                                         {t('home')}
                                     </Link>
                                 </li>
-                                <li className="nav-item ms-3">
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/about">
                                         {t('about')}
                                     </Link>
                                 </li>
-                                <li className="nav-item ms-3">
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/projects">
                                         {t('projects')}
                                     </Link>
                                 </li>
-                                <li className="nav-item ms-3">
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/contact">
                                         {t('contact')}
                                     </Link>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div>
+                            
                         </div>
 
                         <div style={{ marginLeft: '10px' }}>
@@ -83,6 +102,8 @@ const HeaderComponent = () => {
                                 itemTemplate={countryOptionTemplate}
                                 className="custom-dropdown"
                             />
+                            <Button icon={iconDark} className="btn-light" aria-label="Icono modo oscuro"
+                                onClick={changeDarkMode} />
                         </div>
                     </div>
                 </div>

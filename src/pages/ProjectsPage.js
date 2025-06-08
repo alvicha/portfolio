@@ -1,10 +1,9 @@
 import "./portfolio.css";
-import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
-import { Tag } from 'primereact/tag';
 import { Image } from 'primereact/image';
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Chip } from 'primereact/chip';
 
 const ProjectsPage = () => {
     const { t } = useTranslation();
@@ -22,6 +21,7 @@ const ProjectsPage = () => {
             image: "/images/ALBERTOURS.jpg",
             link: "https://github.com/alvicha/ALBERTOURS.git",
             linkVideo: "https://youtu.be/4jwsf2T0TYk",
+            year: 2022,
             tags: [{
                 name: "PHP",
                 icon: "/images/php.png",
@@ -45,6 +45,7 @@ const ProjectsPage = () => {
             image: "/images/roma8.jpg",
             link: "https://github.com/alvicha/PFC_Roma8.git",
             linkVideo: "https://youtu.be/ykaZMpaO2Qc",
+            year: 2024,
             tags: [{
                 name: "VUE.JS",
                 icon: "/images/vuejs.png",
@@ -67,6 +68,7 @@ const ProjectsPage = () => {
             description: t("projectsCard.list.1.description"),
             image: "/images/juego_memoria.jpg",
             link: "https://github.com/alvicha/AE03AD.git",
+            year: 2024,
             linkVideo: "https://github.com/alvicha/ALBERTOURS.git",
 
             tags: [{
@@ -83,8 +85,8 @@ const ProjectsPage = () => {
             description: t("projectsCard.list.3.description"),
             image: "/images/hotel_estrellas.jpg",
             link: "https://github.com/rsanzfloridauni/DAM2324_Estrellas.git",
+            year: 2024,
             linkVideo: "https://github.com/alvicha/ALBERTOURS.git",
-
             tags: [{
                 name: "REACT NATIVE",
                 icon: "/images/react.png",
@@ -107,6 +109,7 @@ const ProjectsPage = () => {
             description: t("projectsCard.list.4.description"),
             image: "/images/comida.jpg",
             link: "https://github.com/alvicha/PFC_Roma8.git",
+            year: 2024,
             linkVideo: "https://youtu.be/XemnFDyUMoA",
             tags: [{
                 name: "PHP",
@@ -134,6 +137,7 @@ const ProjectsPage = () => {
             description: t("projectsCard.list.5.description"),
             image: "/images/templator.jpg",
             link: "https://github.com/alvicha/TEMPLATOR_FLORIDA.git",
+            year: 2025,
             linkVideo: "https://youtu.be/-2a1i9pEZ5E",
             tags: [{
                 name: "HTML",
@@ -170,6 +174,7 @@ const ProjectsPage = () => {
             description: t("projectsCard.list.6.description"),
             image: "/images/fitness.jpg",
             link: "https://github.com/PauHernandezFort/proyectoFront.git",
+            year: 2025,
             tags: [
                 {
                     name: "PHP",
@@ -205,53 +210,41 @@ const ProjectsPage = () => {
                 {t("projectsDescription")}
             </p>
 
-            <div className="row mx-auto">
-                {projects.slice(0, visibleProjects).map((project, index) => (
-                    <div className="flex justify-content-center col-12 col-lg-4 col-md-4 col-sm-4" key={index}>
-                        <Card
-                            key={index}
-                            className="rounded mb-4"
-                            header={<Image src={project.image} alt="Imagen del proyecto" preview />}
-                            footer={
-                                <div className="flex justify-content-center gap-3 mb-2">
-                                    <a href={project.linkVideo} target="_blank" rel="noreferrer" className="no-underline">
-                                        <Button label={t("viewDemo")} icon="pi pi-play" className="buttons-card rounded" />
-                                    </a>
-                                    <a href={project.link} target="_blank" rel="noreferrer" className="no-underline">
-                                        <Button label={t("viewGitHub")} icon="pi pi-github" className="buttons-card rounded" />
-                                    </a>
-                                </div>
-                            }
-                        >
-                            <h3 className="card-title mb-4">{project.title}</h3>
-                            <p className="text-justify text-gray-700">{project.description}</p>
+            <div className="w-[85%] row mx-auto">
+                {projects.slice(0, visibleProjects).map((project) => (
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 items-center text-white p-10 mb-5 rounded-2xl hover:bg-gray-800 transition-colors duration-300">
+                        <div className="bg-gray-900 rounded-xl p-3 shadow-lg">
+                            <Image src={project.image} alt="Project preview" imageClassName="rounded-xl w-full" />
+                        </div>
 
-                            <div className="flex justify-content-center align-items-center flex-wrap gap-2 mt-4 mb-2">
-                                {project.tags.map((tag, i) => (
-                                    <Tag
-                                        key={i}
-                                        className="fw-normal rounded-pill"
-                                        style={{
-                                            border: '1px solid orange',
-                                            backgroundColor: 'transparent',
-                                            color: 'black',
-                                            padding: '6px 10px',
-                                        }}
-                                        value={
-                                            <div style={{
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                gap: 7,
-                                                justifyContent: 'center'
-                                            }}>
-                                                <img src={tag.icon} alt={tag.name} style={{ width: 25, objectFit: "cover", flexShrink: 0 }} />
-                                                <span className="tag-name">{tag.name}</span>
-                                            </div>
-                                        }
-                                    />
-                                ))}
+                        <div>
+                            <h2 className="text-2xl text-left mb-3 font-semibold">{project.title}</h2>
+                            <p className="text-left mb-4">{project.description}</p>
+
+                            <div className="flex justify-between border-bottom mb-4">
+                                <span className="block text-left font-medium text-white mb-3"> {t("year")}</span>
+                                <p>{project.year}</p>
                             </div>
-                        </Card>
+                           
+
+                            <div className="flex flex-wrap gap-2 mb-5">
+                                {project.tags.map((tag, i) => (
+                                    <Chip
+                                        key={i}
+                                        label={tag.name}
+                                        className="chip rounded-full px-4 py-1 font-medium"
+                                    />))}
+                            </div>
+
+                            <div className="flex gap-4">
+                                <a href={project.link} target="_blank" className="no-underline" rel="noopener noreferrer">
+                                    <Button label={t("viewGitHub")} icon="pi pi-github" className="buttons-card text-sm" />
+                                </a>
+                                <a href={project.linkVideo} target="_blank" className="no-underline" rel="noopener noreferrer">
+                                    <Button label={t("viewDemo")} icon="pi pi-play" className="buttons-card text-sm" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>

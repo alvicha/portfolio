@@ -13,8 +13,8 @@ const ProfileCard = () => {
 
     return (
         <Card className="w-96 rounded-lg">
-            <CardHeader floated={false} className="rounded-lg h-64 overflow-hidden">
-                <img src="/images/persona.png" alt="profile-picture" className="w-full h-full object-cover" />
+            <CardHeader floated={false} className="rounded-lg h-[370px] overflow-hidden">
+                <img src="/images/perfil.jpg" alt="profile-picture" className="w-full h-full object-cover" />
             </CardHeader>
             <CardBody className="py-6 text-center">
                 <Typography variant="h4" color="blue-gray" className="mb-3">

@@ -1,6 +1,7 @@
 {
     "home": "Accueil",
     "about": "À propos de moi",
+    "year": "Année",
     "projects": "Projets",
     "contact": "Contact",
     "links": "Liens",
@@ -27,7 +28,7 @@
     "tooltipLinkedIn": "LinkedIn",
     "tooltipEmail": "Email",
     "tooltipTwitter": "X / Twitter",
-    "academicDataTitle": "Données académiques",
+    "academicDataTitle": "Éducation",
     "academicDataDescription": "Détails et présentation des études que j'ai réalisées, ainsi que des <strong>institutions éducatives</strong> où je les ai complétées.",
     "academicInstitutions": "institutions éducatives",
     "floridaUni": "Université Florida, Catarroja",

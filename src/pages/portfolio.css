@@ -139,6 +139,11 @@ header {
     color: #ff6a00;
 }
 
+.btn-light {
+    background: transparent;
+    border: none;
+}
+
 .button-about {
     background-color: #ff6a00 !important;
     color: #ffffff !important;
@@ -399,35 +404,34 @@ header {
     background-color: #FFD700;
 }
 
-.card-title {
-    font-weight: 600;
-    color: darkblue;
-    font-size: 25px;
-    text-align: left;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
-}
-
 .projects-description {
     font-size: 17px;
     margin-bottom: 100px;
 }
 
-.tag-name {
-    font-size: 11px;
+.chip {
+    background: linear-gradient(135deg, #FF9A3D 0%, #FF6F3D 50%, #FFA64D 100%);
+    border: 1px solid #FFA64D;
+    color: #1A1A2E;
     font-weight: 700;
 }
 
 .buttons-card {
     display: flex !important;
-    align-items: center !important;
-    background-color: #FFA64D !important;
-    color: #1A1A2E !important;
+    background-color: transparent !important;
+    color: white !important;
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     font-weight: 600;
-    border: none !important;
+    padding: 5px;
+    transition: opacity 0.6s ease, transform 0.6s ease, border-bottom 0.3s ease;
 }
 
 .buttons-card:hover {
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    color: #FFA64D !important;
+    border-bottom: 2px solid orange !important;
     transform: translateY(-3px);
 }
 
@@ -503,7 +507,7 @@ header {
     overflow: hidden;
     color: white;
     padding: 12px 40px;
-    border: 1px solid white;
+    border: 1px solid #ff6a00;
     background-color: transparent;
     cursor: pointer;
     transition: color 0.4s ease;
