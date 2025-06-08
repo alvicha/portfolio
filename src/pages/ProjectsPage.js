@@ -210,7 +210,7 @@ const ProjectsPage = () => {
                 {t("projectsDescription")}
             </p>
 
-            <div className="w-[85%] row mx-auto">
+            <div className="w-[83%] row mx-auto">
                 {projects.slice(0, visibleProjects).map((project) => (
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 items-center text-white p-10 mb-5 rounded-2xl hover:bg-gray-800 transition-colors duration-300">
                         <div className="bg-gray-900 rounded-xl p-3 shadow-lg">
