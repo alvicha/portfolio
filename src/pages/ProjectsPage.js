@@ -212,9 +212,13 @@ const ProjectsPage = () => {
 
             <div className="w-[83%] row mx-auto">
                 {projects.slice(0, visibleProjects).map((project) => (
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 items-center text-white p-10 mb-5 rounded-2xl hover:bg-gray-800 transition-colors duration-300">
-                        <div className="bg-gray-900 rounded-xl p-3 shadow-lg">
-                            <Image src={project.image} alt="Project preview" imageClassName="rounded-xl w-full" />
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 items-center text-white p-6 md:p-6 lg:p-10 mb-5 rounded-2xl hover:bg-gray-800 transition-colors duration-300">
+                        <div className="w-full max-w-none sm:max-w-lg md:max-w-xl lg:max-w-full bg-gray-900 rounded-xl shadow-lg mx-auto p-0 p-lg-3 overflow-hidden">
+                            <Image
+                                src={project.image}
+                                alt="Project preview"
+                                imageClassName="w-full h-auto max-h-[400px] sm:max-h-[500px] md:max-h-[600px] object-cover rounded-xl"
+                            />
                         </div>
 
                         <div>
@@ -225,7 +229,7 @@ const ProjectsPage = () => {
                                 <span className="block text-left font-medium text-white mb-3"> {t("year")}</span>
                                 <p>{project.year}</p>
                             </div>
-                           
+
 
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {project.tags.map((tag, i) => (
@@ -247,12 +251,14 @@ const ProjectsPage = () => {
                         </div>
                     </div>
                 ))}
-            </div>
 
-            {visibleProjects < projects.length && (
-                <Button label={t("viewMore")} className="rounded p-3 button-more mt-4" onClick={showMoreProjects}>
-                </Button>
-            )}
+                {visibleProjects < projects.length && (
+                    <div className=" col-12 text-center">
+                        <Button label={t("viewMore")} className="rounded button-more mb-4" onClick={showMoreProjects}>
+                        </Button>
+                    </div>
+                )}
+            </div>
         </section>
     );
 };

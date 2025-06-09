@@ -44,21 +44,21 @@ const HomePage = () => {
     );
 
     return (
-        <div>
-            <div className={`home-container page ${active ? "active" : ""}`}>
-                <div className="text-start w-50">
-                    <div className="subtitle text-start">{t("uiuxDesigner")}</div>
+        <div className={`container-fluid page ${active ? "active" : ""}`}>
+            <div className="row align-items-center min-vh-100 text-center d-flex flex-lg-row flex-column mt-0 mt-md-5">
+                <div className="col-12 col-lg-6 col-md-6 mb-0 mb-md-5">
                     <h1 className="title-name fw-bold mb-5">{t("greeting")}</h1>
+
                     <div className="button-group">
                         <Button className="button-about rounded me-3" icon="pi pi-arrow-right icon-arrow" iconPos="right" onClick={() => navigate('/about')} label={t("aboutMeButton")} outlined />
                         <Button className="rounded fw-bold btn-outline-orange" onClick={() => navigate('/contact')} label={t("contactMeButton")}
                             outlined />
                     </div>
-                    <div className="text-justify mt-4">
+                    <div className="intro-text">
                         {t("introText")}
                     </div>
                 </div>
-                <div className="mt-4 mt-md-0">
+                <div className="col-12 col-lg-6 d-flex justify-content-center">
                     <ProfileCard />
                 </div>
             </div>
@@ -66,14 +66,15 @@ const HomePage = () => {
             <div className="titulo-caracteristicas-wrapper">
                 <h2 className="titulo-caracteristicas fw-bold">{t("concreteFeatures")}</h2>
             </div>
-            <div className="row mx-auto mb-5">
+            <div className="row justify-content-center mx-auto mb-5">
                 {characteristics.map((item, index) => (
-                    <div className="flex justify-content-center col-12 col-lg-4 col-md-4 col-sm-4 mb-0 mb-sm-5" key={index}>
+                    <div className="col-12 col-md-4 col-lg-4 mb-5 d-flex justify-content-center"
+                        key={index}>
                         <Card
                             title={item.title}
-                            header={<Image alt={item.title} src={item.img} imageClassName="rounded img-fluid mb-3" />}
+                            header={<Image alt={item.title} src={item.img} imageClassName="img-fluid mb-3" />}
                             footer={footer}
-                            className="h-100 text-justify rounded"
+                            className="custom-card text-center rounded"
                         >
                             <p className="mt-0">{item.description}</p>
                         </Card>

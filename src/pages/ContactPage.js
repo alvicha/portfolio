@@ -15,19 +15,19 @@ const ContactComponent = () => {
     }, []);
 
     return (
-        <section className={`my-5 page ${localActive ? 'active' : ''}`}>
-            <div className="container border border-light rounded p-5 w-50">
+        <section className={`container-fluid my-5 page ${localActive ? 'active' : ''}`}>
+            <div className="col-12 col-sm-10 col-md-8 col-lg-6 border border-light rounded p-5 mx-auto">
                 <h1 className="text-center text-light fw-bold mb-5">{t('contactTitle')}</h1>
                 <p className="text-center text-light mb-5">
                     {t('contactDescription')}
                 </p>
                 <form>
-                    <div className="row">
-                        <div className="col-12 col-lg-6 col-md-6 mb-4 mt-3">
+                    <div className="row px-0 px-lg-4">
+                        <div className="col-12 col-lg-6 col-md-6 mb-4">
                             <InputText id="nombre" placeholder={t('namePlaceholder')}
                                 className="w-100" required aria-required="true" />
                         </div>
-                        <div className="col-12 col-lg-6 col-md-6 mb-4 mt-3">
+                        <div className="col-12 col-lg-6 col-md-6 mb-4">
                             <InputText id="apellidos" placeholder={t('lastNamePlaceholder')}
                                 className="w-100" required aria-required="true" />
                         </div>
@@ -48,7 +48,7 @@ const ContactComponent = () => {
                             <Checkbox inputId="terminos" checked={aceptaTerminos} onChange={e => setAceptaTerminos(e.checked)} required />
                             <label htmlFor="terminos" className="text-light m-0">{t('acceptTermsLabel')}</label>
                         </div>
-                        <div className="col-12 d-flex justify-content-end mt-2">
+                        <div className="col-12 d-flex justify-content-center justify-content-lg-end justify-content-md-end justify-content-sm-end mt-2">
                             <Button type="submit" label={t('sendButton')} icon="pi pi-arrow-right" iconPos="right" className="btn-submit rounded-pill" outlined />
                         </div>
                     </div>
