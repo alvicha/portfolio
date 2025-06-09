@@ -227,7 +227,7 @@ const ProjectsPage = () => {
                             </div>
                            
 
-                            <div className="flex flex-wrap gap-2 mb-5">
+                            <div className="flex flex-wrap gap-2 mb-4">
                                 {project.tags.map((tag, i) => (
                                     <Chip
                                         key={i}
