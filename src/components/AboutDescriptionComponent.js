@@ -1,4 +1,5 @@
 import { Button } from "primereact/button";
+import { Image } from "primereact/image";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -11,22 +12,31 @@ const AboutDescription = () => {
     }, []);
 
     return (
-        <section className={`section-profile p-5 m-5 page ${active ? "active" : ""}`}>
-            <h1 className="about-title text-center mb-5 me-5">{t("aboutTitle")}</h1>
-            <div className="about-content mt-2">
-                <div className="about-image-wrapper">
-                    <img src="/images/perfil2.jpg" alt="Imagen perfil" className="about-image" />
-                </div>
+        <section className={`py-5 page ${active ? "active" : ""}`}>
+            <div className="container-fluid">
+                <h1 className="about-title mt-5">{t("aboutTitle")}</h1>
 
-                <div>
-                    <p className="about-text me-5">
-                        {t("aboutDescriptionFirst")}
-                        <br /> <br />
-                        {t("aboutDescriptionSecond")}
-                    </p>
-                    <a href="/cv/curriculum.pdf" download>
-                        <Button className="rounded btn-outline-orange fw-bold mt-3" label={t("downloadCV")} icon="pi pi-download" outlined />
-                    </a>
+                <div className="row align-items-center mb-4">
+                    <div className="col-12 col-md-6 d-flex justify-content-center">
+                        <div className="about-image-wrapper">
+                            <Image src="/images/perfil2.jpg" alt="Imagen perfil" imageClassName="about-image img-fluid"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="col-12 col-md-6 mt-5">
+                        <p className="about-text text-center text-lg-start text-md-start">
+                            {t("aboutDescriptionFirst")}
+                            <br /> <br />
+                            {t("aboutDescriptionSecond")}
+                        </p>
+
+                        <div className="d-flex justify-content-center justify-content-md-start">
+                            <a href="/cv/curriculum.pdf" download>
+                                <Button className="rounded btn-outline-orange fw-bold mt-3" label={t("downloadCV")} icon="pi pi-download" outlined />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

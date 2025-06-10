@@ -224,27 +224,14 @@ header {
     border-radius: 50%;
 }
 
-.section-profile {
-    transform: translateY(20px);
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 80px;
-    color: white;
-    line-height: 1.7;
-    text-align: justify;
-    gap: 5rem;
-}
-
 .about-title {
     font-size: 40px;
     color: white;
+    text-align: center;
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    margin-bottom: 90px;
 }
 
 .about-title::after {
@@ -258,7 +245,7 @@ header {
 
 .about-text {
     max-width: 700px;
-    font-size: 1.1rem;
+    font-size: 16px;
 }
 
 .about-image-wrapper {
@@ -295,7 +282,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    gap: 4rem;
     padding: 30px;
     border: 1px solid white;
 }
@@ -370,7 +356,7 @@ header {
 .description-experience {
     color: white;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 70px;
 }
 
@@ -436,7 +422,7 @@ header {
     background-color: transparent !important;
     margin: auto;
     font-size: 18px;
-    padding: 20px 40px;
+    padding: 15px 40px;
     border: 1px solid #FF6A00;
     color: #ffffff;
     text-transform: uppercase;
@@ -644,8 +630,6 @@ footer .url-title:hover::after {
 
 .timeline-container {
     position: relative;
-    width: 600px;
-    margin: auto;
     padding: 40px 0;
 }
 
@@ -674,7 +658,6 @@ footer .url-title:hover::after {
 
 .timeline-item.right {
     left: 53%;
-    text-align: left;
 }
 
 .timeline-item .circle {
@@ -688,7 +671,7 @@ footer .url-title:hover::after {
 }
 
 .timeline-item.left .circle {
-    right: -20px;
+    right: -23px;
 }
 
 .timeline-item.right .circle {
@@ -702,6 +685,24 @@ footer .url-title:hover::after {
 
     .titulo-caracteristicas {
         font-size: 36px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .timeline-item {
+        width: 100% !important;
+        max-width: 90%;
+        margin: 0 auto 2rem auto;
+        left: 0 !important;
+        right: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .timeline-item .circle {
+        display: none !important;
     }
 }
 
@@ -723,12 +724,27 @@ footer .url-title:hover::after {
         font-size: 32px;
         margin-bottom: 60px;
     }
+
+    .about-title {
+        font-size: 35px;
+        margin-bottom: 70px;
+    }
+
+    .about-image-wrapper {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 @media (max-width: 540px) {
     .title-name {
         margin-top: 50px;
-        font-size: 37px;
+        font-size: 35px;
+    }
+
+    .experience-title {
+        margin-bottom: 50px;
+        font-size: 35px;
     }
 
     .projects-title {
@@ -743,11 +759,37 @@ footer .url-title:hover::after {
 }
 
 @media (max-width: 392px) {
+    .about-image-wrapper {
+        width: 320px;
+        height: 320px;
+    }
+
     .button-about {
         margin-bottom: 20px;
     }
 
+    .title-name {
+        margin-top: 70px;
+        font-size: 30px;
+    }
+
     .projects-title {
         font-size: 30px;
+    }
+
+    .about-title {
+        font-size: 30px;
+    }
+
+    .experience-title {
+        font-size: 30px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .description-experience {
+        font-size: 14px;
     }
 }

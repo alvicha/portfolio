@@ -253,7 +253,7 @@ const ProjectsPage = () => {
                 ))}
 
                 {visibleProjects < projects.length && (
-                    <div className=" col-12 text-center">
+                    <div className="col-12 text-center">
                         <Button label={t("viewMore")} className="rounded button-more mb-4" onClick={showMoreProjects}>
                         </Button>
                     </div>

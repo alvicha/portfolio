@@ -27,17 +27,20 @@ const AboutSkills = () => {
     ];
 
     return (
-        <section className={`section-skills p-5 m-5 page ${active ? "active" : ""}`}>
-            <h2 className="skill-title me-5">{t("skills")}</h2>
-            <div className="skills-grid rounded">
-                {skills.map((skill, index) => (
-                    <div key={index} className="skill-item" >
-                        <img src={skill.src} alt="Imagen tecnologias" className="skill-image" />
-                        <p className="skill-label mt-3">{skill.label}</p>
-                    </div>
-                ))}
+        <section className={`p-3 p-md-5 page ${active ? "active" : ""}`}>
+            <h2 className="skill-title">{t("skills")}</h2>
+
+            <div className="row align-items-center mb-5 justify-content-center">
+                <div className="col-12 col-lg-6 skills-grid rounded gap-5">
+                    {skills.map((skill, index) => (
+                        <div key={index} className="skill-item text-center" style={{ width: '120px' }}>
+                            <img src={skill.src} alt="Imagen tecnologias" className="skill-image img-fluid" />
+                            <p className="skill-label mt-3 mb-0">{skill.label}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </section >
+        </section>
     );
 };
 
