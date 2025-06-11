@@ -56,56 +56,49 @@ const HeaderComponent = () => {
 
     return (
         <header>
-            <nav className="navbar p-4">
+            <nav className="navbar navbar-expand-lg p-4">
                 <div className="container-fluid">
-                    <div className="d-flex align-items-center w-100">
-                        <div className="d-flex justify-content-end flex-column flex-sm-row align-items-start">
-                            <Link to="/"><img src="/images/logo.png" alt={t('home')} width="89" height="60" /> </Link>
-                        </div>
-                        <div className="navegacion flex-grow-1 d-flex mb-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-end">
-                            <ul className="navbar-nav d-flex flex-column flex-sm-row">
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/home">
-                                        {t('home')}
-                                    </Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/about">
-                                        {t('about')}
-                                    </Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/projects">
-                                        {t('projects')}
-                                    </Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/contact">
-                                        {t('contact')}
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
+                    <Link className="navbar-brand" to="/">
+                        <img src="/images/logo.png" alt={t('home')} width="89" height="60" />
+                    </Link>
 
-                        <div>
-                            
-                        </div>
+                    <div className="navbar-collapse navegacion flex-grow-1 mb-2 mb-lg-0 mb-md-0 mb-sm-0" id="opciones">
+                        <ul className="navbar-nav d-flex flex-column flex-sm-row">
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/home">
+                                    {t('home')}
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/about">
+                                    {t('about')}
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/projects">
+                                    {t('projects')}
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/contact">
+                                    {t('contact')}
+                                </Link>
+                            </li>
+                        </ul>
 
-                        <div style={{ marginLeft: '10px' }}>
-                            <Dropdown
-                                value={selectedCountry}
-                                onChange={(e) => changeLanguage(e.value)}
-                                options={countries}
-                                optionLabel="nameKey"
-                                placeholder="Seleccionar idioma"
-                                valueTemplate={selectedCountryTemplate}
-                                itemTemplate={countryOptionTemplate}
-                                className="custom-dropdown"
-                            />
-                            <Button icon={iconDark} className="btn-light" aria-label="Icono modo oscuro"
-                                onClick={changeDarkMode} />
-                        </div>
+                        <Dropdown
+                            value={selectedCountry}
+                            onChange={(e) => changeLanguage(e.value)}
+                            options={countries}
+                            optionLabel="nameKey"
+                            placeholder="Seleccionar idioma"
+                            valueTemplate={selectedCountryTemplate}
+                            itemTemplate={countryOptionTemplate}
+                            className="custom-dropdown"
+                        />
                     </div>
+                    <Button icon={iconDark} className="btn-light" aria-label="Icono modo oscuro"
+                        onClick={changeDarkMode} />
                 </div>
             </nav>
         </header>

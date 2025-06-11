@@ -37,12 +37,6 @@ const HomePage = () => {
         }
     ];
 
-    const footer = (
-        <div className="d-flex justify-content-end">
-            <Button icon="pi pi-plus" className="btn-plus rounded-pill" severity="warning" />
-        </div>
-    );
-
     return (
         <div className={`container-fluid page ${active ? "active" : ""}`}>
             <div className="row align-items-center min-vh-100 text-center d-flex flex-lg-row flex-column mt-0 mt-md-5">
@@ -73,7 +67,6 @@ const HomePage = () => {
                         <Card
                             title={item.title}
                             header={<Image alt={item.title} src={item.img} imageClassName="img-fluid mb-3" />}
-                            footer={footer}
                             className="custom-card text-center rounded"
                         >
                             <p className="mt-0">{item.description}</p>

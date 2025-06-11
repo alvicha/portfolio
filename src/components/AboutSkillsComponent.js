@@ -1,3 +1,4 @@
+import { Image } from "primereact/image";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -33,8 +34,8 @@ const AboutSkills = () => {
             <div className="row align-items-center mb-5 justify-content-center">
                 <div className="col-12 col-lg-6 skills-grid rounded gap-5">
                     {skills.map((skill, index) => (
-                        <div key={index} className="skill-item text-center" style={{ width: '120px' }}>
-                            <img src={skill.src} alt="Imagen tecnologias" className="skill-image img-fluid" />
+                        <div key={index} className="skill-item text-center">
+                            <Image src={skill.src} alt="Imagen tecnologias" imageClassName="skill-image" />
                             <p className="skill-label mt-3 mb-0">{skill.label}</p>
                         </div>
                     ))}
