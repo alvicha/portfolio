@@ -7,7 +7,7 @@ import ScreensContext from "../screens/ScreensContext";
 
 const HeaderComponent = () => {
     const { t, i18n } = useTranslation();
-    const [iconDark, setIconDark] = useState("pi pi-moon");
+    const [iconDark, setIconDark] = useState("pi pi-sun");
     const [darkMode, setDarkMode] = useState(false);
     const { containerRef } = useContext(ScreensContext);
     const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +71,7 @@ const HeaderComponent = () => {
                     <i className="pi pi-times"></i>
                 </button>
 
-                <ul className="navbar-nav d-flex align-items-end align-items-center">
+                <ul className="navbar-nav d-flex align-items-center">
                     <li className="nav-item">
                         <Link className="nav-link" to="/home" onClick={() => setIsOpen(false)}>
                             {t('home')}
