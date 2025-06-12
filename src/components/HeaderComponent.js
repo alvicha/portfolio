@@ -10,6 +10,7 @@ const HeaderComponent = () => {
     const [iconDark, setIconDark] = useState("pi pi-moon");
     const [darkMode, setDarkMode] = useState(false);
     const { containerRef } = useContext(ScreensContext);
+    const [isOpen, setIsOpen] = useState(false);
 
     const countries = [
         { nameKey: "nameLanguages.french", code: 'fr', flag: "https://flagcdn.com/w40/fr.png" },
@@ -22,7 +23,7 @@ const HeaderComponent = () => {
     const changeLanguage = (lng) => {
         setSelectedCountry(lng);
         i18n.changeLanguage(lng.code);
-    }
+    };
 
     const selectedCountryTemplate = (option, props) => {
         if (option) {
@@ -45,47 +46,53 @@ const HeaderComponent = () => {
         );
     };
 
-    const changeDarkMode = async () => {
+    const changeDarkMode = () => {
         const newMode = !darkMode;
         setDarkMode(newMode);
-
         setIconDark(newMode ? 'pi pi-sun' : 'pi pi-moon');
         containerRef.current.classList.toggle('dark-mode');
     };
 
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
         <header>
-            <nav className="navbar navbar-expand-lg p-4">
-                <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">
-                        <img src="/images/logo.png" alt={t('home')} width="89" height="60" />
-                    </Link>
+            <Link className="navbar-brand" to="/">
+                <img src="/images/logo.png" alt={t('home')} width="89" height="60" />
+            </Link>
+            <button className="abrir-menu" onClick={toggleMenu}>
+                <i className="pi pi-bars"></i>
+            </button>
 
-                    <div className="navbar-collapse navegacion flex-grow-1 mb-2 mb-lg-0 mb-md-0 mb-sm-0" id="opciones">
-                        <ul className="navbar-nav d-flex flex-column flex-sm-row">
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/home">
-                                    {t('home')}
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/about">
-                                    {t('about')}
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/projects">
-                                    {t('projects')}
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/contact">
-                                    {t('contact')}
-                                </Link>
-                            </li>
-                        </ul>
+            <nav className={`navbar ${isOpen ? "visible" : ""}`}>
+                <button className="cerrar-menu" onClick={toggleMenu}>
+                    <i className="pi pi-times"></i>
+                </button>
 
+                <ul className="navbar-nav d-flex align-items-end align-items-center">
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/home" onClick={() => setIsOpen(false)}>
+                            {t('home')}
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/about" onClick={() => setIsOpen(false)}>
+                            {t('about')}
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/projects" onClick={() => setIsOpen(false)}>
+                            {t('projects')}
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/contact" onClick={() => setIsOpen(false)}>
+                            {t('contact')}
+                        </Link>
+                    </li>
+                    <li className="nav-item mt-3 mt-lg-0 mt-md-0">
                         <Dropdown
                             value={selectedCountry}
                             onChange={(e) => changeLanguage(e.value)}
@@ -96,10 +103,9 @@ const HeaderComponent = () => {
                             itemTemplate={countryOptionTemplate}
                             className="custom-dropdown"
                         />
-                    </div>
-                    <Button icon={iconDark} className="btn-light" aria-label="Icono modo oscuro"
-                        onClick={changeDarkMode} />
-                </div>
+                    </li>
+                </ul>
+                <Button icon={iconDark} className="btn-light" aria-label="Icono modo oscuro" onClick={changeDarkMode} />
             </nav>
         </header>
     );

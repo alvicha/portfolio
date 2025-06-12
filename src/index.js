@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "primereact/resources/themes/saga-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import "primereact/resources/themes/saga-blue/theme.css"; // o el tema que uses
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "@material-tailwind/react";
 import { PrimeReactProvider } from 'primereact/api';
