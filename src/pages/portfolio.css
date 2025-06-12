@@ -595,7 +595,6 @@ header {
     left: 0;
     height: 100%;
     width: 0;
-    /* empieza sin ancho */
     background-color: #ff6a00;
     transition: width 0.4s ease;
     z-index: -1;

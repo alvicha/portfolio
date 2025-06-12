@@ -44,7 +44,7 @@ const AboutAcademicData = () => {
                     ></p>
                 </div>
 
-                <div className="col-12 d-flex justify-content-center mb-5">
+                <div className="col-12 d-flex justify-content-center">
                     <div className="timeline-container" style={{ maxWidth: '900px' }}>
                         {dataAcademics.map((acad, index) => (
                             <div
