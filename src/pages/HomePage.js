@@ -39,7 +39,7 @@ const HomePage = () => {
 
     return (
         <div className={`container-fluid page ${active ? "active" : ""}`}>
-            <div className="row align-items-center min-vh-100 text-center d-flex flex-lg-row flex-column mt-0 mt-md-5">
+            <div className="row align-items-center min-h-[70vh] text-center d-flex flex-lg-row flex-column mt-0 mt-md-5">
                 <div className="col-12 col-lg-6 col-md-6 mb-0 mb-md-5">
                     <h1 className="title-name fw-bold mb-5">{t("greeting")}</h1>
 

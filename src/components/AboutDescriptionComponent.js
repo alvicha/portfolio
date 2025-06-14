@@ -14,7 +14,7 @@ const AboutDescription = () => {
     return (
         <section className={`py-5 page ${active ? "active" : ""}`}>
             <div className="container-fluid">
-                <h1 className="about-title mt-5">{t("aboutTitle")}</h1>
+                <h1 className="about-title mt-3 mt-lg-5 mt-md-5 mt-sm-5">{t("aboutTitle")}</h1>
 
                 <div className="row align-items-center mb-4">
                     <div className="col-12 col-md-6 d-flex justify-content-center">
