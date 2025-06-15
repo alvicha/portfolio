@@ -76,11 +76,10 @@ header {
 }
 
 .title-name {
-    color: #ffffff;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    background: linear-gradient(90deg, #FF6A00, #FF8C00);
+    background: linear-gradient(90deg, #fcf2ec, #e2dedc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 1px;

@@ -13,8 +13,8 @@ const ProfileCard = () => {
 
     return (
         <Card className="w-96 rounded-xl bg-[rgba(26,26,46,0.6)] backdrop-blur-sm border border-[rgba(255,255,255,0.1)] shadow-lg">
-            <CardHeader floated={false} className="rounded-t-xl h-[370px] overflow-hidden relative group">
-                <img src="/images/perfil.jpg" alt="profile-picture" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <CardHeader floated={false} className="rounded-t-xl h-[325px] overflow-hidden relative group">
+                <img src="/images/perfil.jpg" alt="profile-picture" className="w-full h-82 transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,46,0.8)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </CardHeader>
             <CardBody className="py-6 text-center">
