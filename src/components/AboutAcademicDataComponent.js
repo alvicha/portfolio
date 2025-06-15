@@ -45,7 +45,7 @@ const AboutAcademicData = () => {
                 </div>
 
                 <div className="col-12 d-flex justify-content-center">
-                    <div className="timeline-container" style={{ maxWidth: '900px' }}>
+                    <div className="timeline-container">
                         {dataAcademics.map((acad, index) => (
                             <div
                                 key={index}
@@ -60,12 +60,12 @@ const AboutAcademicData = () => {
                                         <div className="flex flex-col w-full">
                                             <div className="flex justify-between gap-4 items-center">
                                                 <Typography
-                                                    variant="h5"
                                                     className="font-semibold mb-3"
                                                 >
                                                     {acad.company}
                                                 </Typography>
-                                                <Typography className="italic">
+                                                <Typography
+                                                    className="italic">
                                                     {acad.period}
                                                 </Typography>
                                             </div>

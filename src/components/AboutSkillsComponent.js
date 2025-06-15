@@ -11,35 +11,36 @@ const AboutSkills = () => {
     }, []);
 
     const skills = [
-        { src: "/images/javascript.png", label: "JavaScript" },
-        { src: "/images/html.png", label: "HTML5" },
-        { src: "/images/css.png", label: "CSS" },
-        { src: "/images/php.png", label: "PHP" },
-        { src: "/images/vuejs.png", label: "VueJS" },
-        { src: "/images/React.png", label: "React" },
-        { src: "/images/symfony.png", label: "Symfony" },
-        { src: "/images/nodejs.png", label: "NodeJS" },
-        { src: "/images/bootstrap.png", label: "Bootstrap" },
-        { src: "/images/firebase.png", label: "Firebase" },
-        { src: "/images/mysql.png", label: "MySQL" },
-        { src: "/images/angular.png", label: "Angular" },
-        { src: "/images/logoc.png", label: "C#" },
-        { src: "/images/java.png", label: "Java" },
+        { src: "/images/javascript.png", label: "JavaScript", percent: "85%" },
+        { src: "/images/html.png", label: "HTML5", percent: "90%" },
+        { src: "/images/css.png", label: "CSS", percent: "80%" },
+        { src: "/images/php.png", label: "PHP", percent: "60%" },
+        { src: "/images/vuejs.png", label: "VueJS", percent: "60%" },
+        { src: "/images/React.png", label: "React", percent: "80%" },
+        { src: "/images/symfony.png", label: "Symfony", percent: "70%" },
+        { src: "/images/nodejs.png", label: "NodeJS", percent: "60%" },
+        { src: "/images/bootstrap.png", label: "Bootstrap", percent: "80%" },
+        { src: "/images/firebase.png", label: "Firebase", percent: "60%" },
+        { src: "/images/mysql.png", label: "MySQL", percent: "90%" },
+        { src: "/images/angular.png", label: "Angular", percent: "75%" },
+        { src: "/images/logoc.png", label: "C#", percent: "60%" },
+        { src: "/images/java.png", label: "Java", percent: "60%" },
     ];
 
     return (
         <section className={`p-3 p-md-5 page ${active ? "active" : ""}`}>
             <h2 className="skill-title">{t("skills")}</h2>
 
-            <div className="row align-items-center mb-5 justify-content-center">
-                <div className="col-12 col-lg-6 skills-grid rounded gap-5">
-                    {skills.map((skill, index) => (
-                        <div key={index} className="skill-item text-center">
-                            <Image src={skill.src} alt="Imagen tecnologias" imageClassName="skill-image" />
-                            <p className="skill-label mt-3 mb-0">{skill.label}</p>
+            <div className="skills-glass-grid">
+                {skills.map((skill, index) => (
+                    <div key={index} className="skill-glass-card">
+                        <div className="skill-glass-icon">
+                            <img src={skill.src} alt={skill.label} />
                         </div>
-                    ))}
-                </div>
+                        <div className="skill-glass-label">{skill.label}</div>
+                        <div className="skill-glass-percent">{skill.percent}</div>
+                    </div>
+                ))}
             </div>
         </section>
     );

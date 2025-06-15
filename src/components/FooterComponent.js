@@ -59,7 +59,7 @@ const FooterComponent = () => {
 
                 <div className="col-12 border-top mt-4">
                     <p className="text-center mt-4 mb-2">
-                        &copy; Copyright 2025. Alberto Villegas.
+                        &copy; Copyright 2025. Alberto Villegas. Todos los derechos reservados.
                     </p>
                 </div>
             </div>
