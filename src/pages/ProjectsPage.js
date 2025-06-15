@@ -69,8 +69,6 @@ const ProjectsPage = () => {
             image: "/images/juego_memoria.jpg",
             link: "https://github.com/alvicha/AE03AD.git",
             year: 2024,
-            linkVideo: "https://github.com/alvicha/ALBERTOURS.git",
-
             tags: [{
                 name: "JAVA",
                 icon: "/images/java.png",
@@ -86,7 +84,6 @@ const ProjectsPage = () => {
             image: "/images/hotel_estrellas.jpg",
             link: "https://github.com/rsanzfloridauni/DAM2324_Estrellas.git",
             year: 2024,
-            linkVideo: "https://github.com/alvicha/ALBERTOURS.git",
             tags: [{
                 name: "REACT NATIVE",
                 icon: "/images/react.png",
@@ -244,9 +241,11 @@ const ProjectsPage = () => {
                                 <a href={project.link} target="_blank" className="no-underline" rel="noopener noreferrer">
                                     <Button label={t("viewGitHub")} icon="pi pi-github" className="buttons-card text-sm" />
                                 </a>
-                                <a href={project.linkVideo} target="_blank" className="no-underline" rel="noopener noreferrer">
-                                    <Button label={t("viewDemo")} icon="pi pi-play" className="buttons-card text-sm" />
-                                </a>
+                                {project.linkVideo && (
+                                    <a href={project.linkVideo} target="_blank" className="no-underline" rel="noopener noreferrer">
+                                        <Button label={t("viewDemo")} icon="pi pi-play" className="buttons-card text-sm" />
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
