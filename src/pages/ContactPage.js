@@ -16,43 +16,87 @@ const ContactComponent = () => {
 
     return (
         <section className={`container-fluid my-5 page ${localActive ? 'active' : ''}`}>
-            <div className="col-12 col-sm-10 col-md-8 col-lg-6 border border-light rounded p-5 mx-auto">
-                <h1 className="text-center text-light fw-bold mb-5">{t('contactTitle')}</h1>
-                <p className="text-center text-light mb-5">
-                    {t('contactDescription')}
-                </p>
-                <form>
-                    <div className="row px-0 px-lg-4">
-                        <div className="col-12 col-lg-6 col-md-6 mb-4">
-                            <InputText id="nombre" placeholder={t('namePlaceholder')}
-                                className="w-100" required aria-required="true" />
-                        </div>
-                        <div className="col-12 col-lg-6 col-md-6 mb-4">
-                            <InputText id="apellidos" placeholder={t('lastNamePlaceholder')}
-                                className="w-100" required aria-required="true" />
-                        </div>
-                        <div className="col-12 mb-4">
-                            <InputText id="email" placeholder={t('emailPlaceholder')}
-                                className="w-100 mt-2 mb-3" required aria-describedby="ayuda-correo" aria-required="true" />
-                            <small id="ayuda-correo" className="text-light">
-                                {t('emailHelpText')}
-                            </small>
-                        </div>
-                        <div className="col-12 mb-4">
-                            <InputText id="telefono" placeholder={t('phonePlaceholder')} className="w-100" keyfilter="int" />
-                        </div>
-                        <div className="col-12 mb-3">
-                            <InputTextarea id="mensaje" rows={5} placeholder={t('messagePlaceholder')} className="w-100" aria-label={t('messagePlaceholder')} />
-                        </div>
-                        <div className="col-12 mb-3 d-flex align-items-center gap-2">
-                            <Checkbox inputId="terminos" checked={aceptaTerminos} onChange={e => setAceptaTerminos(e.checked)} required />
-                            <label htmlFor="terminos" className="text-light m-0">{t('acceptTermsLabel')}</label>
-                        </div>
-                        <div className="col-12 d-flex justify-content-center justify-content-lg-end justify-content-md-end justify-content-sm-end mt-2">
-                            <Button type="submit" label={t('sendButton')} icon="pi pi-arrow-right" iconPos="right" className="btn-submit rounded-pill" outlined />
-                        </div>
+            <div className="row p-5 mx-auto">
+                <div className="col-12 col-md-6 rounded p-5 mx-auto">
+                    <h1 className="text-center text-light fw-bold mb-5">{t('contactTitle')}</h1>
+                    <p className="text-center text-light mb-5">
+                        {t('contactDescription')}
+                    </p>
+
+                    <div className="contact-icons d-flex gap-5 justify-content-center mt-4">
+                        <a
+                            href="https://maps.app.goo.gl/xGSeC6kd86dZm1Bf9"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="contact-icon"
+                            title="Ubicación"
+                        >
+                            <i className="pi pi-map-marker" />
+                        </a>
+                        <a
+                            href="tel:648722134"
+                            className="contact-icon"
+                            title="Llamar"
+                        >
+                            <i className="pi pi-phone" />
+                        </a>
+                        <a
+                            href="mailto:avchaparro04@gmail.com"
+                            className="contact-icon"
+                            title="Email"
+                        >
+                            <i className="pi pi-envelope" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/alberto-villegas-chaparro-a786192a2"
+                            target="_blank"
+                            className="contact-icon"
+                            title="LinkedIn"
+                        >
+                            <i className="pi pi-linkedin" />
+                        </a>
                     </div>
-                </form>
+                </div>
+
+                <div className="col-12 col-md-6 rounded p-5 mx-auto">
+                    <form>
+                        <div className="row px-0 px-lg-4">
+                            <div className="col-12 col-lg-6 col-md-6 mb-4">
+                                <InputText id="nombre" placeholder={t('namePlaceholder')}
+                                    className="w-100" required aria-required="true" />
+                            </div>
+                            <div className="col-12 col-lg-6 col-md-6 mb-4">
+                                <InputText id="apellidos" placeholder={t('lastNamePlaceholder')}
+                                    className="w-100" required aria-required="true" />
+                            </div>
+                            <div className="col-12 mb-4">
+                                <InputText id="email" placeholder={t('emailPlaceholder')}
+                                    className="w-100 mt-2 mb-3" required aria-describedby="ayuda-correo" aria-required="true" />
+                                <small id="ayuda-correo" className="text-light">
+                                    {t('emailHelpText')}
+                                </small>
+                            </div>
+                            <div className="col-12 mb-4">
+                                <InputText id="telefono" placeholder={t('phonePlaceholder')} className="w-100" keyfilter="int" />
+                            </div>
+                            <div className="col-12 mb-3">
+                                <InputTextarea id="mensaje" rows={5} placeholder={t('messagePlaceholder')} className="w-100" aria-label={t('messagePlaceholder')} />
+                            </div>
+                            <div className="col-12 mb-3 d-flex align-items-center gap-2">
+                                <Checkbox inputId="terminos" checked={aceptaTerminos} onChange={e => setAceptaTerminos(e.checked)} required />
+                                <label htmlFor="terminos" className="text-light m-0">{t('acceptTermsLabel')}</label>
+                            </div>
+                            <div className="col-12 d-flex justify-content-center justify-content-lg-end justify-content-md-end justify-content-sm-end mt-2">
+                                <Button
+                                    type="submit"
+                                    label={t('sendButton')}
+                                    className="btn-submit"
+                                    outlined
+                                />
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     );

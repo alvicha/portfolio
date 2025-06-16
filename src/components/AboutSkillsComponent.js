@@ -13,7 +13,7 @@ const AboutSkills = () => {
     const skills = [
         { src: "/images/javascript.png", label: "JavaScript", percent: "85%" },
         { src: "/images/html.png", label: "HTML5", percent: "90%" },
-        { src: "/images/css.png", label: "CSS", percent: "80%" },
+        { src: "/images/css.png", label: "CSS", percent: "85%" },
         { src: "/images/php.png", label: "PHP", percent: "60%" },
         { src: "/images/vuejs.png", label: "VueJS", percent: "60%" },
         { src: "/images/React.png", label: "React", percent: "80%" },

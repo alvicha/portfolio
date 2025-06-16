@@ -39,18 +39,6 @@ const ProfileCard = () => {
                         <i className="pi pi-linkedin text-xl" />
                     </a>
                 </Tooltip>
-                <Tooltip content="Email">
-                    <a href="mailto:avchaparro04@gmail.com" 
-                        className="text-white/70 hover:text-[#FF6A00] transition-colors duration-300">
-                        <i className="pi pi-envelope text-xl" />
-                    </a>
-                </Tooltip>
-                <Tooltip content="X / Twitter">
-                    <a href="https://x.com/AlbertoVil58869" target="_blank" rel="noopener noreferrer"
-                        className="text-white/70 hover:text-[#FF6A00] transition-colors duration-300">
-                        <i className="pi pi-twitter text-xl" />
-                    </a>
-                </Tooltip>
             </CardFooter>
         </Card>
     );
