@@ -17,13 +17,13 @@ const ContactComponent = () => {
     return (
         <section className={`container-fluid my-5 page ${localActive ? 'active' : ''}`}>
             <div className="row p-5 mx-auto">
-                <div className="col-12 col-md-6 rounded p-5 mx-auto">
+                <div className="col-12 col-md-6 rounded m-auto">
                     <h1 className="text-center text-light fw-bold mb-5">{t('contactTitle')}</h1>
                     <p className="text-center text-light mb-5">
                         {t('contactDescription')}
                     </p>
 
-                    <div className="contact-icons d-flex gap-5 justify-content-center mt-4">
+                    <div className="contact-icons d-flex gap-4 justify-content-center mt-4 mb-5">
                         <a
                             href="https://maps.app.goo.gl/xGSeC6kd86dZm1Bf9"
                             target="_blank"
