@@ -623,7 +623,7 @@ header {
     margin-top: 8px;
     background-color: #1E1E1E !important;
     border: 1px solid #FF6A00 !important;
-    z-index: 11000 !important; /* más alto que el header */      
+    z-index: 11000 !important;
 }
 
 /* Estilo de cada opción */
