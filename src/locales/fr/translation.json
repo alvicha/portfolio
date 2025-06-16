@@ -1,98 +1,96 @@
 {
-    "home": "Accueil",
-    "about": "À propos de moi",
-    "year": "Année",
-    "projects": "Projets",
-    "contact": "Contact",
-    "links": "Liens",
-    "location": "4 rue Amalio Monforte, Sanroque, Catarroja, Espagne",
-    "selectLanguage": "Choisir la langue",
-    "uiuxDesigner": "Designer UI/UX",
-    "greeting": "Bonjour, je m'appelle Alberto Villegas",
-    "aboutMeButton": "En savoir plus sur moi",
-    "contactMeButton": "Me contacter",
-    "introText": "Découvrez mon portfolio pour explorer mes projets, compétences et comment je peux apporter de la valeur avec des solutions créatives, fonctionnelles et centrées sur l'utilisateur.",
-    "concreteFeatures": "Caractéristiques concrètes",
-    "developmentTitle": "Développement de logiciels multiplateforme",
-    "developmentDescription": "Spécialisé dans la création d'applications web et mobiles via des frameworks.",
-    "developmentLabel": "Plus d'informations sur le développement multiplateforme",
-    "programmingTitle": "Compétences en programmation",
-    "programmingDescription": "Connaissances de plusieurs langages de programmation pour le web et multiplateforme, permettant la création de sites web, etc.",
-    "programmingLabel": "Plus d'informations sur les compétences en programmation",
-    "databaseTitle": "Gestion de bases de données",
-    "databaseDescription": "Gestion des serveurs de bases de données avec expérience dans plusieurs projets développés au fil des années.",
-    "databaseLabel": "Plus d'informations sur la gestion des bases de données",
-    "name": "Alberto Villegas",
-    "profession": "Développeur Full Stack",
-    "tooltipGithub": "GitHub",
-    "tooltipLinkedIn": "LinkedIn",
-    "tooltipEmail": "Email",
-    "tooltipTwitter": "X / Twitter",
-    "academicDataTitle": "Éducation",
-    "academicDataDescription": "Détails et présentation des études que j'ai réalisées, ainsi que des <strong>institutions éducatives</strong> où je les ai complétées.",
-    "academicInstitutions": "institutions éducatives",
-    "floridaUni": "Université Florida, Catarroja",
-    "webDevDegree": "Diplôme supérieur en développement d'applications web",
-    "multiPlatformDevDegree": "Diplôme supérieur en développement d'applications multiplateforme",
-    "microSystemsDegree": "Diplôme intermédiaire de technicien en systèmes micro-informatiques et réseaux",
-    "period1": "Septembre 2024 - Juin 2025",
-    "period2": "Septembre 2022 - Juin 2024",
-    "period3": "Septembre 2020 - Juin 2022",
-    "aboutTitle": "À propos de moi",
-    "aboutDescriptionFirst": "Je suis un développeur full stack junior, passionné par l'apprentissage continu et par le développement frontend et backend. J'ai de l'expérience avec divers outils, technologies et frameworks, toujours axé sur l'utilisabilité et le design centré sur l'utilisateur.",
-    "aboutDescriptionSecond": "Mon objectif est de combiner créativité et technique pour développer des produits numériques qui non seulement fonctionnent correctement, mais qui séduisent aussi leurs utilisateurs.",
-    "downloadCV": "Télécharger CV",
-    "projectsTitle": "Mes Projets",
-    "projectsDescription": "Vous trouverez ici une sélection de mes projets, individuels et en équipe. Explorez mes projets pour en savoir plus sur ce que je fais.",
-    "viewDemo": "Voir la démo",
-    "viewGitHub": "Voir sur GitHub",
-    "viewMore": "Voir plus",
-    "skills": "Compétences",
-    "contactTitle": "Contactez-moi !",
-    "contactDescription": "Contactez-moi via ce formulaire et je répondrai à vos questions dès que possible.",
-    "namePlaceholder": "Prénom",
-    "lastNamePlaceholder": "Nom de famille",
-    "emailPlaceholder": "Adresse e-mail",
-    "emailHelpText": "Nous vous enverrons un message d'information.",
-    "phonePlaceholder": "Numéro de téléphone",
-    "messagePlaceholder": "Votre message",
-    "acceptTermsLabel": "J'accepte les termes et conditions",
-    "sendButton": "Envoyer",
-    "nameLanguages": {
-        "french": "Français",
-        "spanish": "Espagnol",
-        "english": "Anglais"
-    },
-    "projectsCard": {
-        "list": [
-            {
-                "title": "Albertours",
-                "description": "Application web développée en PHP pour la gestion des réservations de circuits touristiques dans différentes villes d’Espagne. Elle permet d’explorer les circuits disponibles, de réserver ou d’annuler des réservations et de consulter des informations détaillées sur chaque circuit."
-            },
-            {
-                "title": "Roma8",
-                "description": "Application web et mobile développée avec Quasar pour la gestion d’un domaine agricole. Ce projet a été réalisé en collaboration avec un autre membre de l’équipe."
-            },
-            {
-                "title": "Jeu de mémoire",
-                "description": "Application Java du jeu de mémoire utilisant MongoDB comme base de données. Les utilisateurs peuvent s'inscrire, se connecter et jouer avec différents niveaux de difficulté. L’application enregistre les temps, les résultats et les records, en suivant le modèle de conception MVC."
-            },
-            {
-                "title": "Hotel Estrellas",
-                "description": "Application de gestion de réservations d’hôtels offrant une expérience complète au client. Elle comprend une version mobile avec des informations sur les services tels que la restauration, la piscine et la salle de sport, et permet de rechercher, consulter et réserver des chambres rapidement et en toute sécurité. Projet réalisé en équipe."
-            },
-            {
-                "title": "App Nourriture",
-                "description": "Application web pour gérer des plats, permettant de consulter des données via une API REST publique et de stocker des informations dans une base de données personnelle. Elle utilise diverses technologies pour la recherche et la gestion des plats."
-            },
-            {
-                "title": "Templator",
-                "description": "Intégration d’un éditeur HTML de type WYSIWYG appelé Summernote pour créer et gérer des modèles HTML destinés à l’envoi d’e-mails."
-            },
-            {
-                "title": "Logiciel de Fitness",
-                "description": "Plateforme web développée pour la gestion efficace d’un club de fitness, visant à optimiser les opérations et améliorer l’expérience des utilisateurs."
-            }
-        ]
-    }
+  "home": "Accueil",
+  "about": "À propos de moi",
+  "year": "Année",
+  "projects": "Projets",
+  "contact": "Contact",
+  "selectLanguage": "Choisir la langue",
+  "greeting": "Alberto Villegas Chaparro",
+  "aboutMeButton": "Voir plus sur moi",
+  "contactMeButton": "Me contacter",
+  "introText": "Explorez mon portfolio pour découvrir mes projets, compétences et comment je peux apporter de la valeur grâce à des solutions créatives, fonctionnelles et centrées sur l’utilisateur.",
+  "concreteFeatures": "Caractéristiques concrètes",
+  "developmentTitle": "Développement de logiciels multiplateformes",
+  "developmentDescription": "Spécialisé dans la création d'applications web et mobiles en utilisant des frameworks.",
+  "developmentLabel": "En savoir plus sur le développement multiplateforme",
+  "programmingTitle": "Compétences en programmation",
+  "programmingDescription": "Connaissance de plusieurs langages de programmation pour le développement web et multiplateforme, permettant la création de sites web, etc.",
+  "programmingLabel": "En savoir plus sur les compétences en programmation",
+  "databaseTitle": "Gestion de bases de données",
+  "databaseDescription": "Expérience dans la gestion de serveurs de bases de données à travers divers projets développés au fil des années.",
+  "databaseLabel": "En savoir plus sur la gestion des bases de données",
+  "name": "Alberto Villegas",
+  "profession": "Développeur Full Stack",
+  "tooltipGithub": "GitHub",
+  "tooltipLinkedIn": "LinkedIn",
+  "tooltipEmail": "Email",
+  "tooltipTwitter": "X / Twitter",
+  "academicDataTitle": "Éducation",
+  "academicDataDescription": "Détails et aperçu de mes études, ainsi que les <strong>établissements éducatifs</strong> où je les ai complétées.",
+  "academicInstitutions": "établissements éducatifs",
+  "floridaUni": "Florida Universitaria, Catarroja",
+  "webDevDegree": "Diplôme Supérieur en Développement d’Applications Web",
+  "multiPlatformDevDegree": "Diplôme Supérieur en Développement d’Applications Multiplateformes",
+  "microSystemsDegree": "Diplôme de Technicien en Systèmes Micro-informatiques et Réseaux",
+  "period1": "Septembre 2024 - Juin 2025",
+  "period2": "Septembre 2022 - Juin 2024",
+  "period3": "Septembre 2020 - Juin 2022",
+  "aboutTitle": "À propos de moi",
+  "aboutDescriptionFirst": "Je suis un développeur full stack junior, passionné par l'apprentissage continu et le développement aussi bien frontend que backend. J’ai de l’expérience avec divers outils, technologies et frameworks, toujours axé sur l’utilisabilité et le design centré sur l’utilisateur.",
+  "aboutDescriptionSecond": "Mon objectif est de combiner créativité et technique pour développer des produits numériques qui ne se contentent pas de fonctionner correctement, mais qui séduisent aussi leurs utilisateurs.",
+  "downloadCV": "Télécharger le CV",
+  "projectsTitle": "Mes Projets",
+  "projectsDescription": "Voici une sélection de mes projets, réalisés individuellement ou en équipe. Explorez-les pour en savoir plus sur mon travail.",
+  "viewDemo": "Voir la démo",
+  "viewGitHub": "Voir sur GitHub",
+  "viewMore": "Voir plus",
+  "skills": "Compétences",
+  "contactTitle": "Contactez-moi !",
+  "contactDescription": "C’est l’occasion idéale pour me contacter via ce formulaire. Je répondrai à vos questions dès que possible.",
+  "namePlaceholder": "Prénom",
+  "lastNamePlaceholder": "Nom de famille",
+  "emailPlaceholder": "Adresse e-mail",
+  "emailHelpText": "Nous vous enverrons un message d'information.",
+  "phonePlaceholder": "Numéro de téléphone",
+  "messagePlaceholder": "Message d'information",
+  "acceptTermsLabel": "Accepter les termes et conditions",
+  "sendButton": "Envoyer",
+  "rightsReserved": "Copyright 2025 Alberto Villegas Chaparro. Tous droits réservés.",
+  "nameLanguages": {
+    "french": "Français",
+    "spanish": "Espagnol",
+    "english": "Anglais"
+  },
+  "projectsCard": {
+    "list": [
+      {
+        "title": "Albertours",
+        "description": "Application web réalisée avec PHP pour la gestion des réservations de circuits touristiques dans différentes villes d’Espagne. Elle permet d’explorer les circuits disponibles, de faire ou d’annuler des réservations et de consulter les informations détaillées de chaque tour."
+      },
+      {
+        "title": "Roma8",
+        "description": "Application web et mobile développée avec Quasar pour la gestion ou l’administration d’une propriété. Ce projet a été réalisé avec un camarade de classe."
+      },
+      {
+        "title": "Application jeu mémoire",
+        "description": "Application Java du jeu de mémoire utilisant MongoDB comme base de données. Elle permet aux utilisateurs de s’enregistrer, se connecter et jouer en choisissant différents niveaux de difficulté. Elle enregistre les temps, résultats et records, selon le modèle de conception MVC."
+      },
+      {
+        "title": "Hotel Estrellas",
+        "description": "Application de gestion de réservations de chambres offrant une expérience client complète. Inclut une version mobile avec des informations sur les services comme le restaurant, la piscine ou la salle de sport, et permet de chercher, explorer et réserver rapidement et en toute sécurité. Projet d'équipe."
+      },
+      {
+        "title": "App Nourriture",
+        "description": "Application web de gestion de plats qui permet de consulter des données via une API REST publique et de stocker les informations dans sa propre base de données. Elle utilise aussi des technologies pour la recherche de plats et la gestion de la base."
+      },
+      {
+        "title": "Templator",
+        "description": "Intégration d’un éditeur HTML WYSIWYG appelé Summernote pour créer et gérer des modèles HTML destinés à l’envoi d’e-mails."
+      },
+      {
+        "title": "Logiciel Fitness",
+        "description": "Application pour le développement d’une plateforme web permettant de gérer efficacement un club de fitness et d’améliorer l’expérience des utilisateurs."
+      }
+    ]
+  }
 }

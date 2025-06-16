@@ -132,7 +132,7 @@ const ProjectsPage = () => {
         {
             title: t("projectsCard.list.5.title"),
             description: t("projectsCard.list.5.description"),
-            image: "/images/templator.jpg",
+            image: "/images/templator.png",
             link: "https://github.com/alvicha/TEMPLATOR_FLORIDA.git",
             year: 2025,
             linkVideo: "https://youtu.be/-2a1i9pEZ5E",

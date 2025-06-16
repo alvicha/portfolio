@@ -4,10 +4,7 @@
     "year": "Año",
     "projects": "Proyectos",
     "contact": "Contacto",
-    "links": "Enlaces",
-    "location": "Calle Amalio Monforte, Sanroque, 4, Catarroja, España",
     "selectLanguage": "Seleccionar idioma",
-    "uiuxDesigner": "Diseñador UI/UX",
     "greeting": "Alberto Villegas Chaparro",
     "aboutMeButton": "Ver más acerca de mí",
     "contactMeButton": "Contáctame",
@@ -58,6 +55,7 @@
     "messagePlaceholder": "Mensaje de información",
     "acceptTermsLabel": "Acepta los términos y condiciones",
     "sendButton": "Enviar",
+    "rightsReserved": "Copyright 2025 Alberto Villegas Chaparro. Todos los derechos reservados.",
     "nameLanguages": {
         "french": "Francés",
         "spanish": "Español",

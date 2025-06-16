@@ -66,31 +66,19 @@ const HeaderComponent = () => {
                 <i className="pi pi-bars"></i>
             </button>
 
-            <nav className={`navbar ${isOpen ? "visible" : ""}`}>
-                <button className="cerrar-menu" onClick={toggleMenu}>
-                    <i className="pi pi-times"></i>
-                </button>
-
-                <ul className="navbar-nav d-flex align-items-center">
+            <nav className={`navbar${isOpen ? " visible" : ""}`}>
+                <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/home" onClick={() => setIsOpen(false)}>
-                            {t('home')}
-                        </Link>
+                        <Link className="nav-link" to="/home" onClick={() => setIsOpen(false)}>{t('home')}</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/about" onClick={() => setIsOpen(false)}>
-                            {t('about')}
-                        </Link>
+                        <Link className="nav-link" to="/about" onClick={() => setIsOpen(false)}>{t('about')}</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/projects" onClick={() => setIsOpen(false)}>
-                            {t('projects')}
-                        </Link>
+                        <Link className="nav-link" to="/projects" onClick={() => setIsOpen(false)}>{t('projects')}</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/contact" onClick={() => setIsOpen(false)}>
-                            {t('contact')}
-                        </Link>
+                        <Link className="nav-link" to="/contact" onClick={() => setIsOpen(false)}>{t('contact')}</Link>
                     </li>
                     <li className="nav-item mt-3 mt-lg-0 mt-md-0">
                         <Dropdown
