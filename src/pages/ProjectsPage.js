@@ -208,9 +208,9 @@ const ProjectsPage = () => {
             </p>
 
             <div className="w-[84%] row mx-auto">
-                {projects.slice(0, visibleProjects).map((project) => (
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center text-white p-6 md:p-6 lg:p-10 mb-5 rounded-2xl hover:bg-gray-800 transition-colors duration-300">
-                        <div className="project-image-wrapper w-full max-w-none sm:max-w-lg md:max-w-xl lg:max-w-full bg-gray-900 rounded-xl shadow-lg mx-auto p-0 p-lg-3 overflow-hidden">
+                {projects.slice(0, visibleProjects).map((project, index) => (
+                        <div key={index} className="project-container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center p-6 md:p-6 lg:p-10 mb-5 rounded-2xl transition-colors duration-300">
+                            <div className="project-image-wrapper w-full max-w-none sm:max-w-lg md:max-w-xl lg:max-w-full bg-gray-900 rounded-xl shadow-lg mx-auto p-0 p-lg-3 overflow-hidden">
                             <Image
                                 src={project.image}
                                 alt="Project preview"
@@ -222,8 +222,8 @@ const ProjectsPage = () => {
                             <h2 className="text-2xl text-left mb-3 font-semibold">{project.title}</h2>
                             <p className="text-left mb-4">{project.description}</p>
 
-                            <div className="flex justify-between border-bottom mb-4">
-                                <span className="block text-left font-medium text-white mb-3"> {t("year")}</span>
+                            <div className="flex justify-between border-bottom border-dark mb-4">
+                                <span className="block text-left font-medium mb-3"> {t("year")}</span>
                                 <p>{project.year}</p>
                             </div>
 

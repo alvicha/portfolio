@@ -1,5 +1,90 @@
 :root {
     --altura-header: 110px;
+    --background-color: #1a1a2e;
+    --text-color: #ffffff;
+    --header-bg: linear-gradient(90deg, rgba(26, 26, 46, 0.92) 70%, rgba(255, 106, 0, 0.13) 100%);
+    --card-bg: rgba(36, 36, 62, 0.85);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --footer-bg: linear-gradient(90deg, rgba(26, 26, 46, 0.96) 70%, rgba(255, 106, 0, 0.13) 100%);
+    --nav-link-color: #ffffff;
+    --title-gradient: linear-gradient(90deg, #fcf2ec, #e2dedc);
+    --border: #ffffff;
+    --project-text-color: #ffffff;
+    --project-bg-hover: rgba(31, 41, 55, 0.8);
+    --hover-text-color: #9B4DCA;
+    --border-buttons: #9B4DCA;
+    --card-profile-bg: #1a1a2e;
+    --card-profile-border: #ffffff;
+
+}
+
+html.light-mode {
+    --background-color: #fff5f0;
+    --text-color: #2d2d2d;
+    --header-bg: linear-gradient(90deg, rgba(255, 245, 240, 0.95) 70%, rgba(255, 106, 0, 0.15) 100%);
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-border: rgba(255, 106, 0, 0.15);
+    --footer-bg: linear-gradient(90deg, rgba(255, 245, 240, 0.95) 70%, rgba(255, 106, 0, 0.15) 100%);
+    --nav-link-color: #2d2d2d;
+    --title-gradient: linear-gradient(90deg, #FF6A00, #FF8C00);
+    --border: #1a1a2e;
+    --project-text-color: #2d2d2d;
+    --project-bg-hover: rgba(255, 245, 240, 0.8);
+    --hover-text-color: #9B4DCA;
+    --card-profile-bg: #ffffff;
+    --card-profile-border: #1a1a2e;
+}
+
+/* Actualizar algunos estilos específicos para el modo claro */
+html.light-mode .navbar .nav-link:hover {
+    color: #FF6A00;
+}
+
+html.light-mode .custom-card {
+    box-shadow: 0 4px 15px rgba(255, 106, 0, 0.1);
+}
+
+html.light-mode .custom-card:hover {
+    box-shadow: 0 8px 25px rgba(255, 106, 0, 0.15);
+}
+
+html.light-mode .btn-light {
+    color: #2d2d2d;
+}
+
+html.light-mode .p-dropdown-panel {
+    background-color: #fff5f0 !important;
+    border: 1px solid rgba(255, 106, 0, 0.2) !important;
+}
+
+html.light-mode .p-dropdown-item:hover {
+    background-color: rgba(255, 106, 0, 0.1) !important;
+}
+
+/* Ajustar el gradiente del fondo para el modo claro */
+html.light-mode body {
+    background: linear-gradient(to right, #fff5f0, #fff8f5 90%, #fff 100%);
+}
+
+html.light-mode .title-name {
+    background: var(--title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Ajustar los botones para el modo claro */
+html.light-mode .button-about {
+    background: linear-gradient(135deg, #FF6A00, #FF8C00) !important;
+    box-shadow: 0 8px 20px rgba(255, 106, 0, 0.2) !important;
+}
+
+html.light-mode .btn-outline-orange {
+    border: 2px solid #9B4DCA !important;
+    color: #FF6A00 !important;
+}
+
+html.light-mode .btn-outline-orange:hover {
+    background-color: rgba(255, 106, 0, 0.1) !important;
 }
 
 html,
@@ -7,19 +92,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #1a1a2e, #232347 90%, #24243e 100%);
+    background: linear-gradient(to right, var(--background-color), #232347 90%, #24243e 100%);
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, rgba(26, 26, 46, 0.92) 70%, rgba(255, 106, 0, 0.13) 100%);
+    background: var(--header-bg);
     border-bottom: 2.5px solid #FF6A00;
     width: 100%;
     padding: 1.5rem;
@@ -31,7 +116,7 @@ header {
 
 .navbar .nav-link {
     position: relative;
-    color: #ffffff;
+    color: var(--nav-link-color);
     font-weight: 500;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -84,7 +169,7 @@ header {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    background: linear-gradient(90deg, #fcf2ec, #e2dedc);
+    background: var(--title-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 1px;
@@ -99,7 +184,7 @@ header {
 }
 
 .button-group {
-    margin: 35px 0;
+    margin: 40px 0;
 }
 
 .btn-hire,
@@ -173,7 +258,7 @@ header {
 }
 
 .button-about {
-    background: linear-gradient(135deg, #FF6A00, #FF8C00) !important;
+    background: linear-gradient(135deg, #FF6A00, #FF6A00) !important;
     color: white !important;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
     border: none !important;
@@ -196,25 +281,8 @@ header {
     animation: moveArrow 1s infinite linear;
 }
 
-.profile-wrapper {
-    width: 360px;
-    height: 390px;
-    border-radius: 8%;
-    overflow: hidden;
-    background-color: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.profile-pic {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 .btn-outline-orange {
-    border: 2px solid #FF6A00 !important;
+    border: 2px solid #9B4DCA !important;
     color: #FF6A00 !important;
     background-color: transparent !important;
     padding: 14px 30px !important;
@@ -227,26 +295,6 @@ header {
 .btn-outline-orange:hover {
     transform: translateY(-3px) !important;
     box-shadow: 0 8px 20px rgba(255, 106, 0, 0.15) !important;
-}
-
-.social-icons {
-    display: flex;
-    gap: 18px;
-}
-
-.icon {
-    background-color: #1E1E1E;
-    color: #FF6A00;
-    padding: 4px 12px;
-    border-radius: 12px;
-    font-size: 25px;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-.icon:hover {
-    color: #FFD700;
-    transform: scale(1.1);
 }
 
 @keyframes moveArrow {
@@ -271,7 +319,7 @@ header {
 
 .about-title {
     font-size: 40px;
-    color: white;
+    color: var(--text-color) !important;
     text-align: center;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -291,7 +339,7 @@ header {
 .about-text {
     max-width: 700px;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-color) !important;
 }
 
 .about-image-wrapper {
@@ -324,7 +372,7 @@ header {
 
 .skill-title {
     font-size: 36px;
-    color: #ffffff;
+    color: var(--text-color) !important;
     font-weight: 700;
     letter-spacing: 2px;
     text-align: center;
@@ -418,7 +466,7 @@ header {
     margin: 60px 0;
     text-transform: uppercase;
     font-size: 36px;
-    color: #ffffff;
+    color: var(--text-color) !important;
     font-weight: 700;
     letter-spacing: 2px;
     position: relative;
@@ -434,8 +482,8 @@ header {
 }
 
 .intro-text {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.1rem;
+    color: var(--text-color) !important;
+    font-size: 17px;
     line-height: 1.6;
     max-width: 600px;
     margin: 2rem auto;
@@ -451,7 +499,7 @@ header {
 }
 
 .description-experience {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-color) !important;
     text-align: center;
     font-size: 16px;
     margin-bottom: 70px;
@@ -494,11 +542,34 @@ header {
     font-weight: 700;
 }
 
+.project-container {
+    color: var(--project-text-color);
+    transition: all 0.3s ease;
+}
+
+.project-container:hover {
+    background-color: var(--project-bg-hover) !important;
+}
+
+/* Asegurarnos que los textos dentro de los proyectos usen el color correcto */
+.project-container h2,
+.project-container p,
+.project-container span {
+    color: var(--project-text-color);
+}
+
+/* Estilo para los chips/tags */
+.project-container .chip {
+    background: linear-gradient(135deg, #FF9A3D 0%, #FF6F3D 50%, #FFA64D 100%);
+    color: #1A1A2E;
+    font-weight: 700;
+}
+
 .buttons-card {
     display: flex !important;
     background-color: transparent !important;
-    color: white !important;
-    border-bottom: 2px solid white;
+    color: var(--text-color) !important;
+    border-bottom: 2px solid var(--project-text-color);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -508,9 +579,8 @@ header {
 }
 
 .buttons-card:hover {
-    color: #FFA64D !important;
-    border-bottom: 2px solid orange !important;
     transform: translateY(-3px);
+    border-bottom: 2px solid var(--hover-text-color) !important;
 }
 
 .button-more {
@@ -520,8 +590,8 @@ header {
     margin: auto;
     font-size: 18px;
     padding: 15px 40px;
-    border: 1px solid #FF6A00;
-    color: #ffffff;
+    border: 1px solid var(--border-buttons);
+    color: var(--text-color) !important;
     text-transform: uppercase;
     font-weight: 700;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -576,7 +646,7 @@ header {
 
 .btn-submit {
     width: 100%;
-    background: linear-gradient(135deg, #FF6A00, #FF8C00) !important;
+    background: #9B4DCA !important;
     color: white !important;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
     border: none !important;
@@ -615,21 +685,21 @@ header {
 }
 
 .custom-dropdown .p-dropdown-label {
-    color: white !important;
+    color: var(--text-color) !important;
     padding: 5px 0;
 }
 
 .p-dropdown-panel {
     margin-top: 8px;
-    background-color: #1E1E1E !important;
-    border: 1px solid #FF6A00 !important;
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--card-border) !important;
     z-index: 11000 !important;
     /* más alto que el header */
 }
 
 /* Estilo de cada opción */
 .p-dropdown-item {
-    color: white !important;
+    color: var(--text-color) !important;
     background-color: transparent !important;
     padding: 7px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -646,12 +716,22 @@ header {
 }
 
 footer {
-    background: linear-gradient(90deg, rgba(26, 26, 46, 0.96) 70%, rgba(255, 106, 0, 0.13) 100%);
+    background: var(--footer-bg);
     border-top: 2.5px solid #FF6A00;
     box-shadow: 0 -6px 32px 0 rgba(36, 36, 62, 0.13);
     backdrop-filter: blur(8px);
     padding: 40px 0;
     min-height: 110px;
+}
+
+.card-profile {
+    border: 1px solid var(--card-profile-border);
+    transition: all 0.4s ease;
+}
+
+.card-profile:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #9B4DCA !important;
 }
 
 footer .description p,
@@ -715,7 +795,7 @@ footer .navbar-brand img:hover {
     transform: translateX(-50%);
     width: 3px;
     height: 90%;
-    background-color: #3b82f6;
+    background-color: #9B4DCA;
 }
 
 .timeline-item {
@@ -726,7 +806,7 @@ footer .navbar-brand img:hover {
 }
 
 .timeline-item.left {
-    left: -310px;
+    left: -312px;
 }
 
 .timeline-item.right {
@@ -762,8 +842,8 @@ footer .navbar-brand img:hover {
 }
 
 .custom-card {
-    background: rgba(36, 36, 62, 0.85) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: var(--card-bg) !important;
+    border: 1px solid var(--card-border) !important;
     box-shadow: 0 2px 8px rgba(36, 36, 62, 0.10);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 16px;
@@ -815,7 +895,7 @@ footer .navbar-brand img:hover {
 }
 
 .custom-card .p-card-title {
-    color: #ffffff;
+    color: var(--text-color) !important;
     font-weight: 600;
     font-size: 1.4rem;
     margin-bottom: 1rem;
@@ -824,7 +904,7 @@ footer .navbar-brand img:hover {
 }
 
 .custom-card .p-card-content {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-color) !important;
     font-size: 1.05rem;
     line-height: 1.7;
     padding: 0 1.5rem 1.5rem;
@@ -849,26 +929,15 @@ footer .navbar-brand img:hover {
     }
 }
 
-.contact-title,
-.url-title {
-    position: relative;
-    display: inline-block;
+.text-contact-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
 }
 
-.contact-title::after,
-.url-title::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #FF6A00, #9B4DCA);
-    transition: width 0.4s;
-    margin-top: 8px;
-}
-
-.contact-title:hover::after,
-.url-title:hover::after {
-    width: 100%;
+.text-contact-description {
+    text-align: center;
+    font-weight: 400;
 }
 
 .contact-icons .contact-icon {
@@ -889,10 +958,17 @@ footer .navbar-brand img:hover {
 }
 
 .contact-icons .contact-icon:hover {
-    background: linear-gradient(135deg, #FF6A00, #FF8C00);
-    color: #fff;
-    transform: translateY(-4px) scale(1.08);
-    box-shadow: 0 6px 18px rgba(255, 106, 0, 0.18);
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 20px rgba(255, 106, 0, 0.15) !important;
+}
+
+a.social-icon {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a.social-icon:hover {
+    color: #FF6A00;
 }
 
 .footer-socials .footer-social-link {
@@ -909,6 +985,7 @@ footer .navbar-brand img:hover {
     text-decoration: none;
     margin-top: 25px;
     margin-bottom: 20px;
+    border: 1px solid var(--card-border) !important;
 }
 
 .footer-socials i {
@@ -918,6 +995,10 @@ footer .navbar-brand img:hover {
 .footer-socials .footer-social-link:hover {
     transform: translateY(-3px) !important;
     box-shadow: 0 8px 20px rgba(255, 106, 0, 0.15) !important;
+}
+
+.container-copyright {
+    border-top: 1px solid var(--border) !important;
 }
 
 @media (max-width: 990px) {
@@ -1079,7 +1160,7 @@ footer .navbar-brand img:hover {
     }
 
     .navbar-nav .nav-link {
-        color: #fff;
+        color: var(--text-color) !important;
         border-bottom: 1px solid #FF6A00;
         display: inline-block;
         width: 80vw;
@@ -1087,6 +1168,18 @@ footer .navbar-brand img:hover {
 
     .btn-light {
         margin-top: 2rem;
+    }
+
+    .navbar {
+        background: var(--card-bg) !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: var(--text-color) !important;
+    }
+
+    .abrir-menu .pi {
+        color: var(--text-color);
     }
 }
 

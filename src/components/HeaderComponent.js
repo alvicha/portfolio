@@ -8,7 +8,7 @@ import ScreensContext from "../screens/ScreensContext";
 const HeaderComponent = () => {
     const { t, i18n } = useTranslation();
     const [iconDark, setIconDark] = useState("pi pi-sun");
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
     const { containerRef } = useContext(ScreensContext);
     const [isOpen, setIsOpen] = useState(false);
 
@@ -50,7 +50,7 @@ const HeaderComponent = () => {
         const newMode = !darkMode;
         setDarkMode(newMode);
         setIconDark(newMode ? 'pi pi-sun' : 'pi pi-moon');
-        containerRef.current.classList.toggle('dark-mode');
+        document.documentElement.classList.toggle('light-mode');
     };
 
     const toggleMenu = () => {

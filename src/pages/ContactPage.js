@@ -16,10 +16,10 @@ const ContactComponent = () => {
 
     return (
         <section className={`container-fluid my-5 page ${localActive ? 'active' : ''}`}>
-            <div className="row p-5 mx-auto">
+            <div className="row p-3 mx-auto">
                 <div className="col-12 col-md-6 rounded m-auto">
-                    <h1 className="text-center text-light fw-bold mb-5">{t('contactTitle')}</h1>
-                    <p className="text-center text-light mb-5">
+                    <h1 className="text-contact-title">{t('contactTitle')}</h1>
+                    <p className="text-contact-description mb-5">
                         {t('contactDescription')}
                     </p>
 
@@ -58,7 +58,7 @@ const ContactComponent = () => {
                     </div>
                 </div>
 
-                <div className="col-12 col-md-6 rounded p-5 mx-auto">
+                <div className="col-12 col-md-6 rounded p-4 p-lg-5 p-md-5 p-sm-5 mx-auto">
                     <form>
                         <div className="row px-0 px-lg-4">
                             <div className="col-12 col-lg-6 col-md-6 mb-4">
