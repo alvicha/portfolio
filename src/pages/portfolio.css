@@ -26,13 +26,13 @@ html.light-mode {
     --card-border: rgba(255, 106, 0, 0.15);
     --footer-bg: linear-gradient(90deg, rgba(255, 245, 240, 0.95) 70%, rgba(255, 106, 0, 0.15) 100%);
     --nav-link-color: #2d2d2d;
-    --title-gradient: linear-gradient(90deg, #FF6A00, #FF8C00);
+    --title-gradient: linear-gradient(90deg, #FF6A00, #9B4DCA);
     --border: #1a1a2e;
     --project-text-color: #2d2d2d;
     --project-bg-hover: rgba(255, 245, 240, 0.8);
     --hover-text-color: #9B4DCA;
-    --card-profile-bg: #ffffff;
-    --card-profile-border: #1a1a2e;
+    --card-profile-bg: #4a4949;
+    --card-profile-border: #9B4DCA;
 }
 
 /* Actualizar algunos estilos específicos para el modo claro */
@@ -64,12 +64,6 @@ html.light-mode .p-dropdown-item:hover {
 /* Ajustar el gradiente del fondo para el modo claro */
 html.light-mode body {
     background: linear-gradient(to right, #fff5f0, #fff8f5 90%, #fff 100%);
-}
-
-html.light-mode .title-name {
-    background: var(--title-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* Ajustar los botones para el modo claro */
@@ -963,7 +957,7 @@ footer .navbar-brand img:hover {
 }
 
 a.social-icon {
-    color: var(--text-color);
+    color: white;
     transition: color 0.3s ease;
 }
 

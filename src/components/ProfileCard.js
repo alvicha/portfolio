@@ -18,7 +18,7 @@ const ProfileCard = () => {
             </CardHeader>
 
             <CardBody className="py-6 text-center">
-                <Typography variant="h4" className="mb-3 font-light" style={{ color: "var(--text-color)" }}>
+                <Typography variant="h4" className="mb-3 text-light font-light">
                     {t("name")}
                 </Typography>
                 <Typography className="font-medium text-[#FF6A00]" textGradient>
