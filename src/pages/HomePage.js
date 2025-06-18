@@ -67,12 +67,11 @@ const HomePage = () => {
                                     <Image 
                                         alt={item.title} 
                                         src={item.img} 
-                                        imageClassName="w-100 rounded-lg" 
                                         preview 
                                     />
                                 </div>
                             }
-                            className="custom-card h-100"
+                            className="custom-card"
                         >
                             <p className="mt-0 mb-3">{item.description}</p>
                         </Card>
