@@ -49,7 +49,7 @@ const AboutAcademicData = () => {
                         {dataAcademics.map((acad, index) => (
                             <div
                                 key={index}
-                                className={`col-12 mb-5 d-flex justify-content-center timeline-item ${index % 2 === 0 ? "left" : "right"}`}
+                                className={`col-12 mb-4 d-flex justify-content-center timeline-item ${index % 2 === 0 ? "left" : "right"}`}
                             >
                                 <div className="circle"></div>
                                 <Card

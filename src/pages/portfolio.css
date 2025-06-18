@@ -17,6 +17,7 @@
     --gradient-start: #1a1a2e;
     --gradient-middle: #232347;
     --gradient-end: #24243e;
+    --background-card-color: #24243e;
 }
 
 html.light-mode {
@@ -36,6 +37,7 @@ html.light-mode {
     --gradient-start: #fff5f0;
     --gradient-middle: #fff8f5;
     --gradient-end: #fff;
+    --background-card-color: #fff5f0;
 }
 
 html.light-mode .navbar .nav-link {
@@ -639,7 +641,7 @@ header {
 
 .p-dropdown-panel {
     margin-top: 8px;
-    background-color: var(--card-bg) !important;
+    background-color: var(--card-profile-bg) !important;
     border: 1px solid var(--card-border) !important;
     z-index: 11000 !important;
 }
@@ -834,7 +836,7 @@ footer .navbar-brand img:hover {
 }
 
 .custom-card {
-    background: var(--card-bg) !important;
+    background: var(--background-card-color) !important;
     border: 1px solid var(--card-border) !important;
     box-shadow: 0 2px 8px rgba(36, 36, 62, 0.10);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
