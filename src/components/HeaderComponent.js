@@ -67,6 +67,9 @@ const HeaderComponent = () => {
             </button>
 
             <nav className={`navbar${isOpen ? " visible" : ""}`}>
+                <button className="cerrar-menu" onClick={toggleMenu}>
+                    <i className="pi pi-times"></i>
+                </button>
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <Link className="nav-link" to="/home" onClick={() => setIsOpen(false)}>{t('home')}</Link>

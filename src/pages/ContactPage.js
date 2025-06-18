@@ -72,7 +72,7 @@ const ContactComponent = () => {
                             <div className="col-12 mb-4">
                                 <InputText id="email" placeholder={t('emailPlaceholder')}
                                     className="w-100 mt-2 mb-3" required aria-describedby="ayuda-correo" aria-required="true" />
-                                <small id="ayuda-correo" className="text-light">
+                                <small id="ayuda-correo">
                                     {t('emailHelpText')}
                                 </small>
                             </div>
@@ -84,7 +84,7 @@ const ContactComponent = () => {
                             </div>
                             <div className="col-12 mb-3 d-flex align-items-center gap-2">
                                 <Checkbox inputId="terminos" checked={aceptaTerminos} onChange={e => setAceptaTerminos(e.checked)} required />
-                                <label htmlFor="terminos" className="text-light m-0">{t('acceptTermsLabel')}</label>
+                                <label htmlFor="terminos" className="m-0">{t('acceptTermsLabel')}</label>
                             </div>
                             <div className="col-12 d-flex justify-content-center justify-content-lg-end justify-content-md-end justify-content-sm-end mt-2">
                                 <Button

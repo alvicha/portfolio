@@ -56,7 +56,7 @@ const HomePage = () => {
             <div className="titulo-caracteristicas-wrapper">
                 <h2 className="titulo-caracteristicas">{t("concreteFeatures")}</h2>
             </div>
-            <div className="row justify-content-center mx-auto mb-5 g-4">
+            <div className="row justify-content-center mx-auto g-4 mb-5">
                 {characteristics.map((item, index) => (
                     <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center"
                         key={index}>
