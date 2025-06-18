@@ -5,7 +5,6 @@
     --header-bg: linear-gradient(90deg, rgba(26, 26, 46, 0.92) 70%, rgba(255, 106, 0, 0.13) 100%);
     --card-border: rgba(255, 255, 255, 0.08);
     --footer-bg: linear-gradient(90deg, rgba(26, 26, 46, 0.96) 70%, rgba(255, 106, 0, 0.13) 100%);
-    --nav-link-color: #ffffff;
     --title-gradient: linear-gradient(90deg, #fcf2ec, #e2dedc);
     --border: #ffffff;
     --project-text-color: #ffffff;
@@ -26,7 +25,6 @@ html.light-mode {
     --header-bg: linear-gradient(90deg, rgb(255, 245, 240) 70%, rgba(255, 106, 0, 0.15) 100%);
     --card-border: rgba(255, 106, 0, 0.15);
     --footer-bg: linear-gradient(90deg, rgb(255, 245, 240) 70%, rgba(255, 106, 0, 0.15) 100%);
-    --nav-link-color: #2d2d2d;
     --title-gradient: linear-gradient(90deg, #FF6A00, #9B4DCA);
     --border: #1a1a2e;
     --project-text-color: #2d2d2d;
@@ -121,7 +119,7 @@ header {
 }
 
 .navbar .nav-link {
-    color: var(--nav-link-color);
+    color: white;
     font-weight: 500;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -634,6 +632,7 @@ header {
 }
 
 .custom-dropdown .p-dropdown-label {
+    font-family: 'Poppins', sans-serif;
     color: var(--text-color) !important;
     padding: 8px 0;
 }
@@ -1020,7 +1019,6 @@ a.social-icon:hover {
         position: absolute;
         top: 0;
         left: 20px;
-        /* Separamos la línea del borde izquierdo */
         width: 3px;
         transform: none;
     }
@@ -1140,10 +1138,6 @@ a.social-icon:hover {
         color: var(--text-color);
     }
 
-    .cerrar-menu .pi {
-        color: var(--text-color);
-    }
-
     .cerrar-menu {
         color: white;
         font-size: 30px;
@@ -1157,6 +1151,23 @@ a.social-icon:hover {
 
     html.light-mode .navbar.visible {
         background-color: #373737;
+    }
+
+    html.light-mode .navbar .nav-link {
+        color: white !important;
+    }
+
+    html.light-mode .btn-light {
+        color: white !important;
+    }
+
+    html.light-mode .custom-dropdown .p-dropdown-label {
+        color: white !important;
+        padding-right: 0px;
+    }
+
+    html.light-mode .p-dropdown .p-dropdown-trigger-icon {
+        color: white !important;
     }
 }
 
