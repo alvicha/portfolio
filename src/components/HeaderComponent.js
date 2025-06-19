@@ -59,45 +59,48 @@ const HeaderComponent = () => {
 
     return (
         <header>
-            <Link className="navbar-brand" to="/">
+            <Link to="/">
                 <img src="/images/logo.png" alt={t('home')} width="89" height="60" />
             </Link>
-            <button className="abrir-menu" onClick={toggleMenu}>
-                <i className="pi pi-bars"></i>
-            </button>
 
-            <nav className={`navbar${isOpen ? " visible" : ""}`}>
-                <button className="cerrar-menu" onClick={toggleMenu}>
-                    <i className="pi pi-times"></i>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <nav className={`navbar${isOpen ? " visible" : ""}`}>
+                    <button className="cerrar-menu" onClick={toggleMenu}>
+                        <i className="pi pi-times"></i>
+                    </button>
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/home" onClick={() => setIsOpen(false)}>{t('home')}</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/about" onClick={() => setIsOpen(false)}>{t('about')}</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/projects" onClick={() => setIsOpen(false)}>{t('projects')}</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/contact" onClick={() => setIsOpen(false)}>{t('contact')}</Link>
+                        </li>
+                        <li className="nav-item mt-3 mt-lg-0 mt-md-0">
+                            <Dropdown
+                                value={selectedCountry}
+                                onChange={(e) => changeLanguage(e.value)}
+                                options={countries}
+                                optionLabel="nameKey"
+                                placeholder="Seleccionar idioma"
+                                valueTemplate={selectedCountryTemplate}
+                                itemTemplate={countryOptionTemplate}
+                                className="custom-dropdown"
+                            />
+                        </li>
+                    </ul>
+                </nav>
+                <button className="abrir-menu" onClick={toggleMenu}>
+                    <i className="pi pi-bars text-2xl"></i>
                 </button>
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/home" onClick={() => setIsOpen(false)}>{t('home')}</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/about" onClick={() => setIsOpen(false)}>{t('about')}</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/projects" onClick={() => setIsOpen(false)}>{t('projects')}</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/contact" onClick={() => setIsOpen(false)}>{t('contact')}</Link>
-                    </li>
-                    <li className="nav-item mt-3 mt-lg-0 mt-md-0">
-                        <Dropdown
-                            value={selectedCountry}
-                            onChange={(e) => changeLanguage(e.value)}
-                            options={countries}
-                            optionLabel="nameKey"
-                            placeholder="Seleccionar idioma"
-                            valueTemplate={selectedCountryTemplate}
-                            itemTemplate={countryOptionTemplate}
-                            className="custom-dropdown"
-                        />
-                    </li>
-                </ul>
                 <Button icon={iconDark} className="btn-light" aria-label="Icono modo oscuro" onClick={changeDarkMode} />
-            </nav>
+            </div>
+
         </header>
     );
 };

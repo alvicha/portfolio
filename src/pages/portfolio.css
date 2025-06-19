@@ -95,8 +95,8 @@ html.light-mode .button-more {
     color: white !important;
 }
 
-html.light-mode .btn-light {
-    color: black !important;
+html.light-mode .btn-light:hover {
+    background-color: rgba(255, 253, 253, 0.66) !important;
 }
 
 html.light-mode .skill-glass-card {
@@ -177,7 +177,7 @@ header {
 }
 
 .abrir-menu .pi {
-    font-size: 28px;
+    font-size: 25px;
     color: white;
 }
 
@@ -231,6 +231,18 @@ header {
     color: #ff6a00;
 }
 
+.btn-light {
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: var(--text-color);
+}
+
+.btn-light:hover {
+    background-color: rgba(255, 255, 255, 0.274) !important;
+}
+
 .buttons {
     background-color: #ff6a00;
     color: #ffffff;
@@ -242,11 +254,6 @@ header {
 .buttons:hover {
     background-color: #ffffff;
     color: #ff6a00;
-}
-
-.btn-light {
-    background: transparent;
-    border: none;
 }
 
 .button-about {
@@ -1170,7 +1177,6 @@ a.social-icon:hover {
     .btn-light {
         margin-top: auto;
         align-self: flex-end;
-        color: white !important;
     }
 
     html.light-mode .navbar.visible {
@@ -1181,8 +1187,8 @@ a.social-icon:hover {
         color: white !important;
     }
 
-    html.light-mode .btn-light {
-        color: white !important;
+    html.light-mode .btn-light:hover {
+        background-color: rgba(255, 255, 255, 0.274) !important;
     }
 
     html.light-mode .custom-dropdown .p-dropdown-label {
