@@ -132,7 +132,7 @@ const ProjectsPage = () => {
         {
             title: t("projectsCard.list.5.title"),
             description: t("projectsCard.list.5.description"),
-            image: "/images/templator.png",
+            image: "/images/templator.jpg",
             link: "https://github.com/alvicha/TEMPLATOR_FLORIDA.git",
             year: 2025,
             linkVideo: "https://youtu.be/-2a1i9pEZ5E",
@@ -215,6 +215,7 @@ const ProjectsPage = () => {
                                 src={project.image}
                                 alt="Project preview"
                                 imageClassName="w-full object-cover rounded-xl"
+                                preview
                             />
                         </div>
 

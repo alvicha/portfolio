@@ -81,7 +81,7 @@ const HeaderComponent = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/contact" onClick={() => setIsOpen(false)}>{t('contact')}</Link>
                         </li>
-                        <li className="nav-item mt-3 mt-lg-0 mt-md-0">
+                        <li className="nav-item mt-2 mt-lg-0 mt-md-0">
                             <Dropdown
                                 value={selectedCountry}
                                 onChange={(e) => changeLanguage(e.value)}
