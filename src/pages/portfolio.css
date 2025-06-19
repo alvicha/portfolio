@@ -99,6 +99,28 @@ html.light-mode .btn-light {
     color: black !important;
 }
 
+html.light-mode .skill-glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    color: #222;
+    border: 1px solid #e0e0e0;
+}
+
+html.light-mode .skill-glass-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 12px 32px rgba(255, 106, 0, 0.13), 0 2px 8px rgba(36, 36, 62, 0.10);
+    border-color: #9B4DCA;
+}
+
+html.light-mode .skill-glass-label {
+    color: #222;
+}
+
+html.light-mode .skill-glass-percent {
+    color: #4a90e2;
+}
+
 html,
 body {
     margin: 0;
@@ -913,6 +935,10 @@ footer .navbar-brand img:hover {
     backdrop-filter: blur(5px);
 }
 
+.container-year {
+    border-bottom: 1px solid var(--text-color);
+}
+
 @media (max-width: 600px) {
     .custom-card .p-card-header img {
         border-radius: 12px 12px 0 0;
@@ -1128,7 +1154,7 @@ a.social-icon:hover {
     .navbar-nav {
         flex-direction: column !important;
         align-items: end !important;
-        gap: 1.5rem;
+        gap: 1.3rem;
         margin-top: 25px;
     }
 
@@ -1161,7 +1187,7 @@ a.social-icon:hover {
 
     html.light-mode .custom-dropdown .p-dropdown-label {
         color: white !important;
-        padding-right: 0px;
+        padding: 0;
     }
 
     html.light-mode .p-dropdown .p-dropdown-trigger-icon {
@@ -1279,4 +1305,7 @@ a.social-icon:hover {
         font-size: 15px;
     }
 
+    .projects-description {
+        margin-bottom: 70px;
+    }
 }

@@ -203,18 +203,18 @@ const ProjectsPage = () => {
     return (
         <section className={`projects-page page ${localActive ? 'active' : ''}`}>
             <h1 className="projects-title mt-5">{t("projectsTitle")}</h1>
-            <p className="projects-description text-center">
+            <p className="projects-description">
                 {t("projectsDescription")}
             </p>
 
-            <div className="w-[84%] row mx-auto">
+            <div className="w-[94%] mx-auto grid gap-5">
                 {projects.slice(0, visibleProjects).map((project, index) => (
-                        <div key={index} className="project-container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center p-6 md:p-6 lg:p-10 mb-5 rounded-2xl transition-colors duration-300">
-                            <div className="project-image-wrapper w-full max-w-none sm:max-w-lg md:max-w-xl lg:max-w-full bg-gray-900 rounded-xl shadow-lg mx-auto p-0 p-lg-3 overflow-hidden">
+                    <div key={index} className="project-container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:p-6 lg:p-10 mb-5 rounded-2xl">
+                        <div className="project-image-wrapper w-full max-w-[600px] max-h-[400px] bg-gray-900 rounded-lg shadow-lg mx-auto p-2 p-md-3 p-sm-3 overflow-hidden">
                             <Image
                                 src={project.image}
                                 alt="Project preview"
-                                imageClassName="w-full h-auto max-h-[400px] sm:max-h-[500px] md:max-h-[600px] object-cover rounded-xl"
+                                imageClassName="w-full object-cover rounded-xl"
                             />
                         </div>
 
@@ -222,7 +222,7 @@ const ProjectsPage = () => {
                             <h2 className="text-2xl text-left mb-3 font-semibold">{project.title}</h2>
                             <p className="text-left mb-4">{project.description}</p>
 
-                            <div className="flex justify-between border-bottom border-dark mb-4">
+                            <div className="container-year flex justify-between mb-4">
                                 <span className="block text-left font-medium mb-3"> {t("year")}</span>
                                 <p>{project.year}</p>
                             </div>

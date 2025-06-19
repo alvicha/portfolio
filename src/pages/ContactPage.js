@@ -34,7 +34,7 @@ const ContactComponent = () => {
                             <i className="pi pi-map-marker" />
                         </a>
                         <a
-                            href="tel:648722134"
+                            href="tel:648722194"
                             className="contact-icon"
                             title="Llamar"
                         >
