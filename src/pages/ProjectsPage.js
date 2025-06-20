@@ -42,7 +42,7 @@ const ProjectsPage = () => {
         {
             title: t("projectsCard.list.1.title"),
             description: t("projectsCard.list.1.description"),
-            image: "/images/roma8.jpg",
+            image: "/images/img-roma8.jpg",
             link: "https://github.com/alvicha/PFC_Roma8.git",
             linkVideo: "https://youtu.be/ykaZMpaO2Qc",
             year: 2024,
@@ -156,10 +156,10 @@ const ProjectsPage = () => {
                     name: "PHP",
                 },
                 {
-                    name: "Angular",
+                    name: "ANGULAR",
                 },
                 {
-                    name: "Symfony",
+                    name: "SYMFONY",
                 },
                 {
                     name: "BOOSTRAP",
