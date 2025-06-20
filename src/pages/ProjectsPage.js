@@ -105,7 +105,7 @@ const ProjectsPage = () => {
             title: t("projectsCard.list.4.title"),
             description: t("projectsCard.list.4.description"),
             image: "/images/comida.jpg",
-            link: "https://github.com/alvicha/PFC_Roma8.git",
+            link: "https://github.com/alvicha/App-Comida.git",
             year: 2024,
             linkVideo: "https://youtu.be/XemnFDyUMoA",
             tags: [{
