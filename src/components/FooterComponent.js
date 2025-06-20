@@ -8,23 +8,23 @@ const FooterComponent = () => {
         <footer>
             <div className="container">
                 <div className="d-flex justify-content-center align-items-start mb-5">
-                    <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+                    <Link to="/">
                         <img src="/images/logo.png" alt="Logo de la aplicación" width="90" height="60" />
                     </Link>
                 </div>
                 <div className="row d-flex align-items-center justify-content-center">
                     <ul className="footer-nav d-flex flex-column flex-sm-row flex-md-row flex-lg-row align-items-center justify-content-center gap-5">
                         <li>
-                            <Link className="nav-link nav-hover" to="/home" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t('home')}</Link>
+                            <Link className="nav-link nav-hover" to="/home">{t('home')}</Link>
                         </li>
                         <li>
-                            <Link className="nav-link nav-hover" to="/about" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t('about')}</Link>
+                            <Link className="nav-link nav-hover" to="/about">{t('about')}</Link>
                         </li>
                         <li>
-                            <Link className="nav-link nav-hover" to="/projects" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t('projects')}</Link>
+                            <Link className="nav-link nav-hover" to="/projects">{t('projects')}</Link>
                         </li>
                         <li>
-                            <Link className="nav-link nav-hover" to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t('contact')}</Link>
+                            <Link className="nav-link nav-hover" to="/contact">{t('contact')}</Link>
                         </li>
                     </ul>
                 </div>
