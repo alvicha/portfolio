@@ -9,7 +9,7 @@
     --border: #ffffff;
     --project-text-color: #ffffff;
     --project-bg-hover: rgba(31, 41, 55, 0.8);
-    --hover-text-color: #9B4DCA;
+    --hover-text-color: #FF6A00;
     --border-buttons: #9B4DCA;
     --card-profile-bg: #1a1a2e;
     --card-profile-border: #ffffff;
@@ -30,7 +30,7 @@ html.light-mode {
     --border: #1a1a2e;
     --project-text-color: #2d2d2d;
     --project-bg-hover: rgba(255, 245, 240, 0.8);
-    --hover-text-color: #9B4DCA;
+    --hover-text-color: #FF6A00;
     --card-profile-bg: #4a4949;
     --card-profile-border: #9B4DCA;
     --social-icon-color: #2d2d2d;
@@ -126,6 +126,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, var(--gradient-start), var(--gradient-middle) 90%, var(--gradient-end) 100%);
     display: flex;
@@ -1222,7 +1224,7 @@ a.social-icon:hover {
     }
 }
 
-@media (max-width: 502px) {
+@media (max-width: 450px) {
     .button-about {
         margin-bottom: 20px;
     }
@@ -1230,8 +1232,8 @@ a.social-icon:hover {
 
 @media (max-width: 392px) {
     .about-image-wrapper {
-        width: 320px;
-        height: 320px;
+        width: 260px;
+        height: 260px;
     }
 
     .button-about {

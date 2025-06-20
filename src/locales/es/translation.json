@@ -65,7 +65,7 @@
         "list": [
             {
                 "title": "Albertours",
-                "description": "Aplicación web realizada con PHP para la gestión de reservas de tours por las diferentes ciudades de España. Nos permite explorar tours disponibles, realizar reservas o cancelar las existentes y consultar información detallada sobre cada tour."
+                "description": "Plataforma web realizada con PHP para la gestión de reservas de tours por las diferentes ciudades de España. Nos permite explorar tours disponibles, realizar reservas o cancelar las existentes y consultar información detallada sobre cada tour."
             },
             {
                 "title": "Roma8",
@@ -81,15 +81,15 @@
             },
             {
                 "title": "App Comida",
-                "description": "Aplicación web para gestionar platos de comida, que permite consultar datos mediante una API REST pública y almacenar información relevante en una base de datos propia. Además, utiliza tecnologías para manejar tanto la búsqueda de platos como la gestión en la base de datos."
+                "description": "Interfaz web para gestionar platos de comida, que permite consultar datos mediante una API REST pública y almacenar información relevante en una base de datos propia. Además, utiliza tecnologías para manejar tanto la búsqueda de platos como la gestión en la base de datos."
             },
             {
                 "title": "Templator",
-                "description": "Integración de un editor HTML de tipo WYSIWYG llamado Summernote con el objetivo de crear y gestionar plantillas HTML para el envío de correos electrónicos."
+                "description": "Se trata de un editor HTML de tipo WYSIWYG, llamado Summernote, que permite a cualquier usuario crear y gestionar plantillas HTML para el envío de correos electrónicos de manera sencilla sin necesidad de conocimientos técnicos."
             },
             {
                 "title": "Software Fitness",
-                "description": "Aplicación para el desarrollo de una plataforma web para la gestión eficiente de un club proporcionado y mejorar la experiencia de los usuarios."
+                "description": "Desarrollo de una plataforma web para la gestión eficiente de un club proporcionado y mejorar la experiencia de los usuarios."
             }
         ]
     }

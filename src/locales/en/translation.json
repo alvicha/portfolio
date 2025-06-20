@@ -65,31 +65,31 @@
         "list": [
             {
                 "title": "Albertours",
-                "description": "Web application built with PHP for managing tour reservations across different cities in Spain. It allows users to explore available tours, make or cancel reservations, and view detailed information about each tour."
+                "description": "Web platform developed in PHP for managing tour reservations across various Spanish cities. It allows users to explore available tours, make or cancel reservations, and view detailed information about each tour."
             },
             {
                 "title": "Roma8",
-                "description": "Web and mobile application developed with Quasar for managing and administering a property. This project was done with a teammate."
+                "description": "Web and mobile application developed with Quasar for managing and administering a residential estate. This project was carried out in collaboration with a teammate."
             },
             {
-                "title": "Memory Game App",
-                "description": "Java-based memory game application using MongoDB as the database. Users can register, log in, and play by selecting different difficulty levels. It stores times, results, and records, and is developed using the MVC design pattern."
+                "title": "Memory Game Application",
+                "description": "Java application of the classic memory game using MongoDB as the database. It allows users to register, log in, and play at different difficulty levels. It records times, results, and high scores, following the MVC design pattern."
             },
             {
                 "title": "Hotel Estrellas",
-                "description": "Application for managing room reservations, offering a full client experience. Includes a mobile version with information on services like dining, pool, and gym. Allows users to search, explore, and book rooms quickly and securely. Team project."
+                "description": "Application for managing hotel room bookings, offering a complete customer experience. Includes a mobile version with information on services like dining, pool, and gym, allowing users to search, explore, and book rooms quickly and securely. Developed as a team project."
             },
             {
                 "title": "Food App",
-                "description": "Web application for managing food dishes, allowing data queries via a public REST API and storing relevant information in its own database. It also uses technologies for both dish searching and database management."
+                "description": "Web interface for managing food dishes. It fetches data using a public REST API and stores relevant information in a local database. Also includes technologies for search and management functionalities."
             },
             {
                 "title": "Templator",
-                "description": "Integration of a WYSIWYG HTML editor called Summernote to create and manage HTML templates for sending emails."
+                "description": "An HTML WYSIWYG editor based on Summernote that enables any user to easily create and manage email templates without needing technical knowledge."
             },
             {
-                "title": "Fitness Software",
-                "description": "Application for developing a web platform to efficiently manage a fitness club and enhance the user experience."
+                "title": "Software Fitness",
+                "description": "Development of a web platform for efficient club management and enhanced user experience."
             }
         ]
     }

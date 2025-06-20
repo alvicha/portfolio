@@ -65,31 +65,31 @@
     "list": [
       {
         "title": "Albertours",
-        "description": "Application web réalisée avec PHP pour la gestion des réservations de circuits touristiques dans différentes villes d’Espagne. Elle permet d’explorer les circuits disponibles, de faire ou d’annuler des réservations et de consulter les informations détaillées de chaque tour."
+        "description": "Plateforme web développée en PHP pour la gestion des réservations de visites dans différentes villes d’Espagne. Elle permet d’explorer les visites disponibles, de réserver ou d’annuler et de consulter des informations détaillées sur chaque tour."
       },
       {
         "title": "Roma8",
-        "description": "Application web et mobile développée avec Quasar pour la gestion ou l’administration d’une propriété. Ce projet a été réalisé avec un camarade de classe."
+        "description": "Application web et mobile développée avec Quasar pour la gestion et l'administration d’un domaine résidentiel. Ce projet a été réalisé en collaboration avec un camarade."
       },
       {
-        "title": "Application jeu mémoire",
-        "description": "Application Java du jeu de mémoire utilisant MongoDB comme base de données. Elle permet aux utilisateurs de s’enregistrer, se connecter et jouer en choisissant différents niveaux de difficulté. Elle enregistre les temps, résultats et records, selon le modèle de conception MVC."
+        "title": "Jeu de mémoire",
+        "description": "Application Java du jeu de mémoire utilisant MongoDB comme base de données. Elle permet aux utilisateurs de s’inscrire, de se connecter et de jouer à différents niveaux de difficulté. Elle enregistre les temps, résultats et records, en suivant le modèle de conception MVC."
       },
       {
-        "title": "Hotel Estrellas",
-        "description": "Application de gestion de réservations de chambres offrant une expérience client complète. Inclut une version mobile avec des informations sur les services comme le restaurant, la piscine ou la salle de sport, et permet de chercher, explorer et réserver rapidement et en toute sécurité. Projet d'équipe."
+        "title": "Hôtel Estrellas",
+        "description": "Application de gestion des réservations de chambres, offrant une expérience client complète. Inclut une version mobile avec des informations sur les services tels que le restaurant, la piscine et la salle de sport, permettant de rechercher, explorer et réserver rapidement. Projet réalisé en équipe."
       },
       {
         "title": "App Nourriture",
-        "description": "Application web de gestion de plats qui permet de consulter des données via une API REST publique et de stocker les informations dans sa propre base de données. Elle utilise aussi des technologies pour la recherche de plats et la gestion de la base."
+        "description": "Interface web pour la gestion de plats. Elle permet de consulter des données via une API REST publique et d’enregistrer les informations pertinentes dans une base de données propre. Elle intègre également des fonctionnalités de recherche et de gestion."
       },
       {
         "title": "Templator",
-        "description": "Intégration d’un éditeur HTML WYSIWYG appelé Summernote pour créer et gérer des modèles HTML destinés à l’envoi d’e-mails."
+        "description": "Éditeur HTML de type WYSIWYG basé sur Summernote, permettant à tout utilisateur de créer et gérer facilement des modèles d'e-mails sans avoir besoin de connaissances techniques."
       },
       {
-        "title": "Logiciel Fitness",
-        "description": "Application pour le développement d’une plateforme web permettant de gérer efficacement un club de fitness et d’améliorer l’expérience des utilisateurs."
+        "title": "Software Fitness",
+        "description": "Développement d'une plateforme web pour une gestion efficace d’un club et une meilleure expérience utilisateur."
       }
     ]
   }
