@@ -48,19 +48,15 @@ const ProjectsPage = () => {
             year: 2024,
             tags: [{
                 name: "VUE.JS",
-                icon: "/images/vuejs.png",
             },
             {
                 name: "JAVASCRIPT",
-                icon: "/images/javascript.png",
             },
             {
                 name: "QUASAR",
-                icon: "/images/quasar.png",
             },
             {
                 name: "CORDOVA",
-                icon: "/images/cordova.png"
             }]
         },
         {
@@ -71,11 +67,9 @@ const ProjectsPage = () => {
             year: 2024,
             tags: [{
                 name: "JAVA",
-                icon: "/images/java.png",
             },
             {
                 name: "MONGODB",
-                icon: "/images/mongodb.png",
             }]
         },
         {
@@ -90,15 +84,12 @@ const ProjectsPage = () => {
             },
             {
                 name: "JAVASCRIPT",
-                icon: "/images/javascript.png",
             },
             {
                 name: "EXPO",
-                icon: "/images/expo.png",
             },
             {
                 name: "MONGODB",
-                icon: "/images/mongodb.png",
             }]
         },
         {
@@ -110,23 +101,18 @@ const ProjectsPage = () => {
             linkVideo: "https://youtu.be/XemnFDyUMoA",
             tags: [{
                 name: "PHP",
-                icon: "/images/php.png",
             },
             {
                 name: "HTML",
-                icon: "/images/html.png",
             },
             {
                 name: "CSS",
-                icon: "/images/css.png",
             },
             {
                 name: "JAVASCRIPT",
-                icon: "/images/javascript.png",
             },
             {
                 name: "MYSQL",
-                icon: "/images/mysql.png"
             }]
         },
         {
@@ -138,31 +124,24 @@ const ProjectsPage = () => {
             linkVideo: "https://youtu.be/-2a1i9pEZ5E",
             tags: [{
                 name: "HTML",
-                icon: "/images/html.png",
             },
             {
                 name: "CSS",
-                icon: "/images/css.png",
             },
             {
                 name: "PHP",
-                icon: "/images/php.png",
             },
             {
                 name: "REACT",
-                icon: "/images/react.png",
             },
             {
                 name: "JAVASCRIPT",
-                icon: "/images/javascript.png",
             },
             {
                 name: "BOOSTRAP",
-                icon: "/images/bootstrap.png",
             },
             {
                 name: "MYSQL",
-                icon: "/images/mysql.png"
             }]
         },
 
@@ -175,23 +154,18 @@ const ProjectsPage = () => {
             tags: [
                 {
                     name: "PHP",
-                    icon: "/images/php.png",
                 },
                 {
                     name: "Angular",
-                    icon: "/images/angular.png",
                 },
                 {
                     name: "Symfony",
-                    icon: "/images/symfony.png",
                 },
                 {
                     name: "BOOSTRAP",
-                    icon: "/images/bootstrap.png",
                 },
                 {
                     name: "MYSQL",
-                    icon: "/images/mysql.png"
                 }]
         }
     ];

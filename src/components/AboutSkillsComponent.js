@@ -28,6 +28,7 @@ const AboutSkills = () => {
         { src: "/images/docker.png", label: "Docker", percent: "65%" },
         { src: "/images/typescript.png", label: "TypeScript", percent: "70%" },
         { src: "/images/mongodb.png", label: "MongoDB", percent: "60%" },
+        { src: "/images/apache-cordova.png", label: "Apache Cordova", percent: "75%" },
     ];
 
     const learning = [
