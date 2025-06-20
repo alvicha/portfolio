@@ -50,6 +50,7 @@ const ContactComponent = () => {
                         <a
                             href="https://www.linkedin.com/in/alberto-villegas-chaparro-a786192a2"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="contact-icon"
                             title="LinkedIn"
                         >

@@ -51,7 +51,7 @@ const AboutSkills = () => {
                 {skills.map((skill, index) => (
                     <div key={index} className="skill-glass-card">
                         <div className="skill-glass-icon">
-                            <img src={skill.src} alt={skill.label} />
+                            <Image src={skill.src} alt={skill.label} />
                         </div>
                         <div className="skill-glass-label">{skill.label}</div>
                         <div className="skill-glass-percent">{skill.percent}</div>

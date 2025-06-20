@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
 import { Dropdown } from 'primereact/dropdown';
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "primereact/button";
-import ScreensContext from "../screens/ScreensContext";
 
 const HeaderComponent = () => {
     const { t, i18n } = useTranslation();
     const [iconDark, setIconDark] = useState("pi pi-sun");
     const [darkMode, setDarkMode] = useState(true);
-    const { containerRef } = useContext(ScreensContext);
     const [isOpen, setIsOpen] = useState(false);
 
     const countries = [

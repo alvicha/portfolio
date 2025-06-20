@@ -1,14 +1,13 @@
-import { createContext, useRef, useState } from 'react';
+import { createContext, useState } from 'react';
 
 const ScreensContext = createContext();
 
 export const ScreensProvider = ({ children }) => {
   const [active, setActive] = useState(false);
-  const containerRef = useRef(null);
 
   return (
     <ScreensContext.Provider value={{
-      active, setActive, containerRef
+      active, setActive
     }}>
       {children}
     </ScreensContext.Provider>
