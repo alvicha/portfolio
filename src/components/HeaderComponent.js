@@ -62,6 +62,9 @@ const HeaderComponent = () => {
             </Link>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+
+                {isOpen && <div className="menu-overlay" onClick={toggleMenu}></div>}
+
                 <nav className={`navbar${isOpen ? " visible" : ""}`}>
                     <button className="cerrar-menu" onClick={toggleMenu}>
                         <i className="pi pi-times"></i>

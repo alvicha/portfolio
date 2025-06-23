@@ -1151,7 +1151,19 @@ a.social-icon:hover {
         transition: transform 0.3s ease-in-out;
     }
 
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9;
+    }
+    
     .navbar.visible {
+        z-index: 10;
+        position: fixed;
         transform: translateY(0);
         opacity: 1;
         pointer-events: auto;
