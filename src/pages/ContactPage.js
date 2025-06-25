@@ -27,7 +27,7 @@ const ContactComponent = () => {
     }, []);
 
     useEffect(() => {
-        if (nameContact !== "" && surnameContact !== "" && emailContact !== "" && phoneNumber !== "" && messageContact !== "") {
+        if (nameContact !== "" && surnameContact !== "" && emailContact !== "" && phoneNumber !== "" && messageContact !== "" && aceptaTerminos) {
             setVisibleSendButton(true);
         } else {
             setVisibleSendButton(false);
@@ -52,19 +52,19 @@ const ContactComponent = () => {
             setLoading(true);
 
             if (!isValidPhone(phoneNumber)) {
-                toast.current.show({ severity: 'error', summary: 'Error', detail: 'Teléfono introducido no válido' });
+                toast.current.show({ severity: 'error', summary: 'Error', detail: t('form.invalidPhone') });
                 setLoading(false);
                 return;
             }
 
             if (!isValidEmail(emailContact)) {
-                toast.current.show({ severity: 'error', summary: 'Error', detail: 'Correo introducido no válido' });
+                toast.current.show({ severity: 'error', summary: 'Error', detail: t('form.invalidEmail') });
                 setLoading(false);
                 return;
             }
 
             if (!aceptaTerminos) {
-                toast.current.show({ severity: 'error', summary: 'Error', detail: 'Debe aceptar los términos' });
+                toast.current.show({ severity: 'error', summary: 'Error', detail: t('form.acceptTerms') });
                 setLoading(false);
                 return;
             }
@@ -79,7 +79,7 @@ const ContactComponent = () => {
 
             emailjs.send('service_0qsoaj9', 'template_6r2ir7l', dataForm, 'fzahUuaxpIVpt05vk')
                 .then(() => {
-                    toast.current.show({ severity: 'success', summary: 'Éxito', detail: 'Formulario enviado correctamente' });
+                    toast.current.show({ severity: 'success', summary: 'Éxito', detail: t('successMessage') });
                     setNameContact("");
                     setSurnameContact("");
                     setEmailContact("");
@@ -89,12 +89,12 @@ const ContactComponent = () => {
                     setLoading(false);
                 })
                 .catch((error) => {
-                    toast.current.show({ severity: 'error', summary: 'Error', detail: 'Error al enviar el formulario' });
+                    toast.current.show({ severity: 'error', summary: 'Error', detail: t('errorMessage') });
                     console.error('EmailJS error:', error);
                     setLoading(false);
                 });
         } catch (error) {
-            toast.current.show({ severity: 'error', summary: 'Error', detail: 'Error al enviar el formulario' });
+            toast.current.show({ severity: 'error', summary: 'Error', detail: t('errorMessage') });
             console.error('Error al enviar el formulario: ', error);
             setLoading(false);
         }

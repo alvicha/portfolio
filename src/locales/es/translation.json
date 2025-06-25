@@ -55,7 +55,9 @@
     "messagePlaceholder": "Mensaje de información",
     "acceptTermsLabel": "Acepta los términos y condiciones",
     "sendButton": "Enviar",
-    "rightsReserved": "Copyright 2025 Alberto Villegas Chaparro. Todos los derechos reservados.",
+    "rightsReserved": "2025 Alberto Villegas Chaparro. Todos los derechos reservados.",
+    "errorMessage": "Error al enviar el formulario",
+    "successMessage": "Formulario enviado correctamente",
     "nameLanguages": {
         "french": "Francés",
         "spanish": "Español",
@@ -92,5 +94,12 @@
                 "description": "Desarrollo de una plataforma web para la gestión eficiente de un club proporcionado y mejorar la experiencia de los usuarios."
             }
         ]
+    },
+    "form": {
+        "invalidPhone": "Teléfono introducido no válido",
+        "invalidEmail": "Correo introducido no válido",
+        "acceptTerms": "Debe aceptar los términos",
+        "sentSuccess": "Formulario enviado correctamente",
+        "sendError": "Error al enviar el formulario"
     }
 }
