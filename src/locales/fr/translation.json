@@ -59,7 +59,7 @@
   "errorMessage": "Erreur lors de l'envoi du formulaire",
   "successMessage": "Formulaire envoyé avec succès",
   "otherSkills": "Autres compétences",
-  "learningObjectives": "OBJECTIFS D'APPRENTISSAGE :",
+  "learningObjectives": "OBJECTIFS D'APPRENTISSAGE",
   "nameLanguages": {
     "french": "Français",
     "spanish": "Espagnol",

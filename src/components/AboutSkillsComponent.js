@@ -60,10 +60,10 @@ const AboutSkills = () => {
                 ))}
             </div>
 
-            <h3 style={{ textTransform: "uppercase" }}>{t("learningObjectives")}</h3>
+            <h3 className="text-uppercase text-center mb-5">{t("learningObjectives")}</h3>
             <div className="skills-glass-grid">
                 {learning.map((skill, index) => (
-                    <div key={index} className="skill-glass-card">
+                    <div key={index} className="skill-card-learning">
                         <div className="skill-glass-icon">
                             <img src={skill.src} alt={skill.label} />
                         </div>
@@ -72,10 +72,10 @@ const AboutSkills = () => {
                 ))}
             </div>
 
-            <h3 style={{ textTransform: "uppercase" }}>{t("otherSkills")}</h3>
+            <h3 className="text-uppercase text-center">{t("otherSkills")}</h3>
             <div className="skills-glass-grid">
                 {otherSkills.map((skill, index) => (
-                    <div key={index} className="skill-glass-card">
+                    <div key={index} className="skill-card-learning">
                         <div className="skill-glass-icon">
                             <img src={skill.src} alt={skill.label} />
                         </div>
