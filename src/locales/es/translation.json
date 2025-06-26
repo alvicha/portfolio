@@ -60,10 +60,13 @@
     "successMessage": "Formulario enviado correctamente",
     "otherSkills": "Otras habilidades",
     "learningObjectives": "OBJETIVOS DE APRENDIZAJE",
+    "native": "Nativo",
+    "intermediate": "intermedio",
     "nameLanguages": {
         "french": "Francés",
         "spanish": "Español",
-        "english": "Inglés"
+        "english": "Inglés",
+        "valencian": "Valenciano"
     },
     "projectsCard": {
         "list": [

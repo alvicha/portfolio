@@ -39,9 +39,9 @@ const AboutSkills = () => {
     ];
 
     const otherSkills = [
-        { src: "/images/ingles.jpg", label: "Inglés", percent: "B1" },
-        { src: "/images/españa.jpg", label: "Español", percent: "Nativo" },
-        { src: "/images/valenciano.jpg", label: "Valenciano", percent: "Intermedio" },
+        { src: "/images/ingles.jpg", label: t("nameLanguages.english"), percent: "B1" },
+        { src: "/images/españa.jpg", label: t("nameLanguages.spanish"), percent: t("native") },
+        { src: "/images/valenciano.jpg", label: t("nameLanguages.valencian"), percent: t("intermediate") },
     ];
 
     return (

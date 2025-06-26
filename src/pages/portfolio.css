@@ -113,6 +113,20 @@ html.light-mode .skill-glass-card:hover {
     border-color: var(--border-buttons);
 }
 
+html.light-mode .skill-card-learning {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    color: #222;
+    border: 1px solid #e0e0e0;
+}
+
+html.light-mode .skill-card-learning:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 12px 32px rgba(255, 106, 0, 0.13), 0 2px 8px rgba(36, 36, 62, 0.10);
+    border-color: var(--border-buttons);
+}
+
 html.light-mode .skill-glass-label {
     color: #222;
 }
