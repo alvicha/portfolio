@@ -395,7 +395,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 32px;
-    margin-top: 65px;
+    margin-top: 55px;
     margin-bottom: 90px;
     justify-items: center;
 }
@@ -427,7 +427,7 @@ header {
     transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
     position: relative;
     overflow: hidden;
-    width: 45%;
+    width: 50%;
 }
 
 .skill-card-learning:hover {
@@ -1072,6 +1072,11 @@ a.social-icon:hover {
 }
 
 @media (max-width: 1210px) {
+
+    .skill-card-learning {
+        width: 60%;
+    }
+
     .timeline-container {
         padding: 10px 20px;
         position: relative;
@@ -1270,6 +1275,10 @@ a.social-icon:hover {
         font-size: 15px;
         margin-bottom: 50px;
     }
+
+    .skill-glass-card {
+        width: 60%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1279,6 +1288,10 @@ a.social-icon:hover {
 }
 
 @media (max-width: 392px) {
+    .skill-card-learning {
+        width: 80%;
+    }
+
     .about-image-wrapper {
         width: 260px;
         height: 260px;
