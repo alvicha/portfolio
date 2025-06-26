@@ -427,7 +427,7 @@ header {
     transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
     position: relative;
     overflow: hidden;
-    width: 50%;
+    width: 45%;
 }
 
 .skill-card-learning:hover {
