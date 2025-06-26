@@ -39,8 +39,8 @@ const AboutSkills = () => {
     ];
 
     const otherSkills = [
-        { src: "/images/ingles.jpg", label: "Inglés", percent: "B1"  },
-        { src: "/images/españa.jpg", label: "Español", percent: "Nativo" }, 
+        { src: "/images/ingles.jpg", label: "Inglés", percent: "B1" },
+        { src: "/images/españa.jpg", label: "Español", percent: "Nativo" },
         { src: "/images/valenciano.jpg", label: "Valenciano", percent: "Intermedio" },
     ];
 
@@ -60,7 +60,7 @@ const AboutSkills = () => {
                 ))}
             </div>
 
-            <h3>OBJETIVOS DE APRENDIZAJE:</h3>
+            <h3 style={{ textTransform: "uppercase" }}>{t("learningObjectives")}</h3>
             <div className="skills-glass-grid">
                 {learning.map((skill, index) => (
                     <div key={index} className="skill-glass-card">
@@ -72,7 +72,7 @@ const AboutSkills = () => {
                 ))}
             </div>
 
-            <h3>OTRAS HABILIDADES:</h3>
+            <h3 style={{ textTransform: "uppercase" }}>{t("otherSkills")}</h3>
             <div className="skills-glass-grid">
                 {otherSkills.map((skill, index) => (
                     <div key={index} className="skill-glass-card">

@@ -45,7 +45,7 @@ const AboutAcademicData = () => {
                 </div>
 
                 <div className="col-12 d-flex justify-content-center">
-                    <div className="timeline-container">
+                    <div className="timeline-container w-full lg:w-[90%] max-w-[600px] mx-auto">
                         {dataAcademics.map((acad, index) => (
                             <div
                                 key={index}

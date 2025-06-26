@@ -58,6 +58,8 @@
     "rightsReserved": "2025 Alberto Villegas Chaparro. Todos los derechos reservados.",
     "errorMessage": "Error al enviar el formulario",
     "successMessage": "Formulario enviado correctamente",
+    "otherSkills": "Otras habilidades",
+    "learningObjectives": "OBJETIVOS DE APRENDIZAJE:",
     "nameLanguages": {
         "french": "Francés",
         "spanish": "Español",
