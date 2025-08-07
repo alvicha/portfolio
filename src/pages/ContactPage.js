@@ -172,16 +172,14 @@ const ContactComponent = () => {
                                     <InputText id="apellidos" value={surnameContact} onChange={e => setSurnameContact(e.target.value)} placeholder={t('lastNamePlaceholder')}
                                         className="w-100" required aria-required="true" />
                                 </div>
-                                <div className="col-12 mb-4">
+                                <div className="col-12 mb-3">
                                     <InputText id="email" value={emailContact} onChange={e => setEmailContact(e.target.value)} placeholder={t('emailPlaceholder')}
                                         className="w-100 mt-2 mb-3" required aria-describedby="ayuda-correo" aria-required="true" />
-                                    <small id="ayuda-correo">
-                                        {t('emailHelpText')}
-                                    </small>
                                 </div>
                                 <div className="col-12 mb-4">
+                                    <InputText id="telefono" type="tel"
+                                        value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} placeholder={t('phonePlaceholder')} className="w-100" />
                                 </div>
-                                <InputText id="telefono" type="tel" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} placeholder={t('phonePlaceholder')} className="w-100" />
                                 <div className="col-12 mb-3">
                                     <InputTextarea id="mensaje" value={messageContact} onChange={e => setMessageContact(e.target.value)} rows={5} placeholder={t('messagePlaceholder')} className="w-100" aria-label={t('messagePlaceholder')} />
                                 </div>
