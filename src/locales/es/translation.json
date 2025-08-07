@@ -106,5 +106,6 @@
         "acceptTerms": "Debe aceptar los términos",
         "sentSuccess": "Formulario enviado correctamente",
         "sendError": "Error al enviar el formulario"
-    }
+    },
+    "success": "Éxito"
 }

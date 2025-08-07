@@ -79,7 +79,7 @@ const ContactComponent = () => {
 
             emailjs.send('service_0qsoaj9', 'template_6r2ir7l', dataForm, 'fzahUuaxpIVpt05vk')
                 .then(() => {
-                    toast.current.show({ severity: 'success', summary: 'Éxito', detail: t('successMessage') });
+                    toast.current.show({ severity: 'success', summary: t('success'), detail: t('successMessage') });
                     setNameContact("");
                     setSurnameContact("");
                     setEmailContact("");
@@ -180,8 +180,8 @@ const ContactComponent = () => {
                                     </small>
                                 </div>
                                 <div className="col-12 mb-4">
-                                    <InputText id="telefono" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} placeholder={t('phonePlaceholder')} className="w-100" keyfilter="int" />
                                 </div>
+                                <InputText id="telefono" type="tel" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} placeholder={t('phonePlaceholder')} className="w-100" />
                                 <div className="col-12 mb-3">
                                     <InputTextarea id="mensaje" value={messageContact} onChange={e => setMessageContact(e.target.value)} rows={5} placeholder={t('messagePlaceholder')} className="w-100" aria-label={t('messagePlaceholder')} />
                                 </div>

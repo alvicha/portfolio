@@ -106,5 +106,6 @@
         "acceptTerms": "You must accept the terms",
         "sentSuccess": "Form submitted successfully",
         "sendError": "An error occurred while submitting the form"
-    }
+    },
+    "success": "Success"
 }

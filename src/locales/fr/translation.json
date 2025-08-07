@@ -106,5 +106,6 @@
     "acceptTerms": "Vous devez accepter les conditions",
     "sentSuccess": "Formulaire envoyé avec succès",
     "sendError": "Une erreur s'est produite lors de l'envoi du formulaire"
-  }
+  },
+  "success": "Succès"
 }
