@@ -150,7 +150,7 @@ const ContactComponent = () => {
                                 <i className="pi pi-envelope" />
                             </a>
                             <a
-                                href="https://www.linkedin.com/in/alberto-villegas-chaparro-a786192a2"
+                                href="https://www.linkedin.com/in/albertovillegas04"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="contact-icon"

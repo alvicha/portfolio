@@ -31,7 +31,7 @@ const FooterComponent = () => {
 
                 <div className="footer-socials d-flex justify-content-center gap-4 mb-2">
                     <a
-                        href="https://www.linkedin.com/in/alberto-villegas-chaparro-a786192a2"
+                        href="https://www.linkedin.com/in/albertovillegas04"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="footer-social-link"

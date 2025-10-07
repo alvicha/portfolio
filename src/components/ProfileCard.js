@@ -34,7 +34,7 @@ const ProfileCard = () => {
                     </a>
                 </Tooltip>
                 <Tooltip content="LinkedIn">
-                    <a href="https://www.linkedin.com/in/alberto-villegas-chaparro-a786192a2/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.linkedin.com/in/albertovillegas04/" target="_blank" rel="noopener noreferrer"
                         className="social-icon">
                         <i className="pi pi-linkedin text-xl" />
                     </a>
