@@ -14,7 +14,7 @@ const ProfileCard = () => {
     return (
         <Card className="w-96 bg-[--card-profile-bg] backdrop-blur-sm rounded-xl shadow-lg card-profile">
             <CardHeader floated={false} className="rounded-t-xl h-[325px] overflow-hidden relative group">
-                <img src="/images/perfil.jpg" alt="profile-picture" className="w-full h-82 transition-transform duration-500 group-hover:scale-105" />
+                <img src="/images/perfil.jpg" alt="profile-picture" className="w-full h-84 transition-transform duration-500 group-hover:scale-105" />
             </CardHeader>
 
             <CardBody className="py-6 text-center">
